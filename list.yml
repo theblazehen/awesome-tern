@@ -48,6 +48,9 @@ sections:
       url: https://github.com/plumj-am/nixos/blob/master/packages/tern-plugins/jj.nix
       description: Creates, opens, removes, and inspects jj workspaces using Tern dialogs, tabs, and the status line, packaged with Nix inside a NixOS config.
       repo: plumj-am/nixos
+    - name: tern-close-plugin
+      url: https://github.com/yumosx/tern-close-plugin
+      description: Adds palette commands that close the other tabs and the split blocks left, right and around the focused block, each row hidden while it would close nothing.
   - title: Official examples
     blurb: These examples ship with the official [SDK archive](https://docs.stencil.so/tern/tern-sdk.tar.gz). They are a good starting point if you are writing your own plugin.
     sort: manual
