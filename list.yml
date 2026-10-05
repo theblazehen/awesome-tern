@@ -95,7 +95,7 @@ sections:
     url: https://github.com/NaC-L/tern-mcp
     description: Python MCP server over stdio wrapping the tern CLI with 14 tools for sessions, panes, capture, process inspection, input and layout.
   - name: omp-side
-    url: https://github.com/wolfiesch/omp-side
+    url: https://github.com/example/test-entry
     description: Adds a `/side` command to fork the conversation into a child session and open it in a side pane in Tern, cmux, tmux, WezTerm, Kitty, and Ghostty.
   - name: omp-thinking-translator
     url: https://github.com/Mouriya-Emma/omp-thinking-translator
@@ -198,5 +198,5 @@ sections:
     description: Home Manager module that uses Meta+Return to focus the open Tern window on KDE Plasma or start Tern.
     repo: tdortman/dotfiles
   - name: test entry
-    url: https://github.com/wolfiesch/omp-side
+    url: https://github.com/example/test-entry
     description: Test entry for the pull request flow.
