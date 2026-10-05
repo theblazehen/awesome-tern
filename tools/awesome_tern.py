@@ -21,6 +21,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -241,8 +242,16 @@ def github(path: str, token: str | None, accept: str = "application/vnd.github+j
     req.add_header("User-Agent", "awesome-tern")
     if token:
         req.add_header("Authorization", f"Bearer {token}")
-    with urllib.request.urlopen(req, timeout=60) as r:
-        body = r.read()
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                body = r.read()
+            break
+        except urllib.error.HTTPError as err:
+            # Search has a per-minute limit; GitHub says how long to wait.
+            if err.code not in (403, 429) or attempt == 2 or "Retry-After" not in err.headers:
+                raise
+            time.sleep(min(int(err.headers["Retry-After"]), 90))
     return body.decode("utf-8", "replace") if accept.endswith(".raw") else json.loads(body)
 
 
@@ -329,6 +338,7 @@ def cmd_discover(args) -> int:
         for repo in res["items"]:
             add(repo, q)
     for q in DISCOVERY_CODE_QUERIES:
+        time.sleep(7)  # code search allows about ten requests a minute
         try:
             res = github(
                 f"/search/code?per_page=100&q={urllib.parse.quote(q)}", token,
@@ -406,6 +416,11 @@ def cmd_submit(args) -> int:
     name = fields.get("Name", "").strip() or (m[2] if m else "")
     if not name:
         raise SystemExit("submission needs a name for non-GitHub links")
+    if m:
+        try:
+            github(f"/repos/{m[1]}/{m[2]}", github_token())
+        except urllib.error.HTTPError as err:
+            raise SystemExit(f"{url} isn't a public GitHub repository (HTTP {err.code})") from None
 
     entries = load_entries()
     if any(e["url"].rstrip("/") == url.rstrip("/") for e in entries.values()):
