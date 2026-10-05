@@ -27,7 +27,7 @@ jobs:
           ISSUE: ${{ github.event.issue.number }}
         run: |
           printf '%s\n' "$BODY" > "$RUNNER_TEMP/body.md"
-          if ! id=$(uv run tools/awesome_tern.py submit "$RUNNER_TEMP/body.md" 2>"$RUNNER_TEMP/err"); then
+          if ! id=$(uv run -q tools/awesome_tern.py submit "$RUNNER_TEMP/body.md" 2>"$RUNNER_TEMP/err"); then
             { echo "The bot couldn't turn this into an entry:"; echo; echo '```'; cat "$RUNNER_TEMP/err"; echo '```'; echo; echo "Edit the issue to try again."; } > "$RUNNER_TEMP/comment.md"
             gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/comment.md"
             exit 1
