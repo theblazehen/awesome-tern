@@ -28,6 +28,9 @@ sections:
     - name: tern-spotify
       url: https://github.com/rico-vz/tern-spotify
       description: Player block for the Spotify desktop app with cover art, playback, seeking and volume controls on macOS, Windows and Linux.
+    - name: tern-CDP-tidal
+      url: https://github.com/H4vC/tern-CDP-tidal
+      description: Player block for the TIDAL desktop app, driven over the Chrome DevTools protocol, with cover art, playback, seeking, volume, shuffle, repeat and line-based search.
   - title: Window and workflow
     blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
     entries:
