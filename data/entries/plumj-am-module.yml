@@ -1,0 +1,6 @@
+name: plumj-am/nixos
+url: https://github.com/plumj-am/nixos/blob/master/modules/tern.nix
+section: dotfiles
+description: NixOS module that manages Tern settings, theme, tmux-style keybindings, the `omp` launch
+  command and plugins.
+repo: plumj-am/nixos

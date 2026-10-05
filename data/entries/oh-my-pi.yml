@@ -1,0 +1,5 @@
+name: oh-my-pi (omp)
+url: https://github.com/can1357/oh-my-pi
+section: apps
+description: Stencil's coding agent that Tern is built around, drawing its transcript and UI natively,
+  restoring sessions, and opening web pages as browser picture-in-picture panes.

@@ -1,0 +1,5 @@
+name: not-matthias/dotfiles-nix
+url: https://github.com/not-matthias/dotfiles-nix/blob/c1c7f09f29c1c938df834427bb96034b2502530e/pkgs/tern.nix
+section: packaging
+description: Provides a Nix derivation for x86_64 Linux that uses requireFile and autoPatchelf.
+repo: not-matthias/dotfiles-nix

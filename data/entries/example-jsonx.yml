@@ -1,0 +1,5 @@
+name: JSON Explorer
+url: https://docs.stencil.so/tern/examples/jsonx.html
+section: plugins-examples
+description: Opens JSON and GeoJSON files as collapsible trees and copies the jq path of a node.
+order: 2

@@ -1,0 +1,6 @@
+name: tdortman/dotfiles
+url: https://github.com/tdortman/dotfiles/blob/008242f1f3ef305950a98f9878a0253477f256b0/nix/packages/tern/default.nix
+section: packaging
+description: Nix package with desktop entries and an update script that finds new builds using a Stencil
+  browser session.
+repo: tdortman/dotfiles

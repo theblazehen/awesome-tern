@@ -1,0 +1,38 @@
+name: Links
+
+on:
+  pull_request:
+    paths: [README.md, lychee.toml]
+  schedule:
+    - cron: "23 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --config lychee.toml --no-progress README.md
+          output: lychee-report.md
+          fail: ${{ github.event_name == 'pull_request' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Report broken links in an issue
+        if: github.event_name != 'pull_request' && steps.lychee.outputs.exit_code != 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          issue=$(gh issue list --label broken-links --state open --json number --jq '.[0].number')
+          if [ -n "$issue" ]; then
+            gh issue edit "$issue" --body-file lychee-report.md
+          else
+            gh issue create --title "Broken links" --label broken-links --body-file lychee-report.md
+          fi

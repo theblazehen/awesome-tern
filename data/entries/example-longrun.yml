@@ -1,0 +1,6 @@
+name: Long-Running Commands
+url: https://docs.stencil.so/tern/examples/longrun.html
+section: plugins-examples
+description: Shows a toast when slow commands finish, keeps a history of run times and status, and adds
+  a status-line segment.
+order: 3

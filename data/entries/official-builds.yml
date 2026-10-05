@@ -1,0 +1,5 @@
+name: Beta builds
+url: https://build.stencil.so/tern
+section: official
+description: CI-generated beta builds from the `main` branch, requiring sign-in.
+order: 2

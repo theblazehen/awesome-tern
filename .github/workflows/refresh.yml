@@ -1,0 +1,31 @@
+name: Refresh
+
+on:
+  schedule:
+    - cron: "41 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: refresh
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Fetch GitHub metadata and rebuild
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          uv run tools/awesome_tern.py refresh
+          uv run tools/awesome_tern.py build
+      - name: Commit changes
+        run: |
+          git diff --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Refresh repository metadata"
+          git push

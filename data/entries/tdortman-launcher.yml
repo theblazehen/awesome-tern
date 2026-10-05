@@ -1,0 +1,6 @@
+name: tdortman Tern launcher
+url: https://github.com/tdortman/dotfiles/blob/008242f1f3ef305950a98f9878a0253477f256b0/nix/modules/home/tern/default.nix
+section: dotfiles
+description: Home Manager module that uses Meta+Return to focus the open Tern window on KDE Plasma or
+  start Tern.
+repo: tdortman/dotfiles

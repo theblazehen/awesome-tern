@@ -1,0 +1,5 @@
+name: tern-spotify
+url: https://github.com/rico-vz/tern-spotify
+section: plugins-blocks
+description: Player block for the Spotify desktop app with cover art, playback, seeking and volume controls
+  on macOS, Windows and Linux.

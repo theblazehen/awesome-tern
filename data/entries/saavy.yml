@@ -1,0 +1,5 @@
+name: saavy
+url: https://github.com/saavy1/saavy_cloud
+section: apps
+description: Persistent coding agent on Cloudflare with a native TSP frontend in Tern and a `pi-tui` fallback
+  elsewhere.

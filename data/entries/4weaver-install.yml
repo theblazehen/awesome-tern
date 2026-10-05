@@ -1,0 +1,6 @@
+name: install-tern-nixos.sh
+url: https://github.com/4weaver/nixdots/blob/a326859f4ba07920d205b2f88a3fd7af8922d92f/scripts/install-tern-nixos.sh
+section: packaging
+description: Shell script that patches the Linux tarball for NixOS and runs `tern remote serve` as a user
+  service on UDP port 8376.
+repo: 4weaver/nixdots

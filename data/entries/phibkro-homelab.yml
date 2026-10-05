@@ -1,0 +1,5 @@
+name: phibkro/homelab
+url: https://github.com/phibkro/homelab/blob/1741e8cd636c483dda04ece696d57c1f9efbea9a/src/users/nori/programs/tern/default.nix
+section: packaging
+description: Nix package for Tern 0.4.1 that patches graphics and input library paths.
+repo: phibkro/homelab

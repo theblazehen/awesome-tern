@@ -1,0 +1,6 @@
+name: Tern plugin book
+url: https://docs.stencil.so/tern/
+section: docs
+description: Official documentation covering host and window runtimes, lenses, blocks, native views, styling,
+  and TSP.
+order: 0

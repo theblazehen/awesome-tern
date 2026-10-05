@@ -1,0 +1,36 @@
+name: Discover
+
+on:
+  schedule:
+    - cron: "7 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: Report repositories created in the last N days
+        default: "7"
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Search GitHub for new Tern projects
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: uv run tools/awesome_tern.py discover --days "${{ inputs.days || 7 }}" > discovery.md
+      - name: Post new finds
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -s discovery.md ] || { echo "Nothing new."; exit 0; }
+          issue=$(gh issue list --label discovery --state open --json number --jq '.[0].number')
+          if [ -n "$issue" ]; then
+            gh issue comment "$issue" --body-file discovery.md
+          else
+            gh issue create --title "New Tern projects" --label discovery --body-file discovery.md
+          fi

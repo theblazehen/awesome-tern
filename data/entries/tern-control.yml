@@ -1,0 +1,5 @@
+name: tern-control
+url: https://github.com/wolfiesch/tern-control
+section: agents
+description: An omp and Pi extension giving agents tools to find Tern sessions, read transcript digests,
+  follow daemon events, change layout, and type into terminals.

@@ -1,0 +1,5 @@
+name: omp-thinking-translator
+url: https://github.com/Mouriya-Emma/omp-thinking-translator
+section: agents
+description: An omp extension that translates visible thinking into collapsible native sections in Tern
+  and plain ANSI output in other terminals.

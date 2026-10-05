@@ -1,0 +1,6 @@
+name: Octet
+url: https://github.com/skaft-software/octet/pull/485
+section: apps
+description: Coding-agent shell that renders transcript cards, split diffs, pickers, and reports through
+  TSP, with Tern support merged into a feature branch, not `main`.
+repo: skaft-software/octet

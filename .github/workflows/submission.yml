@@ -1,0 +1,47 @@
+name: Submission
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency: submission-${{ github.event.issue.number }}
+
+jobs:
+  pull-request:
+    if: contains(github.event.issue.labels.*.name, 'submission') && github.event.issue.state == 'open'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Create the entry
+        id: entry
+        env:
+          BODY: ${{ github.event.issue.body }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          printf '%s\n' "$BODY" > "$RUNNER_TEMP/body.md"
+          if ! id=$(uv run tools/awesome_tern.py submit "$RUNNER_TEMP/body.md" 2>"$RUNNER_TEMP/err"); then
+            { echo "The bot couldn't turn this into an entry:"; echo; echo '```'; cat "$RUNNER_TEMP/err"; echo '```'; echo; echo "Edit the issue to try again."; } > "$RUNNER_TEMP/comment.md"
+            gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/comment.md"
+            exit 1
+          fi
+          echo "id=$id" >> "$GITHUB_OUTPUT"
+          uv run tools/awesome_tern.py refresh
+          uv run tools/awesome_tern.py build
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          branch: submission/${{ github.event.issue.number }}
+          commit-message: "Add ${{ steps.entry.outputs.id }}"
+          title: "Add ${{ steps.entry.outputs.id }}"
+          body: |
+            Closes #${{ github.event.issue.number }}.
+
+            Generated from the submission form. Check the wording and section before merging.
+          labels: submission

@@ -1,0 +1,6 @@
+name: tern-ide layout
+url: https://github.com/plumj-am/nixos/blob/master/packages/tern-plugins/layout.nix
+section: plugins-window
+description: Window plugin with an IDE-style four-pane layout, set split ratios, and an omp pane, packaged
+  with Nix inside a NixOS config.
+repo: plumj-am/nixos

@@ -1,0 +1,5 @@
+name: tern-video-block
+url: https://github.com/verticalrectangle/tern-video-block
+section: plugins-blocks
+description: Opens video files in a block with mpv sound, frame stepping and synced side-by-side playback
+  using ffmpeg and the kitty graphics protocol.

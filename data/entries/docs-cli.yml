@@ -1,0 +1,6 @@
+name: Plugin CLI
+url: https://docs.stencil.so/tern/reference/cli.html
+section: docs
+description: Reference for `tern plugin list`, `install`, `link`, `unlink`, `remove`, `reload`, `dir`,
+  and `types`.
+order: 4

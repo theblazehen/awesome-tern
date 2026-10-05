@@ -1,0 +1,7 @@
+name: octet-tern
+url: https://github.com/skaft-software/octet/tree/9e8abda1f4f210d43361b6c0a80e482097feff77/crates/octet-tern
+section: sdks
+description: A Rust TSP client built into Octet with wire types, APC chunking, tty flow control, and scene
+  builders.
+repo: skaft-software/octet
+order: 3

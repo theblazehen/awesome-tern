@@ -1,0 +1,6 @@
+name: Canvas Dashboard
+url: https://docs.stencil.so/tern/reference/api-window.html#canvas-cx
+section: plugins-examples
+description: Window-only persistent dashboard that shows canvas ownership, keyed patches, and a Refresh
+  action.
+order: 6

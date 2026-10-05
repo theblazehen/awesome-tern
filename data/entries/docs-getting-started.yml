@@ -1,0 +1,5 @@
+name: Getting Started
+url: https://docs.stencil.so/tern/guides/getting-started.html
+section: docs
+description: Walkthrough of building a lens and palette command, then linking, type-checking, and reloading.
+order: 1

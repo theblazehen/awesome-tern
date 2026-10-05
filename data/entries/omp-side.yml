@@ -1,0 +1,5 @@
+name: omp-side
+url: https://github.com/wolfiesch/omp-side
+section: agents
+description: Adds a `/side` command to fork the conversation into a child session and open it in a side
+  pane in Tern, cmux, tmux, WezTerm, Kitty, and Ghostty.

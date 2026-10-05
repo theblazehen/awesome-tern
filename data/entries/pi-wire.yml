@@ -1,0 +1,7 @@
+name: '@oh-my-pi/pi-wire'
+url: https://github.com/can1357/oh-my-pi/tree/main/packages/wire
+section: sdks
+description: 'TypeScript package implementing the TSP wire format: APC framing, component types, frame
+  operations, handshake and events.'
+repo: can1357/oh-my-pi
+order: 1

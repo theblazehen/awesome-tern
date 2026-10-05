@@ -1,0 +1,23 @@
+[tools]
+uv = "latest"
+lychee = "latest"
+
+[tasks.build]
+description = "Regenerate README.md and the submission form from data/"
+run = "uv run tools/awesome_tern.py build"
+
+[tasks.check]
+description = "Validate data/ and make sure generated files are current"
+run = "uv run tools/awesome_tern.py check"
+
+[tasks.refresh]
+description = "Fetch stars and status for every GitHub entry, then rebuild"
+run = ["uv run tools/awesome_tern.py refresh", "uv run tools/awesome_tern.py build"]
+
+[tasks.discover]
+description = "List Tern projects on GitHub that aren't on the list yet"
+run = "uv run tools/awesome_tern.py discover"
+
+[tasks.links]
+description = "Check every link in README.md"
+run = "lychee --config lychee.toml README.md"

@@ -1,0 +1,5 @@
+name: tern-jj
+url: https://github.com/resYuto/tern-jj
+section: plugins-lenses
+description: Displays `jj status` and `jj st` output as a read-only native card with added, modified and
+  deleted files colored to match the Tern theme.

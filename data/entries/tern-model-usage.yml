@@ -1,0 +1,5 @@
+name: tern-model-usage
+url: https://github.com/azmifarih/tern-model-usage
+section: plugins-window
+description: Shows omp coding-plan quota for each signed-in account in the status line and opens a canvas
+  pane with provider cards and reset countdowns.

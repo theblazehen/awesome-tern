@@ -1,0 +1,6 @@
+name: Directory Variables
+url: https://docs.stencil.so/tern/examples/dirvars.html
+section: plugins-examples
+description: Loads approved `.tern-env` files into new shells and signals when a directory's environment
+  changed.
+order: 4
