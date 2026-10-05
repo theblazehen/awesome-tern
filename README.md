@@ -71,6 +71,7 @@ Applications that draw their own user interface natively inside Tern using the T
 - [omp-side](https://github.com/wolfiesch/omp-side) - Adds a `/side` command to fork the conversation into a child session and open it in a side pane in Tern, cmux, tmux, WezTerm, Kitty, and Ghostty.
 - [tern-mcp](https://github.com/NaC-L/tern-mcp) - Python MCP server over stdio wrapping the tern CLI with 14 tools for sessions, panes, capture, process inspection, input and layout.
 - [tern-control](https://github.com/wolfiesch/tern-control) - An omp and Pi extension giving agents tools to find Tern sessions, read transcript digests, follow daemon events, change layout, and type into terminals.
+- [omp-side-test-does-not-exist](https://github.com/wolfiesch/omp-side-test-does-not-exist) - Smoke test for the submission bot. `unavailable`
 - [omp-thinking-translator](https://github.com/Mouriya-Emma/omp-thinking-translator) - An omp extension that translates visible thinking into collapsible native sections in Tern and plain ANSI output in other terminals.
 
 ## SDKs and protocol libraries

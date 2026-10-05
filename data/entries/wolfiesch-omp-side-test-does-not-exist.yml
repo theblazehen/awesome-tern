@@ -1,0 +1,4 @@
+name: omp-side-test-does-not-exist
+url: https://github.com/wolfiesch/omp-side-test-does-not-exist
+section: agents
+description: Smoke test for the submission bot.

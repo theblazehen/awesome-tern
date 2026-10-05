@@ -71,6 +71,10 @@
     "stars": 5,
     "status": null
   },
+  "wolfiesch/omp-side-test-does-not-exist": {
+    "stars": 0,
+    "status": "unavailable"
+  },
   "wolfiesch/tern-control": {
     "stars": 1,
     "status": null
