@@ -89,6 +89,9 @@ sections:
     url: https://github.com/skaft-software/octet/pull/485
     description: Coding-agent shell rendering transcript cards, split diffs, pickers, and reports through TSP; Tern support is merged into the integration branch for 0.8.2 but not in the latest 0.8.1 release.
     repo: skaft-software/octet
+  - name: rmon
+    url: https://github.com/pgkt04/rmon
+    description: Resource monitor for Linux and macOS with CPU, GPU, memory, network, disk and process panels and a disk benchmark, drawn natively in Tern over TSP.
 - title: Agent integrations
   entries:
   - name: tern-control
