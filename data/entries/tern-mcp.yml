@@ -1,5 +1,0 @@
-name: tern-mcp
-url: https://github.com/NaC-L/tern-mcp
-section: agents
-description: Python MCP server over stdio wrapping the tern CLI with 14 tools for sessions, panes, capture,
-  process inspection, input and layout.

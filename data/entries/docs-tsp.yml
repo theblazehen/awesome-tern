@@ -1,6 +1,0 @@
-name: Tern Surface Protocol
-url: https://docs.stencil.so/tern/protocol/index.html
-section: docs
-description: Specifies the in-band protocol where CLIs, TUIs, and agents send UI trees that Tern lays
-  out and draws natively.
-order: 5

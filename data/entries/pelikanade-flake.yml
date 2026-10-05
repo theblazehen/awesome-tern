@@ -1,6 +1,0 @@
-name: pelikanade/flake
-url: https://github.com/pelikanade/flake/blob/f6f8217278a4a119c8e3a5b27b5a30ffef57cbd1/docs/tern.md
-section: packaging
-description: Nix packaging guide covering signed-in downloads, `requireFile`, graphics libraries, and
-  updating.
-repo: pelikanade/flake

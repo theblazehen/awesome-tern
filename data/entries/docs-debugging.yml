@@ -1,5 +1,0 @@
-name: Debugging
-url: https://docs.stencil.so/tern/guides/debugging.html
-section: docs
-description: Covers toasts, logs, Luau typing, handler budgets, and scripted window control.
-order: 3

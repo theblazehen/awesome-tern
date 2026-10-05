@@ -8,7 +8,7 @@ on:
 permissions:
   contents: write
 
-concurrency: refresh
+concurrency: ci-refs/heads/main
 
 jobs:
   refresh:
@@ -20,8 +20,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          uv run tools/awesome_tern.py refresh
-          uv run tools/awesome_tern.py build
+          uv run -q tools/awesome_tern.py refresh
+          uv run -q tools/awesome_tern.py build
       - name: Commit changes
         run: |
           git diff --quiet && exit 0

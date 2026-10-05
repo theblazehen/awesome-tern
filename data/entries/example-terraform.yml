@@ -1,6 +1,0 @@
-name: Terraform Plans
-url: https://docs.stencil.so/tern/examples/terraform.html
-section: plugins-examples
-description: Lens for `terraform plan` and `tofu plan` that shows badges, diagnostics and resources grouped
-  by action.
-order: 0

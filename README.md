@@ -1,3 +1,5 @@
+<!-- Generated from list.yml by tools/awesome_tern.py. Edit list.yml, not this file. -->
+
 # Awesome Tern
 
 > Plugins, apps, tools and resources for [Tern](https://stencil.so/tern), Stencil's terminal.
@@ -116,4 +118,4 @@ Tern builds are behind a sign-in, so most of these packages expect you to downlo
 
 ## Contributing
 
-Suggestions are welcome. Use the [submission form](https://github.com/theblazehen/awesome-tern/issues/new?template=submission.yml) or read the [contribution guidelines](CONTRIBUTING.md).
+Suggestions are welcome as pull requests. Read the [contribution guidelines](CONTRIBUTING.md) first.

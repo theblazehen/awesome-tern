@@ -1,5 +1,0 @@
-name: Terngram
-url: https://github.com/d3d0n/terngram
-section: apps
-description: Unofficial keyboard-driven Telegram client built on TDLib and omp's UI toolkit, also installable
-  as a Tern plugin.

@@ -1,5 +1,0 @@
-name: Command Lenses
-url: https://docs.stencil.so/tern/guides/lenses.html
-section: docs
-description: Explains how to turn command output into native views using manifest globs and host callbacks.
-order: 2

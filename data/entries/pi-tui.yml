@@ -1,7 +1,0 @@
-name: '@oh-my-pi/pi-tui'
-url: https://github.com/can1357/oh-my-pi/tree/main/packages/tui
-section: sdks
-description: TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively
-  over TSP.
-repo: can1357/oh-my-pi
-order: 2

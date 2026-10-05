@@ -1,5 +1,0 @@
-name: Review Queue
-url: https://docs.stencil.so/tern/examples/review-queue.html
-section: plugins-examples
-description: Block that polls `gh` every two minutes and lists pull requests waiting for your review.
-order: 1

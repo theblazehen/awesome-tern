@@ -1,5 +1,0 @@
-name: Project Workspaces
-url: https://docs.stencil.so/tern/examples/workspaces.html
-section: plugins-examples
-description: Builds named tabs and split panes from `.tern/workspace.json`.
-order: 5

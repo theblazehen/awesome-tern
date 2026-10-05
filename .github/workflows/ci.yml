@@ -6,7 +6,9 @@ on:
     branches: [main]
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency: ci-${{ github.ref }}
 
 jobs:
   check:
@@ -14,5 +16,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
-      - name: Validate data and generated files
-        run: uv run tools/awesome_tern.py check
+      - name: Validate list.yml
+        run: uv run -q tools/awesome_tern.py check
+      - name: Regenerate README.md
+        if: github.event_name == 'push'
+        run: |
+          uv run -q tools/awesome_tern.py build
+          git diff --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "Regenerate README.md"
+          git push

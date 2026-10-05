@@ -2,14 +2,13 @@
 # requires-python = ">=3.12"
 # dependencies = ["pyyaml>=6"]
 # ///
-"""Maintain awesome-tern: data in data/, README.md is generated.
+"""Maintain awesome-tern. list.yml is the source; README.md is generated from it.
 
 Commands:
-  check      validate data and fail if README.md or the issue form is stale
-  build      regenerate README.md and the submission issue form
-  refresh    fetch GitHub metadata for every entry into data/metadata.json
-  discover   search GitHub for Tern projects not yet on the list (markdown to stdout)
-  submit     turn a submission issue body into a new entry file
+  check      validate list.yml
+  build      regenerate README.md
+  refresh    fetch stars and status for GitHub entries into metadata.json
+  discover   print recently created Tern repositories that aren't listed
 """
 
 from __future__ import annotations
@@ -25,65 +24,49 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from collections.abc import Iterator
 from pathlib import Path
 
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-DATA = ROOT / "data"
-ENTRIES = DATA / "entries"
-METADATA = DATA / "metadata.json"
+LIST = ROOT / "list.yml"
+METADATA = ROOT / "metadata.json"
 README = ROOT / "README.md"
-ISSUE_FORM = ROOT / ".github" / "ISSUE_TEMPLATE" / "submission.yml"
 
 GITHUB_REPO_URL = re.compile(r"^https://github\.com/([\w.-]+)/([\w.-]+)/?$")
 INACTIVE_AFTER = dt.timedelta(days=180)
 SORTS = {"stars", "manual"}
 
+
 # --------------------------------------------------------------------------- data
 
 
-def load_yaml(path: Path):
-    with path.open(encoding="utf-8") as f:
-        return yaml.safe_load(f)
-
-
-def dump_yaml(path: Path, data) -> None:
-    text = yaml.safe_dump(data, sort_keys=False, allow_unicode=True, width=100)
-    path.write_text(text, encoding="utf-8")
-
-
-def load_site() -> dict:
-    return load_yaml(DATA / "site.yml")
-
-
-def load_sections() -> list[dict]:
-    """Sections as a flat, ordered list; children carry `parent`."""
-    flat: list[dict] = []
-
-    def walk(items, parent):
-        for s in items:
-            children = s.get("children", [])
-            node = {k: v for k, v in s.items() if k != "children"}
-            node["parent"] = parent
-            node.setdefault("sort", "stars")
-            flat.append(node)
-            walk(children, s["id"])
-
-    walk(load_yaml(DATA / "sections.yml"), None)
-    return flat
-
-
-def load_entries() -> dict[str, dict]:
-    return {p.stem: load_yaml(p) for p in sorted(ENTRIES.glob("*.yml"))}
+def load_list() -> dict:
+    try:
+        with LIST.open(encoding="utf-8") as f:
+            return yaml.safe_load(f)
+    except yaml.YAMLError as err:
+        raise SystemExit(f"error: list.yml is not valid YAML\n{err}") from None
 
 
 def load_metadata() -> dict:
     return json.loads(METADATA.read_text()) if METADATA.exists() else {}
 
 
+def walk(sections: list[dict], depth: int = 0) -> Iterator[tuple[dict, int]]:
+    for s in sections:
+        yield s, depth
+        yield from walk(s.get("sections", []), depth + 1)
+
+
+def all_entries(data: dict) -> Iterator[dict]:
+    for s, _ in walk(data["sections"]):
+        yield from s.get("entries", [])
+
+
 def entry_repo(entry: dict) -> str | None:
-    """owner/name for GitHub metadata: explicit `repo`, else a repo-root URL."""
+    """owner/name for GitHub metadata: explicit `repo`, else a repository URL."""
     if entry.get("repo"):
         return entry["repo"]
     m = GITHUB_REPO_URL.match(entry["url"])
@@ -93,135 +76,115 @@ def entry_repo(entry: dict) -> str | None:
 # ----------------------------------------------------------------------- validate
 
 
-def validate(sections, entries) -> list[str]:
+def validate(data: dict) -> list[str]:
     errors: list[str] = []
-    ids = {s["id"] for s in sections}
-    seen_urls: dict[str, str] = {}
-    for s in sections:
-        if s["sort"] not in SORTS:
-            errors.append(f"section {s['id']}: sort must be one of {sorted(SORTS)}")
-    for eid, e in entries.items():
-        where = f"data/entries/{eid}.yml"
-        for field in ("name", "url", "section", "description"):
-            if not e.get(field):
-                errors.append(f"{where}: missing {field}")
-        if e.get("section") and e["section"] not in ids:
-            errors.append(f"{where}: unknown section {e['section']!r}")
-        url = e.get("url", "")
-        if url in seen_urls:
-            errors.append(f"{where}: duplicate url (also {seen_urls[url]})")
-        seen_urls[url] = eid
-        desc = (e.get("description") or "").strip()
-        if desc:
-            if desc[0].islower():
-                errors.append(f"{where}: description must not start with a lowercase letter")
-            if not desc.endswith("."):
-                errors.append(f"{where}: description must end with a period")
-            if "\n" in desc:
-                errors.append(f"{where}: description must be one line")
+    for key in ("title", "tagline", "sections"):
+        if not data.get(key):
+            errors.append(f"list.yml: missing {key}")
+    seen: dict[str, str] = {}
+    for s, _ in walk(data.get("sections", [])):
+        title = s.get("title") or "?"
+        if not s.get("title"):
+            errors.append("a section is missing its title")
+        if s.get("sort", "stars") not in SORTS:
+            errors.append(f"{title}: sort must be one of {sorted(SORTS)}")
+        for e in s.get("entries", []):
+            where = f"{title} > {e.get('name') or e.get('url') or '?'}"
+            for field in ("name", "url", "description"):
+                if not e.get(field):
+                    errors.append(f"{where}: missing {field}")
+            unknown = set(e) - {"name", "url", "description", "repo"}
+            if unknown:
+                errors.append(f"{where}: unknown fields {sorted(unknown)}")
+            url = e.get("url", "")
+            if url and not url.startswith("https://"):
+                errors.append(f"{where}: url must start with https://")
+            if url in seen:
+                errors.append(f"{where}: also listed under {seen[url]}")
+            seen[url] = title
+            desc = (e.get("description") or "").strip()
+            if desc:
+                if desc[0].islower():
+                    errors.append(f"{where}: description must not start with a lowercase letter")
+                if not desc.endswith("."):
+                    errors.append(f"{where}: description must end with a period")
+                if "\n" in desc:
+                    errors.append(f"{where}: description must be one line")
     return errors
+
+
+def cmd_check(_args) -> int:
+    errors = validate(load_list())
+    for e in errors:
+        print(f"error: {e}", file=sys.stderr)
+    return 1 if errors else 0
 
 
 # -------------------------------------------------------------------------- build
 
 
 def anchor(title: str) -> str:
-    a = title.strip().lower()
-    a = re.sub(r"[^\w\- ]", "", a)
-    return a.replace(" ", "-")
+    return re.sub(r"[^\w\- ]", "", title.strip().lower()).replace(" ", "-")
 
 
 def entry_flag(entry: dict, meta: dict) -> str:
-    """Status marker from the last refresh: unavailable, archived or inactive."""
+    """Marker from the last refresh: unavailable, archived or inactive."""
     repo = entry_repo(entry)
     status = (meta.get(repo) or {}).get("status") if repo else None
     return f" `{status}`" if status else ""
 
 
-def sorted_entries(section: dict, items: list[tuple[str, dict]], meta: dict):
-    if section["sort"] == "manual":
-        return sorted(items, key=lambda kv: (kv[1].get("order", 1000), kv[1]["name"].lower()))
+def ordered(section: dict, meta: dict) -> list[dict]:
+    entries = section.get("entries", [])
+    if section.get("sort", "stars") == "manual":
+        return entries
 
-    def stars(kv):
-        repo = entry_repo(kv[1])
+    def stars(e):
+        repo = entry_repo(e)
         return (meta.get(repo) or {}).get("stars", -1) if repo else -1
 
-    return sorted(items, key=lambda kv: (-stars(kv), kv[1]["name"].lower()))
+    return sorted(entries, key=lambda e: (-stars(e), e["name"].lower()))
 
 
-def render_readme(site, sections, entries, meta) -> str:
-    by_section: dict[str, list[tuple[str, dict]]] = {}
-    for eid, e in entries.items():
-        by_section.setdefault(e["section"], []).append((eid, e))
-
-    out = [f"# {site['title']}", ""]
-    out += [f"> {site['tagline']}", ""]
-    if site.get("intro"):
-        out += [site["intro"].strip(), ""]
-
+def render(data: dict, meta: dict) -> str:
+    out = [
+        "<!-- Generated from list.yml by tools/awesome_tern.py. Edit list.yml, not this file. -->",
+        "",
+        f"# {data['title']}",
+        "",
+        f"> {data['tagline'].strip()}",
+        "",
+    ]
+    if data.get("intro"):
+        out += [data["intro"].strip(), ""]
     out += ["## Contents", ""]
-    for s in sections:
-        indent = "  " if s["parent"] else ""
-        out.append(f"{indent}- [{s['title']}](#{anchor(s['title'])})")
+    for s, depth in walk(data["sections"]):
+        out.append(f"{'  ' * depth}- [{s['title']}](#{anchor(s['title'])})")
     out.append("")
-
-    for s in sections:
-        out += [f"{'###' if s['parent'] else '##'} {s['title']}", ""]
+    for s, depth in walk(data["sections"]):
+        out += [f"{'#' * (depth + 2)} {s['title']}", ""]
         if s.get("blurb"):
             out += [s["blurb"].strip(), ""]
-        items = sorted_entries(s, by_section.get(s["id"], []), meta)
-        for _, e in items:
+        items = ordered(s, meta)
+        for e in items:
             out.append(f"- [{e['name']}]({e['url']}) - {e['description'].strip()}{entry_flag(e, meta)}")
         if items:
             out.append("")
-
-    out += ["## Contributing", "", site["contributing"].strip(), ""]
+    if data.get("contributing"):
+        out += ["## Contributing", "", data["contributing"].strip(), ""]
     return "\n".join(out)
 
 
-def render_issue_form(sections) -> str:
-    options = [s["id"] for s in sections if s.get("submittable", True)]
-    form = {
-        "name": "Suggest a project",
-        "description": "Add a plugin, app, tool or resource to the list.",
-        "title": "Add: ",
-        "labels": ["submission"],
-        "body": [
-            {"type": "markdown", "attributes": {"value": "This form is generated by `tools/awesome_tern.py build`. A bot turns it into a pull request."}},
-            {"type": "input", "id": "url", "attributes": {"label": "Link", "description": "Repository, docs page or post."}, "validations": {"required": True}},
-            {"type": "input", "id": "name", "attributes": {"label": "Name", "description": "Leave empty to use the repository name."}},
-            {"type": "dropdown", "id": "section", "attributes": {"label": "Section", "options": options}, "validations": {"required": True}},
-            {"type": "input", "id": "description", "attributes": {"label": "Description", "description": "One plain sentence ending in a period. Maintainers may reword it.", "placeholder": "Renders `kubectl get pods` as a native table."}, "validations": {"required": True}},
-        ],
-    }
-    header = "# Generated by tools/awesome_tern.py build. Edit data/sections.yml instead.\n"
-    return header + yaml.safe_dump(form, sort_keys=False, allow_unicode=True, width=100)
-
-
-def generated() -> dict[Path, str]:
-    site, sections, entries, meta = load_site(), load_sections(), load_entries(), load_metadata()
-    return {
-        README: render_readme(site, sections, entries, meta),
-        ISSUE_FORM: render_issue_form(sections),
-    }
-
-
 def cmd_build(_args) -> int:
-    for path, text in generated().items():
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(text, encoding="utf-8")
-        print(f"wrote {path.relative_to(ROOT)}")
+    data = load_list()
+    errors = validate(data)
+    if errors:
+        for e in errors:
+            print(f"error: {e}", file=sys.stderr)
+        return 1
+    README.write_text(render(data, load_metadata()), encoding="utf-8")
+    print("wrote README.md")
     return 0
-
-
-def cmd_check(_args) -> int:
-    errors = validate(load_sections(), load_entries())
-    for path, text in generated().items():
-        if not path.exists() or path.read_text(encoding="utf-8") != text:
-            errors.append(f"{path.relative_to(ROOT)} is stale (run `mise run build`)")
-    for e in errors:
-        print(f"error: {e}", file=sys.stderr)
-    return 1 if errors else 0
 
 
 # ------------------------------------------------------------------------- github
@@ -257,7 +220,7 @@ def github(path: str, token: str | None, accept: str = "application/vnd.github+j
 
 def cmd_refresh(_args) -> int:
     token = github_token()
-    repos = sorted({r for e in load_entries().values() if (r := entry_repo(e))})
+    repos = sorted({r for e in all_entries(load_list()) if (r := entry_repo(e))})
     now = dt.datetime.now(dt.UTC)
     meta: dict = {}
     for repo in repos:
@@ -300,12 +263,12 @@ MARKERS = re.compile(
 )
 
 
-def known_repos(entries) -> set[str]:
-    known = {r.lower() for e in entries.values() if (r := entry_repo(e))}
-    known.add(os.environ.get("GITHUB_REPOSITORY", "theblazehen/awesome-tern").lower())
-    for e in entries.values():
-        m = re.match(r"^https://github\.com/([\w.-]+)/([\w.-]+)", e["url"])
-        if m:
+def listed_repos(data: dict) -> set[str]:
+    known = {os.environ.get("GITHUB_REPOSITORY", "theblazehen/awesome-tern").lower()}
+    for e in all_entries(data):
+        if repo := entry_repo(e):
+            known.add(repo.lower())
+        if m := re.match(r"^https://github\.com/([\w.-]+)/([\w.-]+)", e["url"]):
             known.add(f"{m[1]}/{m[2]}".lower())
     return known
 
@@ -316,7 +279,7 @@ def cmd_discover(args) -> int:
     The window keeps reports short and stateless: anything not added simply ages out.
     """
     token = github_token()
-    known = known_repos(load_entries())
+    known = listed_repos(load_list())
     cutoff = dt.datetime.now(dt.UTC) - dt.timedelta(days=args.days)
     found: dict[str, dict] = {}
     failed: list[str] = []
@@ -324,7 +287,7 @@ def cmd_discover(args) -> int:
     def add(repo: dict, query: str):
         name = repo["full_name"]
         if name.lower() in known or repo.get("fork"):
-            return
+            return None
         hit = found.setdefault(name, {"repo": repo, "queries": [], "verified": False})
         hit["queries"].append(query)
         return hit
@@ -354,84 +317,31 @@ def cmd_discover(args) -> int:
 
     for name, hit in list(found.items()):
         try:
+            # Code search results omit fork, stars and creation date.
+            if "created_at" not in hit["repo"]:
+                hit["repo"] = github(f"/repos/{name}", token)
+            created = dt.datetime.fromisoformat(hit["repo"]["created_at"])
+            if hit["repo"].get("fork") or created < cutoff:
+                del found[name]
+                continue
             if not hit["verified"]:
                 readme = github(f"/repos/{name}/readme", token, accept="application/vnd.github.raw")
                 if not MARKERS.search(readme):
                     del found[name]
-                    continue
-            # Code search results omit fork and stars.
-            if "stargazers_count" not in hit["repo"]:
-                hit["repo"] = github(f"/repos/{name}", token)
         except urllib.error.HTTPError:
             del found[name]
-            continue
-        created = dt.datetime.fromisoformat(hit["repo"]["created_at"])
-        if hit["repo"].get("fork") or created < cutoff:
-            del found[name]
 
-    lines = []
-    for name, hit in sorted(found.items(), key=lambda kv: -kv[1]["repo"].get("stargazers_count", 0)):
-        r = hit["repo"]
-        desc = (r.get("description") or "").strip() or "no description"
-        lines.append(
-            f"- [{name}]({r['html_url']}) ★{r.get('stargazers_count', '?')}: {desc}"
-            f" _(matched: {', '.join(sorted(set(hit['queries'])))})_"
-        )
     if failed:
         print("queries that failed: " + "; ".join(failed), file=sys.stderr)
-    if lines:
+    if found:
         print(f"Tern-related repositories created in the last {args.days} days that aren't on the list:\n")
-        print("\n".join(lines))
-    return 0
-
-
-# ------------------------------------------------------------------------- submit
-
-
-def parse_issue_form(body: str) -> dict[str, str]:
-    fields: dict[str, str] = {}
-    for block in re.split(r"^### ", body, flags=re.M)[1:]:
-        label, _, value = block.partition("\n")
-        value = value.strip()
-        fields[label.strip()] = "" if value == "_No response_" else value
-    return fields
-
-
-def slugify(text: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
-
-
-def cmd_submit(args) -> int:
-    fields = parse_issue_form(Path(args.body_file).read_text(encoding="utf-8"))
-    url = fields.get("Link", "").strip()
-    section = fields.get("Section", "").strip()
-    description = " ".join(fields.get("Description", "").split())
-    if description and description[-1] not in ".!?":
-        description += "."
-    if description:
-        description = description[0].upper() + description[1:]
-    if not url.startswith("https://") or not section or not description:
-        raise SystemExit("submission needs a https link, a section and a description")
-    m = re.match(r"^https://github\.com/([\w.-]+)/([\w.-]+)", url)
-    name = fields.get("Name", "").strip() or (m[2] if m else "")
-    if not name:
-        raise SystemExit("submission needs a name for non-GitHub links")
-    if m:
-        try:
-            github(f"/repos/{m[1]}/{m[2]}", github_token())
-        except urllib.error.HTTPError as err:
-            raise SystemExit(f"{url} isn't a public GitHub repository (HTTP {err.code})") from None
-
-    entries = load_entries()
-    if any(e["url"].rstrip("/") == url.rstrip("/") for e in entries.values()):
-        raise SystemExit(f"{url} is already on the list")
-    eid = slugify(f"{m[1]}-{m[2]}" if m else name)
-    entry = {"name": name, "url": url, "section": section, "description": description}
-    errors = validate(load_sections(), {eid: entry})
-    if errors:
-        raise SystemExit("\n".join(errors))
-    dump_yaml(ENTRIES / f"{eid}.yml", entry)
-    print(eid)
+        for name, hit in sorted(found.items(), key=lambda kv: -kv[1]["repo"].get("stargazers_count", 0)):
+            r = hit["repo"]
+            desc = (r.get("description") or "").strip() or "no description"
+            print(
+                f"- [{name}]({r['html_url']}) ★{r.get('stargazers_count', '?')}: {desc}"
+                f" _(matched: {', '.join(sorted(set(hit['queries'])))})_"
+            )
     return 0
 
 
@@ -447,9 +357,6 @@ def main() -> int:
     p = sub.add_parser("discover")
     p.add_argument("--days", type=int, default=7, help="only report repositories created this recently")
     p.set_defaults(func=cmd_discover)
-    p = sub.add_parser("submit")
-    p.add_argument("body_file", help="file holding the issue body")
-    p.set_defaults(func=cmd_submit)
     args = parser.parse_args()
     return args.func(args)
 

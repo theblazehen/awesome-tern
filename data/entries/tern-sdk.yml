@@ -1,5 +1,0 @@
-name: Tern SDK
-url: https://docs.stencil.so/tern/tern-sdk.tar.gz
-section: sdks
-description: Official archive containing Luau type definitions (`tern.d.luau`) and example plugins.
-order: 0

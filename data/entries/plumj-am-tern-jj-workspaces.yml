@@ -1,6 +1,0 @@
-name: tern-jj workspaces
-url: https://github.com/plumj-am/nixos/blob/master/packages/tern-plugins/jj.nix
-section: plugins-window
-description: Creates, opens, removes, and inspects jj workspaces using Tern dialogs, tabs, and the status
-  line, packaged with Nix inside a NixOS config.
-repo: plumj-am/nixos

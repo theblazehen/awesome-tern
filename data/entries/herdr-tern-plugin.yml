@@ -1,5 +1,0 @@
-name: herdr-tern-plugin
-url: https://github.com/gabrielmoreira/herdr-tern-plugin
-section: plugins-window
-description: Adds an Open Herdr Session command that picks an existing herdr session and attaches to it
-  inside Tern without copying or converting workspaces.

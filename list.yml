@@ -1,0 +1,199 @@
+# The source for README.md. Add or change entries here, then open a pull request;
+# README.md is regenerated after merge. See CONTRIBUTING.md.
+#
+# Sections are sorted by GitHub stars unless they say `sort: manual`.
+
+title: Awesome Tern
+tagline: Plugins, apps, tools and resources for [Tern](https://stencil.so/tern), Stencil's terminal.
+intro: |-
+  Tern is a Rust-native terminal from [Stencil](https://stencil.so). Shells, [omp](https://omp.sh) agents and browser panes keep running in a daemon when the window closes, and come back after a reboot. One session can be open on the desktop app, on iOS and in a WebGPU browser tab at the same time; typing in one shows up in the others.
+
+  Plugins are written in Luau, and any program can draw native UI through the Tern Surface Protocol (TSP). `tern remote serve` serves a remote machine's sessions over QUIC. Tern is in closed beta; you get in through the [waitlist](https://auth.stencil.so/waitlist?app=tern).
+contributing: Suggestions are welcome as pull requests. Read the [contribution guidelines](CONTRIBUTING.md) first.
+sections:
+- title: Plugins
+  blurb: Tern plugins are written in Luau and can be installed directly from GitHub with `tern plugin install github.com/OWNER/REPO`. See the [plugin CLI reference](https://docs.stencil.so/tern/reference/cli.html) for the available commands.
+  sections:
+  - title: Command lenses
+    blurb: A lens captures a shell command's output and shows it as a native view. A Raw toggle shows the original text.
+    entries:
+    - name: tern-jj
+      url: https://github.com/resYuto/tern-jj
+      description: Displays `jj status` and `jj st` output as a read-only native card with added, modified and deleted files colored to match the Tern theme.
+  - title: Blocks
+    entries:
+    - name: tern-video-block
+      url: https://github.com/verticalrectangle/tern-video-block
+      description: Opens video files in a block with mpv sound, frame stepping and synced side-by-side playback using ffmpeg and the kitty graphics protocol.
+    - name: tern-spotify
+      url: https://github.com/rico-vz/tern-spotify
+      description: Player block for the Spotify desktop app with cover art, playback, seeking and volume controls on macOS, Windows and Linux.
+  - title: Window and workflow
+    blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
+    entries:
+    - name: tern-model-usage
+      url: https://github.com/azmifarih/tern-model-usage
+      description: Shows omp coding-plan quota for each signed-in account in the status line and opens a canvas pane with provider cards and reset countdowns.
+    - name: herdr-tern-plugin
+      url: https://github.com/gabrielmoreira/herdr-tern-plugin
+      description: Adds an Open Herdr Session command that picks an existing herdr session and attaches to it inside Tern without copying or converting workspaces.
+    - name: tern-ide layout
+      url: https://github.com/plumj-am/nixos/blob/master/packages/tern-plugins/layout.nix
+      description: Window plugin with an IDE-style four-pane layout, set split ratios, and an omp pane, packaged with Nix inside a NixOS config.
+      repo: plumj-am/nixos
+    - name: tern-jj workspaces
+      url: https://github.com/plumj-am/nixos/blob/master/packages/tern-plugins/jj.nix
+      description: Creates, opens, removes, and inspects jj workspaces using Tern dialogs, tabs, and the status line, packaged with Nix inside a NixOS config.
+      repo: plumj-am/nixos
+  - title: Official examples
+    blurb: These examples ship with the official [SDK archive](https://docs.stencil.so/tern/tern-sdk.tar.gz). They are a good starting point if you are writing your own plugin.
+    sort: manual
+    entries:
+    - name: Terraform Plans
+      url: https://docs.stencil.so/tern/examples/terraform.html
+      description: Lens for `terraform plan` and `tofu plan` that shows badges, diagnostics and resources grouped by action.
+    - name: Review Queue
+      url: https://docs.stencil.so/tern/examples/review-queue.html
+      description: Block that polls `gh` every two minutes and lists pull requests waiting for your review.
+    - name: JSON Explorer
+      url: https://docs.stencil.so/tern/examples/jsonx.html
+      description: Opens JSON and GeoJSON files as collapsible trees and copies the jq path of a node.
+    - name: Long-Running Commands
+      url: https://docs.stencil.so/tern/examples/longrun.html
+      description: Shows a toast when slow commands finish, keeps a history of run times and status, and adds a status-line segment.
+    - name: Directory Variables
+      url: https://docs.stencil.so/tern/examples/dirvars.html
+      description: Loads approved `.tern-env` files into new shells and signals when a directory's environment changed.
+    - name: Project Workspaces
+      url: https://docs.stencil.so/tern/examples/workspaces.html
+      description: Builds named tabs and split panes from `.tern/workspace.json`.
+    - name: Canvas Dashboard
+      url: https://docs.stencil.so/tern/reference/api-window.html#canvas-cx
+      description: Window-only persistent dashboard that shows canvas ownership, keyed patches, and a Refresh action.
+- title: Native TSP apps
+  blurb: Applications that draw their own user interface natively inside Tern using the Tern Surface Protocol (TSP).
+  entries:
+  - name: oh-my-pi (omp)
+    url: https://github.com/can1357/oh-my-pi
+    description: Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
+  - name: Terngram
+    url: https://github.com/d3d0n/terngram
+    description: Unofficial keyboard-driven Telegram client built on TDLib and omp's UI toolkit, also installable as a Tern plugin.
+  - name: saavy
+    url: https://github.com/saavy1/saavy_cloud
+    description: Persistent coding agent on Cloudflare with a native TSP frontend in Tern and a `pi-tui` fallback elsewhere.
+  - name: Octet
+    url: https://github.com/skaft-software/octet/pull/485
+    description: Coding-agent shell that renders transcript cards, split diffs, pickers, and reports through TSP, with Tern support merged into a feature branch, not `main`.
+    repo: skaft-software/octet
+- title: Agent integrations
+  entries:
+  - name: tern-control
+    url: https://github.com/wolfiesch/tern-control
+    description: An omp and Pi extension giving agents tools to find Tern sessions, read transcript digests, follow daemon events, change layout, and type into terminals.
+  - name: tern-mcp
+    url: https://github.com/NaC-L/tern-mcp
+    description: Python MCP server over stdio wrapping the tern CLI with 14 tools for sessions, panes, capture, process inspection, input and layout.
+  - name: omp-side
+    url: https://github.com/wolfiesch/omp-side
+    description: Adds a `/side` command to fork the conversation into a child session and open it in a side pane in Tern, cmux, tmux, WezTerm, Kitty, and Ghostty.
+  - name: omp-thinking-translator
+    url: https://github.com/Mouriya-Emma/omp-thinking-translator
+    description: An omp extension that translates visible thinking into collapsible native sections in Tern and plain ANSI output in other terminals.
+- title: SDKs and protocol libraries
+  sort: manual
+  entries:
+  - name: Tern SDK
+    url: https://docs.stencil.so/tern/tern-sdk.tar.gz
+    description: Official archive containing Luau type definitions (`tern.d.luau`) and example plugins.
+  - name: '@oh-my-pi/pi-wire'
+    url: https://github.com/can1357/oh-my-pi/tree/main/packages/wire
+    description: 'TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.'
+    repo: can1357/oh-my-pi
+  - name: '@oh-my-pi/pi-tui'
+    url: https://github.com/can1357/oh-my-pi/tree/main/packages/tui
+    description: TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
+    repo: can1357/oh-my-pi
+  - name: octet-tern
+    url: https://github.com/skaft-software/octet/tree/9e8abda1f4f210d43361b6c0a80e482097feff77/crates/octet-tern
+    description: A Rust TSP client built into Octet with wire types, APC chunking, tty flow control, and scene builders.
+    repo: skaft-software/octet
+- title: Official resources
+  sort: manual
+  entries:
+  - name: Tern
+    url: https://stencil.so/tern
+    description: Stencil's product page for Tern with a feature tour.
+  - name: Waitlist
+    url: https://auth.stencil.so/waitlist?app=tern
+    description: Sign up for Tern's closed beta using a Stencil account.
+  - name: Beta builds
+    url: https://build.stencil.so/tern
+    description: CI-generated beta builds from the `main` branch, requiring sign-in.
+  - name: Stencil on GitHub
+    url: https://github.com/stencil-hq
+    description: Stencil's GitHub organization; Tern's source is not public.
+  - name: '@stencil_labs'
+    url: https://x.com/stencil_labs
+    description: Stencil's account on X.
+  - name: '@_can1357'
+    url: https://x.com/_can1357
+    description: Stencil founder Can Bölük on X, where he posts most Tern announcements.
+  - name: omp Discord
+    url: https://discord.gg/4NMW9cdXZa
+    description: The community Discord server for omp, where Tern is also discussed.
+  sections:
+  - title: Documentation
+    sort: manual
+    entries:
+    - name: Tern plugin book
+      url: https://docs.stencil.so/tern/
+      description: Official documentation covering host and window runtimes, lenses, blocks, native views, styling, and TSP.
+    - name: Getting Started
+      url: https://docs.stencil.so/tern/guides/getting-started.html
+      description: Walkthrough of building a lens and palette command, then linking, type-checking, and reloading.
+    - name: Command Lenses
+      url: https://docs.stencil.so/tern/guides/lenses.html
+      description: Explains how to turn command output into native views using manifest globs and host callbacks.
+    - name: Debugging
+      url: https://docs.stencil.so/tern/guides/debugging.html
+      description: Covers toasts, logs, Luau typing, handler budgets, and scripted window control.
+    - name: Plugin CLI
+      url: https://docs.stencil.so/tern/reference/cli.html
+      description: Reference for `tern plugin list`, `install`, `link`, `unlink`, `remove`, `reload`, `dir`, and `types`.
+    - name: Tern Surface Protocol
+      url: https://docs.stencil.so/tern/protocol/index.html
+      description: Specifies the in-band protocol where CLIs, TUIs, and agents send UI trees that Tern lays out and draws natively.
+- title: Packaging
+  blurb: Tern builds are behind a sign-in, so most of these packages expect you to download the build yourself.
+  entries:
+  - name: pelikanade/flake
+    url: https://github.com/pelikanade/flake/blob/f6f8217278a4a119c8e3a5b27b5a30ffef57cbd1/docs/tern.md
+    description: Nix packaging guide covering signed-in downloads, `requireFile`, graphics libraries, and updating.
+    repo: pelikanade/flake
+  - name: tdortman/dotfiles
+    url: https://github.com/tdortman/dotfiles/blob/008242f1f3ef305950a98f9878a0253477f256b0/nix/packages/tern/default.nix
+    description: Nix package with desktop entries and an update script that finds new builds using a Stencil browser session.
+    repo: tdortman/dotfiles
+  - name: not-matthias/dotfiles-nix
+    url: https://github.com/not-matthias/dotfiles-nix/blob/c1c7f09f29c1c938df834427bb96034b2502530e/pkgs/tern.nix
+    description: Provides a Nix derivation for x86_64 Linux that uses requireFile and autoPatchelf.
+    repo: not-matthias/dotfiles-nix
+  - name: phibkro/homelab
+    url: https://github.com/phibkro/homelab/blob/1741e8cd636c483dda04ece696d57c1f9efbea9a/src/users/nori/programs/tern/default.nix
+    description: Nix package for Tern 0.4.1 that patches graphics and input library paths.
+    repo: phibkro/homelab
+  - name: install-tern-nixos.sh
+    url: https://github.com/4weaver/nixdots/blob/a326859f4ba07920d205b2f88a3fd7af8922d92f/scripts/install-tern-nixos.sh
+    description: Shell script that patches the Linux tarball for NixOS and runs `tern remote serve` as a user service on UDP port 8376.
+    repo: 4weaver/nixdots
+- title: Configs and dotfiles
+  entries:
+  - name: plumj-am/nixos
+    url: https://github.com/plumj-am/nixos/blob/master/modules/tern.nix
+    description: NixOS module that manages Tern settings, theme, tmux-style keybindings, the `omp` launch command and plugins.
+    repo: plumj-am/nixos
+  - name: tdortman Tern launcher
+    url: https://github.com/tdortman/dotfiles/blob/008242f1f3ef305950a98f9878a0253477f256b0/nix/modules/home/tern/default.nix
+    description: Home Manager module that uses Meta+Return to focus the open Tern window on KDE Plasma or start Tern.
+    repo: tdortman/dotfiles
