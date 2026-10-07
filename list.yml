@@ -37,6 +37,9 @@ sections:
     - name: tern-office-preview
       url: https://github.com/zerx-lab/tern-office-preview
       description: Previews Word and Excel files natively in a block using a Rust renderer, with no Office, browser or LibreOffice involved.
+    - name: tern-pokemon
+      url: https://github.com/ITSyndicate25/tern-pokemon
+      description: Ports vscode-pokemon to a block where Pokémon walk, sit and get petted on themed beach, forest and castle scenes, drawn natively with animated GIF sprites and no web view.
   - title: Window and workflow
     blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
     entries:
@@ -69,6 +72,9 @@ sections:
     - name: tern-file-paste
       url: https://github.com/vokativ/tern-file-paste
       description: Uploads copied local files from macOS, Linux, and Windows to remote hosts over SSH and inserts their paths into Tern panes.
+    - name: tern-mizu
+      url: https://github.com/ITSyndicate25/tern-mizu
+      description: Paints the Mizu Icons VS Code file icon theme over the Files pane, with 893 icons covering 847 file names, 947 extensions and 1457 folder names.
   - title: Official examples
     blurb: These examples ship with the official [SDK archive](https://docs.stencil.so/tern/tern-sdk.tar.gz). They are a good starting point if you are writing your own plugin.
     sort: manual
