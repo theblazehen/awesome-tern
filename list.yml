@@ -64,6 +64,9 @@ sections:
     - name: TernGitButler
       url: https://github.com/edheltzel/Butler-Pane
       description: GitButler workspaces in Tern, with a status-bar segment, a workspace block with one lane per branch stack and a diff block.
+    - name: tern-chime
+      url: https://github.com/H4vC/tern-chime
+      description: Plays a configurable sound when a pane raises an unseen alert, an omp agent yields its turn, or a long command finishes, with bundled chimes and per-trigger overrides.
     - name: tern-chirp
       url: https://github.com/Noctivoro/tern-chirp
       description: Plays a short synthesized beep when an agent finishes or waits for you, with the sound's shape chosen by Jev to match how the turn went.
