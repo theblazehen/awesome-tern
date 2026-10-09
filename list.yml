@@ -115,6 +115,9 @@ sections:
     - name: tern-file-paste
       url: https://github.com/vokativ/tern-file-paste
       description: Uploads copied local files from macOS, Linux, and Windows to remote hosts over SSH and inserts their paths into Tern panes.
+    - name: remote-image-paste
+      url: https://github.com/cangiolo/remote-image-paste
+      description: Uploads a macOS clipboard image to the focused remote host over SSH and pastes the server path into the current pane.
     - name: tern-mizu
       url: https://github.com/ITSyndicate25/tern-mizu
       description: Paints the Mizu Icons VS Code file icon theme over the Files pane, with 893 icons covering 847 file names, 947 extensions and 1457 folder names.
