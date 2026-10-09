@@ -59,6 +59,7 @@ Window plugins add commands, keybindings, layouts, and status-line segments.
 - [font-default](https://github.com/getpipher/font-default) ★ 0 · 2026-10-06 - Makes the Reset font size command return to your configured size instead of Tern's built-in default.
 - [herdr-cwd-sync](https://github.com/m16khb-org/herdr-cwd-sync/tree/main/tern) `unavailable` - Makes the Files pane, titles and new tabs follow the focused herdr pane's directory by forwarding its cwd to Tern with OSC 7.
 - [tern-agents](https://github.com/maxtuzz/tern-agents) ★ 0 · 2026-10-08 - Runs Claude Code, Codex, Gemini, OpenCode, Aider or any agent CLI as a Tern agent block, with profiles, run presets, a launcher and an Agents sidebar.
+- [tern-cat](https://github.com/contrafy/tern-cat) ★ 0 · 2026-10-08 - Adds a pixel-art menace that naps in your panes, swats at your pointer, stares when you sudo and dives through portals when you switch panes.
 - [tern-chime](https://github.com/H4vC/tern-chime) ★ 0 · 2026-10-08 - Plays a configurable sound when a pane raises an unseen alert, an omp agent yields its turn, or a long command finishes, with bundled chimes and per-trigger overrides.
 - [tern-claude-usage](https://github.com/zerx-lab/tern-claude-usage) ★ 0 · 2026-10-08 - Shows Claude Pro and Max usage limits in a panel and a status-line segment, with 5-hour and 7-day windows, per-model limits, pace tracking and reset countdowns.
 - [tern-close-plugin](https://github.com/yumosx/tern-close-plugin) ★ 0 · 2026-10-05 - Adds palette commands that close the other tabs and the split blocks left, right and around the focused block, each row hidden while it would close nothing.
@@ -87,7 +88,7 @@ These examples ship with the official [SDK archive](https://docs.stencil.so/tern
 
 Applications that draw their own user interface natively inside Tern using the Tern Surface Protocol (TSP).
 
-- [oh-my-pi (omp)](https://github.com/can1357/oh-my-pi) ★ 34738 · 2026-10-09 - Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
+- [oh-my-pi (omp)](https://github.com/can1357/oh-my-pi) ★ 34752 · 2026-10-09 - Stencil's coding agent that Tern is built around, drawing its transcript and UI natively, restoring sessions, and opening web pages as browser picture-in-picture panes.
 - [Hermes for Tern](https://github.com/thefullctx/hermes-for-tern) ★ 11 · 2026-10-07 - Unofficial Tern frontend for Hermes Agent that draws the conversation, tool rows, subagents, buttons and a docked composer natively over TSP, and leaves the normal Hermes interface alone in other terminals.
 - [Octet](https://github.com/skaft-software/octet/pull/485) ★ 7 · 2026-10-09 - Coding-agent shell rendering transcript cards, split diffs, pickers, and reports through TSP; Tern support is merged into the integration branch for 0.8.2 but not in the latest 0.8.1 release.
 - [mantern](https://github.com/theblazehen/mantern) ★ 5 · 2026-10-05 - Drop-in `man` replacement that draws pages natively in Tern over TSP, with a synopsis card, option cards, tables, foldable sections and clickable SEE ALSO links, and falls back to the system `man` elsewhere.
@@ -109,9 +110,9 @@ Applications that draw their own user interface natively inside Tern using the T
 ## SDKs and protocol libraries
 
 - [Tern SDK](https://docs.stencil.so/tern/tern-sdk.tar.gz) - Official archive containing Luau type definitions (`tern.d.luau`) and example plugins.
-- [tern-sdk](https://github.com/stencil-hq/tern-sdk) ★ 31 · 2026-10-08 - Official repository of Surface Protocol SDKs for Rust, Python, Go and TypeScript, plus example plugins.
-- [@oh-my-pi/pi-wire](https://github.com/can1357/oh-my-pi/tree/main/packages/wire) ★ 34738 · 2026-10-09 - TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.
-- [@oh-my-pi/pi-tui](https://github.com/can1357/oh-my-pi/tree/main/packages/tui) ★ 34738 · 2026-10-09 - TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
+- [tern-sdk](https://github.com/stencil-hq/tern-sdk) ★ 31 · 2026-10-09 - Official repository of Surface Protocol SDKs for Rust, Python, Go and TypeScript, plus example plugins.
+- [@oh-my-pi/pi-wire](https://github.com/can1357/oh-my-pi/tree/main/packages/wire) ★ 34752 · 2026-10-09 - TypeScript package implementing the TSP wire format: APC framing, component types, frame operations, handshake and events.
+- [@oh-my-pi/pi-tui](https://github.com/can1357/oh-my-pi/tree/main/packages/tui) ★ 34752 · 2026-10-09 - TypeScript UI toolkit from omp for rendering transcripts, chat, dashboards, and pickers natively over TSP.
 - [octet-tern](https://github.com/skaft-software/octet/tree/9e8abda1f4f210d43361b6c0a80e482097feff77/crates/octet-tern) ★ 7 · 2026-10-09 - A Rust TSP client built into Octet with wire types, APC chunking, tty flow control, and scene builders.
 
 ## Official resources
@@ -137,7 +138,7 @@ Applications that draw their own user interface natively inside Tern using the T
 
 Tern builds are behind a sign-in, so these Nix setups expect you to download the build yourself.
 
-- [pelikanade/flake](https://github.com/pelikanade/flake/blob/f6f8217278a4a119c8e3a5b27b5a30ffef57cbd1/docs/tern.md) ★ 11 · 2026-10-08 - Nix packaging guide covering signed-in downloads, `requireFile`, graphics libraries, and updating.
+- [pelikanade/flake](https://github.com/pelikanade/flake/blob/f6f8217278a4a119c8e3a5b27b5a30ffef57cbd1/docs/tern.md) ★ 11 · 2026-10-09 - Nix packaging guide covering signed-in downloads, `requireFile`, graphics libraries, and updating.
 - [plumj-am/nixos](https://github.com/plumj-am/nixos/blob/master/modules/tern.nix) ★ 2 · 2026-10-08 - NixOS module that manages Tern settings, theme, tmux-style keybindings, the `omp` launch command and plugins.
 - [tdortman/dotfiles](https://github.com/tdortman/dotfiles/tree/008242f1f3ef305950a98f9878a0253477f256b0/nix) ★ 1 · 2026-10-09 - A Nix package with desktop entries, an update script finding new builds via a Stencil browser session, and a KDE Plasma Home Manager module where Meta+Return focuses Tern or starts it.
 - [theoparis/nix-tern](https://github.com/theoparis/nix-tern) ★ 1 · 2026-10-07 - Nix flake that packages a hand-downloaded Tern tarball and keeps it from being garbage collected.

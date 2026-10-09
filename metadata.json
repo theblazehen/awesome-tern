@@ -91,7 +91,12 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-09",
-    "stars": 34738,
+    "stars": 34752,
+    "status": null
+  },
+  "contrafy/tern-cat": {
+    "pushed": "2026-10-08",
+    "stars": 0,
     "status": null
   },
   "d3d0n/terngram": {
@@ -134,7 +139,7 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-08",
+    "pushed": "2026-10-09",
     "stars": 11,
     "status": null
   },
@@ -184,7 +189,7 @@
     "status": null
   },
   "stencil-hq/tern-sdk": {
-    "pushed": "2026-10-08",
+    "pushed": "2026-10-09",
     "stars": 31,
     "status": null
   },
