@@ -59,6 +59,11 @@
     "stars": 0,
     "status": null
   },
+  "aancw/tern-ssh": {
+    "pushed": "2026-10-09",
+    "stars": 0,
+    "status": null
+  },
   "aliefe04/tern-worktrees": {
     "pushed": "2026-10-07",
     "stars": 0,
@@ -91,7 +96,7 @@
   },
   "can1357/oh-my-pi": {
     "pushed": "2026-10-09",
-    "stars": 34752,
+    "stars": 34754,
     "status": null
   },
   "cangiolo/remote-image-paste": {
