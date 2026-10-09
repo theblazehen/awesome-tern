@@ -58,6 +58,9 @@ sections:
     - name: tern-agents
       url: https://github.com/maxtuzz/tern-agents
       description: Runs Claude Code, Codex, Gemini, OpenCode, Aider or any agent CLI as a Tern agent block, with profiles, run presets, a launcher and an Agents sidebar.
+    - name: workspaces-sidebar
+      url: https://github.com/rezhajulio/workspaces-sidebar
+      description: Pins a workspace sidebar to every tab that lists sessions and their tabs as a tree, with live badges for waiting agents, running and failed commands, one-click switching, tab color tags, and attention-jump keybindings.
     - name: tern-herdr
       url: https://github.com/safzanpirani/tern-herdr
       description: Shows Herdr as native Tern tabs, splits and a sidebar, with tabs colored by agent state and Herdr's prefix keys working.
