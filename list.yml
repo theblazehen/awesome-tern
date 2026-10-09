@@ -49,6 +49,9 @@ sections:
   - title: Window and workflow
     blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
     entries:
+    - name: tern-cat
+      url: https://github.com/contrafy/tern-cat
+      description: Adds a pixel-art menace that naps in your panes, swats at your pointer, stares when you sudo and dives through portals when you switch panes.
     - name: tern-worktrees
       url: https://github.com/riicodespretty/tern-worktrees
       description: Opens git worktrees as Tern tabs with a branch picker and teardown on close, backed by a `tern-wt` CLI and an omp skill for agents.
