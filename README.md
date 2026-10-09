@@ -43,6 +43,7 @@ A lens captures a shell command's output and shows it as a native view. A Raw to
 - [tern-margin](https://github.com/Noctivoro/tern-margin) ★ 0 · 2026-10-08 - Renders a Markdown file block by block so you can leave CriticMarkup comments on any paragraph, list, table or code block, and hands them back to the agent that opened it.
 - [tern-office-preview](https://github.com/zerx-lab/tern-office-preview) ★ 0 · 2026-10-06 - Previews Word and Excel files natively in a block using a Rust renderer, with no Office, browser or LibreOffice involved.
 - [tern-rss](https://github.com/bmanturner/tern-rss) ★ 0 · 2026-10-07 - Follows RSS and Atom feeds in a block with expandable previews, articles in a docked reader browser, toasts for starred feeds and a catch-up line instead of an ever-growing unread count.
+- [tern-ssh](https://github.com/aancw/tern-ssh) ★ 0 · 2026-10-09 - An ssh host manager that runs as a Tern pane. It lists the hosts of an ssh config, connects to them, and adds, edits and removes hosts without leaving Tern.
 
 ### Window and workflow
 

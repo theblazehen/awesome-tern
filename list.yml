@@ -49,6 +49,9 @@ sections:
     - name: tern-rss
       url: https://github.com/bmanturner/tern-rss
       description: Follows RSS and Atom feeds in a block with expandable previews, articles in a docked reader browser, toasts for starred feeds and a catch-up line instead of an ever-growing unread count.
+    - name: tern-ssh
+      url: https://github.com/aancw/tern-ssh
+      description: An ssh host manager that runs as a Tern pane. It lists the hosts of an ssh config, connects to them, and adds, edits and removes hosts without leaving Tern.
   - title: Window and workflow
     blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
     entries:
