@@ -5,6 +5,8 @@ exclude = [
   '^https://discord\.gg/',
   '^https://auth\.stencil\.so/',
   '^https://build\.stencil\.so/',
+  '^https://docs\.stencil\.so/tern/tern-sdk\.tar\.gz$',
+  '^https://github\.com/m16khb-org/herdr-cwd-sync/',
 ]
 accept = ["200..=299", "429"]
 max_retries = 3
