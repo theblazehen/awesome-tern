@@ -31,6 +31,7 @@ Tern plugins are written in Luau and can be installed directly from GitHub with 
 A lens captures a shell command's output and shows it as a native view. A Raw toggle shows the original text.
 
 - [tern-jj](https://github.com/resYuto/tern-jj) ★ 1 · 2026-10-04 - Displays `jj status` and `jj st` output as a read-only native card with added, modified and deleted files colored to match the Tern theme.
+- [tern-kube](https://github.com/contrafy/tern-kube) ★ 0 · 2026-10-09 - Renders `kubectl` output as sortable, filterable native views, with a live Explore block, one-key pod shells and logs, previewed and confirmed changes, and GitOps drift against your manifests.
 
 ### Blocks
 
