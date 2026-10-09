@@ -20,6 +20,9 @@ sections:
     - name: tern-jj
       url: https://github.com/resYuto/tern-jj
       description: Displays `jj status` and `jj st` output as a read-only native card with added, modified and deleted files colored to match the Tern theme.
+    - name: tern-kube
+      url: https://github.com/contrafy/tern-kube
+      description: Renders `kubectl` output as sortable, filterable native views, with a live Explore block, one-key pod shells and logs, previewed and confirmed changes, and GitOps drift against your manifests.
   - title: Blocks
     entries:
     - name: tern-margin
