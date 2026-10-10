@@ -6,7 +6,7 @@
   },
   "Ghost-9/pi-tern": {
     "pushed": "2026-10-07",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "H4vC/tern-CDP-tidal": {
@@ -30,7 +30,7 @@
     "status": null
   },
   "Mouriya-Emma/omp-thinking-translator": {
-    "pushed": "2026-10-02",
+    "pushed": "2026-10-10",
     "stars": 0,
     "status": null
   },
@@ -61,7 +61,7 @@
   },
   "aancw/tern-ssh": {
     "pushed": "2026-10-09",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "aliefe04/tern-worktrees": {
@@ -71,7 +71,7 @@
   },
   "arg3t/neotern": {
     "pushed": "2026-10-07",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "azmifarih/tern-model-usage": {
@@ -95,8 +95,8 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-09",
-    "stars": 34754,
+    "pushed": "2026-10-10",
+    "stars": 34869,
     "status": null
   },
   "cangiolo/remote-image-paste": {
@@ -120,7 +120,7 @@
     "status": null
   },
   "edheltzel/Butler-Pane": {
-    "pushed": "2026-10-08",
+    "pushed": "2026-10-09",
     "stars": 0,
     "status": null
   },
@@ -180,16 +180,16 @@
   },
   "rico-vz/tern-spotify": {
     "pushed": "2026-10-04",
-    "stars": 2,
+    "stars": 3,
     "status": null
   },
   "rico-vz/tern-usage-monitor": {
     "pushed": "2026-10-06",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "riicodespretty/tern-worktrees": {
-    "pushed": "2026-10-08",
+    "pushed": "2026-10-10",
     "stars": 1,
     "status": null
   },
@@ -204,17 +204,17 @@
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-10-09",
+    "pushed": "2026-10-10",
     "stars": 7,
     "status": null
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-09",
-    "stars": 31,
+    "stars": 38,
     "status": null
   },
   "tdortman/dotfiles": {
-    "pushed": "2026-10-09",
+    "pushed": "2026-10-10",
     "stars": 1,
     "status": null
   },
@@ -225,7 +225,7 @@
   },
   "thefullctx/hermes-for-tern": {
     "pushed": "2026-10-07",
-    "stars": 11,
+    "stars": 12,
     "status": null
   },
   "theoparis/nix-tern": {
@@ -239,7 +239,7 @@
     "status": null
   },
   "verusferro/Ternatro": {
-    "pushed": "2026-10-08",
+    "pushed": "2026-10-09",
     "stars": 3,
     "status": null
   },
@@ -270,7 +270,7 @@
   },
   "zerx-lab/tern-office-preview": {
     "pushed": "2026-10-06",
-    "stars": 0,
+    "stars": 1,
     "status": null
   }
 }
