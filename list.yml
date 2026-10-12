@@ -115,6 +115,9 @@ sections:
     - name: tern-chirp
       url: https://github.com/Noctivoro/tern-chirp
       description: Plays a short synthesized beep when an agent finishes or waits for you, with the sound's shape chosen by Jev to match how the turn went.
+    - name: tern-bell
+      url: https://github.com/qiaoqinyu/tern-bell
+      description: Rings a bell when an agent turn finishes, with a keyboard-driven settings pane that previews fourteen macOS system sounds and user-supplied CS 1.6 clips before saving.
     - name: tern-haptic-alert
       url: https://github.com/lfsmoura/tern-haptic-alert
       description: Sends a haptic pulse to a Logitech MX Master 4 when an agent finishes or is blocked waiting for input.
