@@ -82,6 +82,9 @@ sections:
     - name: tern-tracker
       url: https://github.com/foxzool/tern-tracker
       description: Lists the GitHub issues and pull requests of the repository in the focused pane's directory, with comments and a form for creating issues, in English or Chinese.
+    - name: Tern Reviewr
+      url: https://github.com/AxelMrak/tern-reviewr
+      description: Reviews staged, unstaged, and untracked Git changes in a native Tern diff view, sends line-anchored comments directly to an agent, and tracks per-file review progress.
   - title: Window and workflow
     blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
     entries:
