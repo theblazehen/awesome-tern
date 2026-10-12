@@ -94,6 +94,9 @@ sections:
     - name: tern-agent-scheduler
       url: https://github.com/bmanturner/tern-agent-scheduler
       description: Schedules omp agent runs with cron, presets, plain-English or one-shot times, starts each in a background tab and keeps their results, failures and costs in a manager block, with status-line, notification and Carly support.
+    - name: tern-sessions
+      url: https://github.com/bmanturner/tern-sessions
+      description: Searches past omp sessions by title, recap, prompt, folder, model, date or cost, resumes or forks one in a new tab, and shows a spend ledger with a daily budget alert.
     - name: tern-agents
       url: https://github.com/maxtuzz/tern-agents
       description: Runs Claude Code, Codex, Gemini, OpenCode, Aider or any agent CLI as a Tern agent block, with profiles, run presets, a launcher and an Agents sidebar.
