@@ -219,6 +219,9 @@ sections:
     - name: CodexBar AgentView
       url: https://github.com/materemias/codexbar-agentview
       description: Shows Claude, Codex and other AI provider usage from the CodexBar CLI in the status line, with a dashboard that lists live and ended Claude Code, Codex, omp and pi sessions and focuses or resumes them in Tern tabs.
+    - name: tern-omp-usage
+      url: https://github.com/joaodutra88/tern-omp-usage
+      description: Shows Claude and Codex limits from omp in the status line as colored dots, with a Monday-to-Friday weekly budget, saved resets and today's tokens and API cost.
   - title: Official examples
     blurb: These examples ship with the official [SDK repository](https://github.com/stencil-hq/tern-sdk). They are a good starting point if you are writing your own plugin.
     sort: manual
