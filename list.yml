@@ -46,6 +46,9 @@ sections:
     - name: tern-office-preview
       url: https://github.com/zerx-lab/tern-office-preview
       description: Previews Word and Excel files natively in a block using a Rust renderer, with no Office, browser or LibreOffice involved.
+    - name: tern-pencil-preview
+      url: https://github.com/SamuelFontess/tern-pencil-preview
+      description: Previews pen.dev (Pencil) `.pen` designs in a block, rendering the selected frame as an image with its layers and an inspector, and re-renders when the file changes.
     - name: tern-pokemon
       url: https://github.com/ITSyndicate25/tern-pokemon
       description: Ports vscode-pokemon to a block where Pokémon walk, sit and get petted on themed beach, forest and castle scenes, drawn natively with animated GIF sprites and no web view.
