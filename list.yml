@@ -225,6 +225,9 @@ sections:
     - name: tern-omp-usage
       url: https://github.com/joaodutra88/tern-omp-usage
       description: Shows Claude and Codex limits from omp in the status line as colored dots, with a Monday-to-Friday weekly budget, saved resets and today's tokens and API cost.
+    - name: tern-projects
+      url: https://github.com/thegeneralist01/tern-projects
+      description: Curated multi-folder projects, pinned chats, and search across OMP, Claude Code, Codex, Pi, OpenCode, and Cursor.
   - title: Official examples
     blurb: These examples ship with the official [SDK repository](https://github.com/stencil-hq/tern-sdk). They are a good starting point if you are writing your own plugin.
     sort: manual
