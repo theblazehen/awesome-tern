@@ -137,6 +137,9 @@ sections:
     - name: tern-software-factory
       url: https://github.com/junaidrahim/tern-software-factory
       description: Lists the agents on your Tern host and jumps to the pane of the one you select.
+    - name: tern-difftastic
+      url: https://github.com/MicroProofs/tern-difftastic
+      description: Reviews jj and git changes as difftastic's structural side-by-side diffs in a block, with search across both sides of every file and seen and reviewed marks on hunks that survive rebases.
   - title: Window and workflow
     blurb: Window plugins add commands, keybindings, layouts, and status-line segments.
     entries:
