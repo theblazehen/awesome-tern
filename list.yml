@@ -342,6 +342,9 @@ sections:
     - name: tern-zh-cn
       url: https://github.com/maicent/tern-zh-cn
       description: Partial Simplified Chinese translation with Chinese titles for over 50 built-in palette commands and CSS replacement of the palette tabs and tab-bar buttons.
+    - name: Flock
+      url: https://github.com/Luqueee/flock
+      description: Groups omp agents, terminals and sessions by project and machine in a native sidebar, and opens an agent's git worktree in VS Code, locally or over SSH.
 
   - title: Official examples
     blurb: These examples ship with the official [SDK repository](https://github.com/stencil-hq/tern-sdk). They are a good starting point if you are writing your own plugin.
