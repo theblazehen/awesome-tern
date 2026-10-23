@@ -272,7 +272,7 @@ sections:
       description: Shows Claude, Codex and other AI provider usage from the CodexBar CLI in the status line, with a dashboard that lists live and ended Claude Code, Codex, omp and pi sessions and focuses or resumes them in Tern tabs.
     - name: tern-omp-usage
       url: https://github.com/joaodutra88/tern-omp-usage
-      description: Shows Claude and Codex limits from omp in the status line as colored dots, with a Monday-to-Friday weekly budget, saved resets and today's tokens and API cost.
+      description: Shows Claude and Codex limits from omp in the status line as colored dots, with a work-week budget, alerts, a 7-day usage and cost dashboard and one-click updates.
     - name: Worktree Panel
       url: https://github.com/mullerino/tern-worktree-panel
       description: Pins a panel to every tab that lists the git worktrees of the focused repository with the state of the omp agents in each, moves agents waiting for you to the top, and focuses or opens a worktree's tab on click.
