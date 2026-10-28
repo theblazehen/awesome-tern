@@ -135,6 +135,10 @@ sections:
       description: Shows your MiniMax Token Plan quota in the status line and refreshes it every five minutes.
   - title: Status and dashboards
     entries:
+    - name: tern-t3
+      url: https://github.com/rcnsh/tern-t3
+      kind: plugin
+      description: Reads, starts and replies to T3 Code agent threads in native Tern blocks.
     - name: tern-agent-nav
       url: https://github.com/Arcadia822/tern-agent-nav
       kind: plugin
