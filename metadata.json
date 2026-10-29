@@ -10,7 +10,7 @@
     "status": null
   },
   "Arcadia822/tern-agent-nav": {
-    "pushed": "2026-10-20",
+    "pushed": "2026-10-29",
     "screenshots": {
       "": "https://github.com/Arcadia822/tern-agent-nav/raw/main/docs/screenshot.png"
     },
@@ -61,7 +61,7 @@
   },
   "Ghost-9/pi-tern": {
     "pushed": "2026-10-07",
-    "stars": 7,
+    "stars": 8,
     "status": null
   },
   "H4vC/tern-CDP-tidal": {
@@ -266,7 +266,7 @@
     "screenshots": {
       "": "https://github.com/bmanturner/tern-agent-scheduler/raw/main/docs/screenshots/manager-light.png"
     },
-    "stars": 18,
+    "stars": 19,
     "status": null
   },
   "bmanturner/tern-rss": {
@@ -288,11 +288,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-28",
+    "pushed": "2026-10-29",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 36963,
+    "stars": 37029,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -569,9 +569,9 @@
     "status": null
   },
   "materemias/tern-awui": {
-    "pushed": "2026-10-27",
+    "pushed": "2026-10-29",
     "screenshots": {
-      "": "https://github.com/materemias/tern-awui/raw/main/docs/handover.gif"
+      "": "https://github.com/materemias/tern-awui/raw/main/docs/phone.gif"
     },
     "stars": 5,
     "status": null
@@ -615,7 +615,7 @@
     "screenshots": {
       "": "https://github.com/mmnavarr/overseer/raw/main/docs/images/panel.png"
     },
-    "stars": 14,
+    "stars": 15,
     "status": null
   },
   "mreishus/tern-plugins": {
@@ -655,7 +655,7 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-28",
+    "pushed": "2026-10-29",
     "stars": 11,
     "status": null
   },
@@ -691,7 +691,7 @@
     "status": null
   },
   "rcnsh/tern-t3": {
-    "pushed": "2026-10-27",
+    "pushed": "2026-10-29",
     "screenshots": {
       "": "https://github.com/rcnsh/tern-t3/raw/main/docs/thread.png"
     },
@@ -704,7 +704,7 @@
     "status": null
   },
   "rezhajulio/workspaces-sidebar": {
-    "pushed": "2026-10-25",
+    "pushed": "2026-10-29",
     "screenshots": {
       "": "https://github.com/rezhajulio/workspaces-sidebar/raw/main/docs/demo.png"
     },
@@ -756,13 +756,13 @@
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-10-27",
+    "pushed": "2026-10-29",
     "stars": 9,
     "status": null
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-28",
-    "stars": 88,
+    "stars": 90,
     "status": null
   },
   "taooceros/tern-csv": {
@@ -790,7 +790,7 @@
     "status": null
   },
   "tdortman/dotfiles": {
-    "pushed": "2026-10-27",
+    "pushed": "2026-10-28",
     "stars": 1,
     "status": null
   },
