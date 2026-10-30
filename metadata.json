@@ -61,7 +61,7 @@
   },
   "Ghost-9/pi-tern": {
     "pushed": "2026-10-07",
-    "stars": 8,
+    "stars": 7,
     "status": null
   },
   "H4vC/tern-CDP-tidal": {
@@ -186,7 +186,7 @@
   },
   "TazeDiB/Toons-Tern": {
     "pushed": "2026-10-08",
-    "stars": 2,
+    "stars": 3,
     "status": null
   },
   "Unravl/tern-plugins": {
@@ -266,7 +266,7 @@
     "screenshots": {
       "": "https://github.com/bmanturner/tern-agent-scheduler/raw/main/docs/screenshots/manager-light.png"
     },
-    "stars": 19,
+    "stars": 20,
     "status": null
   },
   "bmanturner/tern-rss": {
@@ -288,11 +288,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-29",
+    "pushed": "2026-10-30",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 37029,
+    "stars": 37155,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -313,7 +313,7 @@
     "screenshots": {
       "": "https://github.com/contrafy/tern-cat/raw/master/docs/images/overlay-cat.png"
     },
-    "stars": 6,
+    "stars": 7,
     "status": null
   },
   "contrafy/tern-grafana": {
@@ -342,7 +342,7 @@
   },
   "d3d0n/terngram": {
     "pushed": "2026-10-05",
-    "stars": 2,
+    "stars": 4,
     "status": null
   },
   "dbydd/power-surge": {
@@ -351,8 +351,8 @@
     "status": null
   },
   "dbydd/tern-obsidian": {
-    "pushed": "2026-10-26",
-    "stars": 1,
+    "pushed": "2026-10-30",
+    "stars": 2,
     "status": null
   },
   "deLiseLINO/tern-todo": {
@@ -445,7 +445,7 @@
     "screenshots": {
       "": "https://github.com/jmazzola/tern-plugin-omp-usage/raw/main/docs/images/line-current.png"
     },
-    "stars": 5,
+    "stars": 6,
     "status": null
   },
   "jmilldotdev/tern-find-in-files": {
@@ -537,7 +537,7 @@
     "status": null
   },
   "lucaxic/tern-commands": {
-    "pushed": "2026-10-22",
+    "pushed": "2026-10-29",
     "screenshots": {
       "": "https://github.com/lucaxic/tern-commands/raw/main/assets/screenshot.png"
     },
@@ -549,7 +549,7 @@
     "screenshots": {
       "": "https://github.com/maicent/tern-zh-cn/raw/main/docs/screenshot.png"
     },
-    "stars": 4,
+    "stars": 5,
     "status": null
   },
   "materemias/codexbar-agentview": {
@@ -569,11 +569,11 @@
     "status": null
   },
   "materemias/tern-awui": {
-    "pushed": "2026-10-29",
+    "pushed": "2026-10-30",
     "screenshots": {
       "": "https://github.com/materemias/tern-awui/raw/main/docs/phone.gif"
     },
-    "stars": 5,
+    "stars": 6,
     "status": null
   },
   "maxtuzz/tern-agents": {
@@ -655,7 +655,7 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-29",
+    "pushed": "2026-10-30",
     "stars": 11,
     "status": null
   },
@@ -757,12 +757,12 @@
   },
   "skaft-software/octet": {
     "pushed": "2026-10-29",
-    "stars": 9,
+    "stars": 10,
     "status": null
   },
   "stencil-hq/tern-sdk": {
-    "pushed": "2026-10-28",
-    "stars": 90,
+    "pushed": "2026-10-29",
+    "stars": 94,
     "status": null
   },
   "taooceros/tern-csv": {
@@ -795,7 +795,7 @@
     "status": null
   },
   "tdortman/tern-plugins": {
-    "pushed": "2026-10-28",
+    "pushed": "2026-10-29",
     "stars": 0,
     "status": null
   },
@@ -809,7 +809,7 @@
   },
   "theblazehen/tern-omp-bridge": {
     "pushed": "2026-10-24",
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "thefullctx/hermes-for-tern": {
@@ -817,7 +817,7 @@
     "screenshots": {
       "": "https://github.com/thefullctx/hermes-for-tern/raw/main/assets/screenshot.png"
     },
-    "stars": 21,
+    "stars": 22,
     "status": null
   },
   "thegeneralist01/tern-projects": {
@@ -825,7 +825,7 @@
     "screenshots": {
       "": "https://github.com/thegeneralist01/tern-projects/raw/main/docs/screenshots/showcase-overview.png"
     },
-    "stars": 12,
+    "stars": 13,
     "status": null
   },
   "theoparis/nix-tern": {
@@ -868,7 +868,7 @@
   },
   "wolfiesch/omp-side": {
     "pushed": "2026-10-22",
-    "stars": 9,
+    "stars": 10,
     "status": null
   },
   "wolfiesch/tern-control": {
