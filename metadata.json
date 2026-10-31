@@ -10,7 +10,7 @@
     "status": null
   },
   "Arcadia822/tern-agent-nav": {
-    "pushed": "2026-10-30",
+    "pushed": "2026-10-31",
     "screenshots": {
       "": "https://github.com/Arcadia822/tern-agent-nav/raw/main/docs/screenshot.png"
     },
@@ -60,7 +60,7 @@
     "status": null
   },
   "Ghost-9/pi-tern": {
-    "pushed": "2026-10-07",
+    "pushed": "2026-10-31",
     "stars": 7,
     "status": null
   },
@@ -224,7 +224,7 @@
     "screenshots": {
       "": "https://github.com/alt-glitch/hermes-tern/raw/main/docs/images/transcript.png"
     },
-    "stars": 3,
+    "stars": 4,
     "status": null
   },
   "andreiverdes/omp-cache-meter": {
@@ -288,11 +288,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-30",
+    "pushed": "2026-10-31",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 37158,
+    "stars": 37279,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -325,7 +325,7 @@
     "status": null
   },
   "contrafy/tern-kube": {
-    "pushed": "2026-10-09",
+    "pushed": "2026-10-30",
     "screenshots": {
       "": "https://github.com/contrafy/tern-kube/raw/master/docs/screenshots/m1-inspector-dark-wide.png"
     },
@@ -676,8 +676,8 @@
     "status": null
   },
   "plumj-am/nixos": {
-    "pushed": "2026-10-25",
-    "stars": 2,
+    "pushed": "2026-10-30",
+    "stars": 3,
     "status": null
   },
   "plxzy/agents-hub": {
@@ -704,7 +704,7 @@
     "status": null
   },
   "rezhajulio/workspaces-sidebar": {
-    "pushed": "2026-10-29",
+    "pushed": "2026-10-30",
     "screenshots": {
       "": "https://github.com/rezhajulio/workspaces-sidebar/raw/main/docs/demo.png"
     },
@@ -762,7 +762,7 @@
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-10-29",
-    "stars": 94,
+    "stars": 96,
     "status": null
   },
   "taooceros/tern-csv": {
@@ -795,7 +795,7 @@
     "status": null
   },
   "tdortman/tern-plugins": {
-    "pushed": "2026-10-29",
+    "pushed": "2026-10-30",
     "stars": 0,
     "status": null
   },
@@ -809,7 +809,7 @@
   },
   "theblazehen/tern-omp-bridge": {
     "pushed": "2026-10-24",
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "thefullctx/hermes-for-tern": {
