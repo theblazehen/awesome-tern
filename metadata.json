@@ -61,7 +61,7 @@
   },
   "Ghost-9/pi-tern": {
     "pushed": "2026-10-31",
-    "stars": 7,
+    "stars": 8,
     "status": null
   },
   "H4vC/tern-CDP-tidal": {
@@ -130,7 +130,7 @@
     "status": null
   },
   "Mouriya-Emma/omp-thinking-translator": {
-    "pushed": "2026-10-26",
+    "pushed": "2026-10-31",
     "stars": 1,
     "status": null
   },
@@ -262,7 +262,7 @@
     "status": null
   },
   "bmanturner/tern-agent-scheduler": {
-    "pushed": "2026-10-28",
+    "pushed": "2026-11-01",
     "screenshots": {
       "": "https://github.com/bmanturner/tern-agent-scheduler/raw/main/docs/screenshots/manager-light.png"
     },
@@ -288,11 +288,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-10-31",
+    "pushed": "2026-11-01",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 37279,
+    "stars": 37379,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -549,11 +549,11 @@
     "screenshots": {
       "": "https://github.com/maicent/tern-zh-cn/raw/main/docs/screenshot.png"
     },
-    "stars": 5,
+    "stars": 6,
     "status": null
   },
   "materemias/codexbar-agentview": {
-    "pushed": "2026-10-25",
+    "pushed": "2026-11-01",
     "screenshots": {
       "": "https://github.com/materemias/codexbar-agentview/raw/master/docs/kde.gif"
     },
@@ -569,7 +569,7 @@
     "status": null
   },
   "materemias/tern-awui": {
-    "pushed": "2026-10-30",
+    "pushed": "2026-10-31",
     "screenshots": {
       "": "https://github.com/materemias/tern-awui/raw/main/docs/phone.gif"
     },
@@ -655,7 +655,7 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-10-30",
+    "pushed": "2026-10-31",
     "stars": 11,
     "status": null
   },
@@ -704,7 +704,7 @@
     "status": null
   },
   "rezhajulio/workspaces-sidebar": {
-    "pushed": "2026-10-30",
+    "pushed": "2026-11-01",
     "screenshots": {
       "": "https://github.com/rezhajulio/workspaces-sidebar/raw/main/docs/demo.png"
     },
@@ -761,8 +761,8 @@
     "status": null
   },
   "stencil-hq/tern-sdk": {
-    "pushed": "2026-10-29",
-    "stars": 96,
+    "pushed": "2026-10-31",
+    "stars": 100,
     "status": null
   },
   "taooceros/tern-csv": {
@@ -774,7 +774,7 @@
     "status": null
   },
   "taooceros/tern-spotify": {
-    "pushed": "2026-10-23",
+    "pushed": "2026-10-31",
     "screenshots": {
       "": "https://github.com/taooceros/tern-spotify/raw/main/docs/player.png"
     },
@@ -790,12 +790,12 @@
     "status": null
   },
   "tdortman/dotfiles": {
-    "pushed": "2026-10-28",
+    "pushed": "2026-11-01",
     "stars": 1,
     "status": null
   },
   "tdortman/tern-plugins": {
-    "pushed": "2026-10-30",
+    "pushed": "2026-10-31",
     "stars": 0,
     "status": null
   },
@@ -877,7 +877,7 @@
     "status": null
   },
   "wolfiesch/tern-omp-usage-dashboard": {
-    "pushed": "2026-10-22",
+    "pushed": "2026-10-31",
     "stars": 0,
     "status": null
   },
