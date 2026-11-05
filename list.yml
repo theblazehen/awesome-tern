@@ -133,6 +133,11 @@ sections:
       url: https://github.com/meisijiya/tern-minimax-quota
       kind: plugin
       description: Shows your MiniMax Token Plan quota in the status line and refreshes it every five minutes.
+    - name: USAGE
+      url: https://github.com/blastworksai/tools/tree/main/plugins/tern/USAGE
+      kind: plugin
+      description: Shows how much of each AI subscription defined in SPAWN you have used, read headlessly through each provider's own CLI or account endpoint, in compact, wide and bottom views with reset countdowns.
+      repo: blastworksai/tools
   - title: Status and dashboards
     entries:
     - name: tern-t3
@@ -203,6 +208,16 @@ sections:
       url: https://github.com/yesmeck/tern-task-plugin
       kind: plugin
       description: Makes each task a session with its own branch, git worktree and default agent, with a kanban dashboard of pull request status.
+    - name: SPAWN
+      url: https://github.com/blastworksai/tools/tree/main/plugins/tern/SPAWN
+      kind: plugin
+      description: Keeps one saved launch record per provider account and starts your whole agent roster, or one account, in named and coloured tabs with a single action.
+      repo: blastworksai/tools
+    - name: ORCH+
+      url: https://github.com/blastworksai/tools/tree/main/plugins/tern/ORCH%2B
+      kind: plugin
+      description: Session-scoped orchestration on top of SPAWN, with durable controller ownership, managed dispatch, worker and coordinator rollover, an owner-approved landing queue and guided reload recovery.
+      repo: blastworksai/tools
   - title: Worktrees
     entries:
     - name: tern-worktrees
@@ -294,6 +309,11 @@ sections:
       url: https://github.com/Arcadia822/tern-agent-nav
       kind: plugin
       description: Simple session sidebar in the style of Herdr that lists omp, Codex, Copilot and Claude Code agents grouped by Tern session, with a click to focus one.
+    - name: WORK
+      url: https://github.com/blastworksai/tools/tree/main/plugins/tern/WORK
+      kind: plugin
+      description: Native pane listing your active Glitch workspaces, with GitHub links and a button that opens your default agent beside it already running `/work-on`.
+      repo: blastworksai/tools
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
@@ -488,6 +508,11 @@ sections:
       url: https://github.com/Dangerboi/tern-kata
       kind: app
       description: Browses and edits kata issues in a native pane opened with F9 or the palette, with Markdown issue bodies, priority and label chips, and kata links from agent chat that open the issue.
+    - name: TODO
+      url: https://github.com/blastworksai/tools/tree/main/plugins/tern/TODO
+      kind: plugin
+      description: Read-only native checklist of the agreed checkpoints in an agent's canonical `/glitch-plan` plan, read locally or over SSH.
+      repo: blastworksai/tools
   - title: File viewers and notebooks
     entries:
     - name: tern-video-block
