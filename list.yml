@@ -421,6 +421,10 @@ sections:
       url: https://github.com/naraaalt/tern-custom-background
       kind: plugin
       description: Puts a dithered picture behind the whole window, with a settings page to pick the image and how it is drawn.
+    - name: tern-pulse-skin
+      url: https://github.com/roverdude24/tern-pulse-skin
+      kind: plugin
+      description: Three full skins, Amber Phosphor, LCARS Deck and Neon Command, that restyle fonts, shapes, tabs, panel headers and decoration across Tern and its plugins, switched from a top-bar toggle.
   - title: Localization
     entries:
     - name: tern-zh-cn
