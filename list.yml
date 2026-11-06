@@ -294,6 +294,10 @@ sections:
       url: https://github.com/Arcadia822/tern-agent-nav
       kind: plugin
       description: Simple session sidebar in the style of Herdr that lists omp, Codex, Copilot and Claude Code agents grouped by Tern session, with a click to focus one.
+    - name: Roost
+      url: https://github.com/roverdude24/tern-roost
+      kind: plugin
+      description: Left panel that groups every session by its folder, with folder badges, the agent each one runs, time since last activity, optional git branch and worktree rows, and a Settled shelf that restores closed sessions.
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
