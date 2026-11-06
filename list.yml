@@ -294,6 +294,10 @@ sections:
       url: https://github.com/Arcadia822/tern-agent-nav
       kind: plugin
       description: Simple session sidebar in the style of Herdr that lists omp, Codex, Copilot and Claude Code agents grouped by Tern session, with a click to focus one.
+    - name: tern-workspaces
+      url: https://github.com/mk-wang/tern-workspaces
+      kind: plugin
+      description: Project sidebar with separate sessions, root-locked new tabs, case-insensitive name or path filtering, live omp status, and agent chat resume.
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
