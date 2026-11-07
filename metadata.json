@@ -31,7 +31,7 @@
     "status": null
   },
   "Dangerboi/tern-kata": {
-    "pushed": "2026-11-06",
+    "pushed": "2026-11-07",
     "screenshots": {
       "": "https://github.com/Dangerboi/tern-kata/raw/main/docs/images/tern-kata.png"
     },
@@ -215,6 +215,14 @@
     "stars": 1,
     "status": null
   },
+  "ak4duy/tern-usage-sidebar": {
+    "pushed": "2026-11-05",
+    "screenshots": {
+      "": "https://github.com/ak4duy/tern-usage-sidebar/raw/main/assets/bars.png"
+    },
+    "stars": 0,
+    "status": null
+  },
   "aliefe04/tern-worktrees": {
     "stars": 0,
     "status": "unavailable"
@@ -261,6 +269,17 @@
     "stars": 1,
     "status": null
   },
+  "blastworksai/tools": {
+    "pushed": "2026-11-07",
+    "screenshots": {
+      "plugins/tern/SPAWN": "https://github.com/blastworksai/tools/raw/main/plugins/tern/SPAWN/assets/screenshots/spawn-all-tabs.png",
+      "plugins/tern/TODO": "https://github.com/blastworksai/tools/raw/main/plugins/tern/TODO/assets/screenshots/todo-blurred.png",
+      "plugins/tern/USAGE": "https://github.com/blastworksai/tools/raw/main/plugins/tern/USAGE/assets/screenshots/usage-views.png",
+      "plugins/tern/WORK": "https://github.com/blastworksai/tools/raw/main/plugins/tern/WORK/assets/screenshots/work-on-split.png"
+    },
+    "stars": 0,
+    "status": null
+  },
   "bmanturner/tern-agent-scheduler": {
     "pushed": "2026-11-06",
     "screenshots": {
@@ -292,7 +311,7 @@
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 38090,
+    "stars": 38124,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -329,7 +348,7 @@
     "screenshots": {
       "": "https://github.com/contrafy/tern-kube/raw/master/docs/screenshots/m1-inspector-dark-wide.png"
     },
-    "stars": 8,
+    "stars": 9,
     "status": null
   },
   "contrafy/tern-netsuite": {
@@ -365,6 +384,11 @@
   },
   "doyouing/tern-wide-autocomplete": {
     "pushed": "2026-10-23",
+    "stars": 0,
+    "status": null
+  },
+  "duzui300/tern-plugins": {
+    "pushed": "2026-11-06",
     "stars": 0,
     "status": null
   },
@@ -423,7 +447,7 @@
   },
   "hyper-stition/tern-annotate": {
     "pushed": "2026-10-13",
-    "stars": 3,
+    "stars": 4,
     "status": null
   },
   "iacore/tern-canvas-viewer": {
@@ -605,12 +629,17 @@
     "stars": 1,
     "status": null
   },
+  "mk-wang/tern-workspaces": {
+    "pushed": "2026-11-05",
+    "stars": 0,
+    "status": null
+  },
   "mmnavarr/overseer": {
     "pushed": "2026-11-06",
     "screenshots": {
       "": "https://github.com/mmnavarr/overseer/raw/main/docs/images/tour.png"
     },
-    "stars": 87,
+    "stars": 89,
     "status": null
   },
   "mreishus/tern-plugins": {
@@ -724,6 +753,22 @@
     "stars": 4,
     "status": null
   },
+  "roverdude24/tern-pulse-skin": {
+    "pushed": "2026-11-06",
+    "screenshots": {
+      "": "https://github.com/roverdude24/tern-pulse-skin/raw/main/docs/neon.png"
+    },
+    "stars": 0,
+    "status": null
+  },
+  "roverdude24/tern-roost": {
+    "pushed": "2026-11-06",
+    "screenshots": {
+      "": "https://github.com/roverdude24/tern-roost/raw/main/docs/panel-0.2.5.png"
+    },
+    "stars": 0,
+    "status": null
+  },
   "saanuregh/tern-agents-ui": {
     "pushed": "2026-10-21",
     "screenshots": {
@@ -752,7 +797,7 @@
   },
   "skaft-software/octet": {
     "pushed": "2026-11-07",
-    "stars": 87,
+    "stars": 115,
     "status": null
   },
   "stencil-hq/tern-sdk": {
@@ -790,7 +835,7 @@
     "status": null
   },
   "tdortman/tern-plugins": {
-    "pushed": "2026-10-31",
+    "pushed": "2026-11-07",
     "stars": 0,
     "status": null
   },
@@ -804,7 +849,7 @@
   },
   "theblazehen/tern-omp-bridge": {
     "pushed": "2026-10-24",
-    "stars": 4,
+    "stars": 5,
     "status": null
   },
   "thefullctx/hermes-for-tern": {
@@ -816,7 +861,7 @@
     "status": null
   },
   "thegeneralist01/tern-projects": {
-    "pushed": "2026-11-06",
+    "pushed": "2026-11-07",
     "screenshots": {
       "": "https://github.com/thegeneralist01/tern-projects/raw/main/docs/screenshots/showcase-overview.png"
     },
@@ -868,7 +913,15 @@
   },
   "wolfiesch/tern-control": {
     "pushed": "2026-10-01",
-    "stars": 2,
+    "stars": 3,
+    "status": null
+  },
+  "wolfiesch/tern-grafana": {
+    "pushed": "2026-11-05",
+    "screenshots": {
+      "": "https://github.com/wolfiesch/tern-grafana/raw/main/docs/screenshot.png"
+    },
+    "stars": 3,
     "status": null
   },
   "wolfiesch/tern-omp-usage-dashboard": {
