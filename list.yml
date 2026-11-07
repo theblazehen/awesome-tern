@@ -150,6 +150,10 @@ sections:
       url: https://github.com/FR-HL/tern-quotadeck
       kind: plugin
       description: Shows remaining quota and reset countdowns for OpenCode Go, Claude, Codex, Copilot, Cursor, Gemini and DeepSeek in the status line, with a detail page, per-session context usage and network speed.
+    - name: dora-tern-omp-usage
+      url: https://github.com/DoraJasmine/dora-tern-omp-usage
+      kind: plugin
+      description: Shows omp usage limits above the composer with a hover card, today's tokens and cost in the status line, a 7-day dashboard and per-host data for WSL and SSH.
   - title: Status and dashboards
     entries:
     - name: tern-t3
@@ -619,6 +623,10 @@ sections:
       url: https://github.com/zachristmas/tern-mssql
       kind: app
       description: SQL Server client with an object explorer, a T-SQL editor that completes from the live catalog and a spreadsheet-style results grid, read-only until you unlock writes.
+    - name: tern-datablender
+      url: https://github.com/dbydd/tern-datablender
+      kind: app
+      description: Viewer for NetCDF, HDF5 and MATLAB data fields with a node-graph editor for filters, FFT and time shifts, blended layers and hover values, shipped as prebuilt binaries.
   - title: System and developer tools
     entries:
     - name: tern-clock
