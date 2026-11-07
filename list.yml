@@ -559,6 +559,10 @@ sections:
       url: https://github.com/wangm23456/tern-plugin-beads
       kind: plugin
       description: Task board for the Beads `bd` issue tracker with Ready, In Progress, Blocked and Done filters, actions to claim, close and reprioritize issues, and a project switcher.
+    - name: tern-objectives
+      url: https://github.com/JakobMusik/tern-objectives
+      kind: plugin
+      description: Keeps one list of objectives linked to the tabs where their work happens, shown as a graph that jumps to any tab or pane, with priorities, tags, closing and resuming linked tabs, and spaced-repetition review of done objectives.
   - title: File viewers and notebooks
     entries:
     - name: tern-video-block
