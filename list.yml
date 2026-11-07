@@ -142,6 +142,18 @@ sections:
       kind: plugin
       description: Shows how much of each AI subscription defined in SPAWN you have used, read headlessly through each provider's own CLI or account endpoint, in compact, wide and bottom views with reset countdowns.
       repo: blastworksai/tools
+    - name: LastFry
+      url: https://github.com/KinseyD/LastFry
+      kind: plugin
+      description: Shows remaining API balance and plan windows for DeepSeek, OpenRouter, SiliconFlow, Kimi, Zhipu, MiniMax, Novita, StepFun and relays in a status-line segment and a manage block, with key import from omp.
+    - name: tern-quotadeck
+      url: https://github.com/FR-HL/tern-quotadeck
+      kind: plugin
+      description: Shows remaining quota and reset countdowns for OpenCode Go, Claude, Codex, Copilot, Cursor, Gemini and DeepSeek in the status line, with a detail page, per-session context usage and network speed.
+    - name: dora-tern-omp-usage
+      url: https://github.com/DoraJasmine/dora-tern-omp-usage
+      kind: plugin
+      description: Shows omp usage limits above the composer with a hover card, today's tokens and cost in the status line, a 7-day dashboard and per-host data for WSL and SSH.
   - title: Status and dashboards
     entries:
     - name: tern-t3
@@ -181,6 +193,10 @@ sections:
       url: https://github.com/Sipty/tern-agent-progress
       kind: plugin
       description: Marks tabs that run omp agents with WoW-style quest marks and todo progress bars.
+    - name: tern-agent-radar
+      url: https://github.com/edcnogueira/tern-agent-radar
+      kind: plugin
+      description: Lists every coding agent across sessions in one pane, ordered by who needs you, with a jump-to-agent picker, a status-line count and a toast when an agent starts waiting.
   - title: Orchestration
     entries:
     - name: tern-dsh-web
@@ -228,10 +244,6 @@ sections:
       url: https://github.com/riicodespretty/tern-worktrees
       kind: plugin
       description: Opens git worktrees as Tern tabs with a branch picker and teardown on close, backed by a `tern-wt` CLI and an omp skill for agents.
-    - name: tern-worktrees (aliefe04)
-      url: https://github.com/aliefe04/tern-worktrees
-      kind: plugin
-      description: Adds palette commands that create a git worktree on a new branch with an agent tab, and remove the focused worktree only when it is clean and merged into the default branch.
     - name: tern-worktree
       url: https://github.com/nibblebot/tern-worktree
       kind: plugin
@@ -463,6 +475,10 @@ sections:
       url: https://github.com/roverdude24/tern-pulse-skin
       kind: plugin
       description: Three full skins, Amber Phosphor, LCARS Deck and Neon Command, that restyle fonts, shapes, tabs, panel headers and decoration across Tern and its plugins, switched from a top-bar toggle.
+    - name: tern-tab-spinner
+      url: https://github.com/jorgoose/tern-tab-spinner
+      kind: plugin
+      description: Sends a moving accent highlight around the icon of each working tab in the native vertical sidebar, with no extra panes or polling.
   - title: Localization
     entries:
     - name: tern-zh-cn
@@ -535,6 +551,14 @@ sections:
       kind: plugin
       description: Read-only native checklist of the agreed checkpoints in an agent's canonical `/glitch-plan` plan, read locally or over SSH.
       repo: blastworksai/tools
+    - name: tern-notion-kanban
+      url: https://github.com/emerycp/tern-notion-kanban
+      kind: plugin
+      description: Shows a Notion board view as a native kanban pane with the view's columns, filters and sorts, and lets you move, create and open cards.
+    - name: tern-plugin-beads
+      url: https://github.com/wangm23456/tern-plugin-beads
+      kind: plugin
+      description: Task board for the Beads `bd` issue tracker with Ready, In Progress, Blocked and Done filters, actions to claim, close and reprioritize issues, and a project switcher.
   - title: File viewers and notebooks
     entries:
     - name: tern-video-block
@@ -569,6 +593,10 @@ sections:
       url: https://github.com/dbydd/tern-obsidian
       kind: plugin
       description: Recognizes Obsidian vaults and opens their notes, Bases and JSON Canvas files in native reader blocks.
+    - name: tern-pdf
+      url: https://github.com/cxnmai/tern-pdf
+      kind: plugin
+      description: Opens PDFs in a native pane that reloads when LaTeX or Typst rebuilds the file, with page navigation and in-pane zoom, rendered by a Rust helper using Poppler.
   - title: Cloud and data
     entries:
     - name: tern-kube
@@ -591,16 +619,20 @@ sections:
       url: https://github.com/junaidrahim/tern-bigquery
       kind: plugin
       description: BigQuery browser built on the `bq` tool, with project search, dataset and table navigation, schema inspection and scrollable data previews.
+    - name: tern-mssql
+      url: https://github.com/zachristmas/tern-mssql
+      kind: app
+      description: SQL Server client with an object explorer, a T-SQL editor that completes from the live catalog and a spreadsheet-style results grid, read-only until you unlock writes.
+    - name: tern-datablender
+      url: https://github.com/dbydd/tern-datablender
+      kind: app
+      description: Viewer for NetCDF, HDF5 and MATLAB data fields with a node-graph editor for filters, FFT and time shifts, blended layers and hover values, shipped as prebuilt binaries.
   - title: System and developer tools
     entries:
     - name: tern-clock
       url: https://github.com/ajaxdude/tern-clock
       kind: plugin
       description: Live system clock in the tab bar, in 12- or 24-hour format with optional seconds and a choice of four positions.
-    - name: tern-commands
-      url: https://github.com/lucaxic/tern-commands
-      kind: plugin
-      description: Turns the code blocks in a `COMMANDS.md` file into grouped command buttons.
     - name: tern-nom
       url: https://github.com/tdortman/tern-plugins/tree/main/crates/nom
       kind: app
@@ -634,6 +666,18 @@ sections:
       url: https://github.com/pgkt04/rmon
       kind: app
       description: Resource monitor for Linux and macOS with CPU, GPU, memory, network, disk and process panels and a disk benchmark, drawn natively in Tern over TSP.
+    - name: tern-sysmon
+      url: https://github.com/hastecraft/tern-sysmon
+      kind: plugin
+      description: Btop-style system monitor block with per-core CPU, GPU, memory, network, disk I/O, volumes and a sortable process table, backed by a small native collector on Windows, macOS and Linux.
+    - name: tern-go-navigation
+      url: https://github.com/Evolt0/tern-go-navigation
+      kind: plugin
+      description: Go definitions, references and project-wide symbol search in Tern's native editor, with source-line previews and a persistent gopls index.
+    - name: tern-java-navigation
+      url: https://github.com/Evolt0/tern-java-navigation
+      kind: plugin
+      description: Java and Kotlin definitions, references and project-wide symbol search in Tern's native editor, backed by Eclipse JDT LS and the JetBrains Kotlin LSP.
 - title: Media and fun
   blurb: Music, games, toys, and whatever doesn't fit anywhere else.
   sections:
@@ -699,6 +743,10 @@ sections:
       url: https://github.com/verusferro/Ternatro
       kind: app
       description: Plays Balatro in a Tern pane, running the game's own Lua code from your copy of Balatro.exe and drawing its layout, card motion, particles and shaders natively; you need to own the game.
+    - name: tern-balatro
+      url: https://github.com/ocasazza/tern-balatro
+      kind: plugin
+      description: Balatro jokers wander a card table, shop or blind and pop +Mult when clicked, with sprites cut from your own copy of the game, in the style of tern-pokemon.
   - title: Other
     blurb: Plugins and apps that don't fit another section yet.
     entries:
