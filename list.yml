@@ -133,6 +133,10 @@ sections:
       url: https://github.com/meisijiya/tern-minimax-quota
       kind: plugin
       description: Shows your MiniMax Token Plan quota in the status line and refreshes it every five minutes.
+    - name: tern-usage-sidebar
+      url: https://github.com/ak4duy/tern-usage-sidebar
+      kind: plugin
+      description: Shows each provider's 5-hour and weekly usage as a two-line bar in the status bar from `ai-usagebar`, with reset times on hover.
   - title: Status and dashboards
     entries:
     - name: tern-t3
