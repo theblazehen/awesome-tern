@@ -294,6 +294,12 @@ sections:
       url: https://github.com/Arcadia822/tern-agent-nav
       kind: plugin
       description: Simple session sidebar in the style of Herdr that lists omp, Codex, Copilot and Claude Code agents grouped by Tern session, with a click to focus one.
+    - name: Agent Sessions
+      url: https://github.com/duzui300/tern-plugins/tree/main/plugins/agent-sessions
+      kind: plugin
+      description: Canvas that gathers Claude Code, Antigravity, Pi and omp session histories into one searchable list, with tags, aliases, hidden sessions and one-click resume in a new tab.
+      repo: duzui300/tern-plugins
+      screenshot: https://raw.githubusercontent.com/duzui300/tern-plugins/main/plugins/agent-sessions/docs/session-manager.png
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
