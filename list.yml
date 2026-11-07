@@ -322,6 +322,10 @@ sections:
       kind: plugin
       description: Native pane listing your active Glitch workspaces, with GitHub links and a button that opens your default agent beside it already running `/work-on`.
       repo: blastworksai/tools
+    - name: tern-workspaces
+      url: https://github.com/mk-wang/tern-workspaces
+      kind: plugin
+      description: Project sidebar with separate sessions, root-locked new tabs, case-insensitive name or path filtering, live omp status, and agent chat resume.
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
