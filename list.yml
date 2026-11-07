@@ -628,6 +628,12 @@ sections:
       url: https://github.com/kyle-elliott/tern-spotify
       kind: plugin
       description: Spotify player pane with album art, queue, library, search and device picker, plus a floating mode, status-line track and palette commands for playback.
+    - name: NetEase
+      url: https://github.com/duzui300/tern-plugins/tree/main/plugins/netease
+      kind: plugin
+      description: Player block for the NetEase Cloud Music desktop app on Windows with cover art, playback, per-app volume and a picture-in-picture mode, driven through the app's own global hotkeys.
+      repo: duzui300/tern-plugins
+      screenshot: https://raw.githubusercontent.com/duzui300/tern-plugins/main/plugins/netease/docs/OnPanel.png
   - title: Fun
     entries:
     - name: tern-pokemon
