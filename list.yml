@@ -536,6 +536,10 @@ sections:
       url: https://github.com/contrafy/tern-grafana
       kind: plugin
       description: Grafana and Prometheus-compatible backends as native blocks for PromQL queries, dashboards, alerts and silences, logs and traces; pre-release.
+    - name: Grafana for Tern
+      url: https://github.com/wolfiesch/tern-grafana
+      kind: plugin
+      description: Reads Grafana dashboards in a native pane on Grafana's grid, with stat, table, logs, time series, state timeline, bar chart and alert list panels and a keyboard crosshair that shows values at one shared time.
     - name: tern-netsuite
       url: https://github.com/contrafy/tern-netsuite
       kind: plugin
