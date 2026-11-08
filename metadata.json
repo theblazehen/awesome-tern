@@ -10,7 +10,7 @@
     "status": null
   },
   "Arcadia822/tern-agent-nav": {
-    "pushed": "2026-11-05",
+    "pushed": "2026-11-08",
     "screenshots": {
       "": "https://github.com/Arcadia822/tern-agent-nav/raw/main/docs/screenshot.png"
     },
@@ -167,7 +167,7 @@
     "status": null
   },
   "Mouriya-Emma/omp-thinking-translator": {
-    "pushed": "2026-11-06",
+    "pushed": "2026-11-07",
     "stars": 1,
     "status": null
   },
@@ -299,11 +299,11 @@
     "screenshots": {
       "": "https://github.com/betizzel/tern-rmd/raw/main/docs/screenshot.png"
     },
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "blastworksai/tools": {
-    "pushed": "2026-11-07",
+    "pushed": "2026-11-08",
     "screenshots": {
       "plugins/tern/SPAWN": "https://github.com/blastworksai/tools/raw/main/plugins/tern/SPAWN/assets/screenshots/spawn-all-tabs.png",
       "plugins/tern/TODO": "https://github.com/blastworksai/tools/raw/main/plugins/tern/TODO/assets/screenshots/todo-blurred.png",
@@ -340,11 +340,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-11-07",
+    "pushed": "2026-11-08",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 38128,
+    "stars": 38193,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -642,7 +642,7 @@
     "screenshots": {
       "": "https://github.com/maicent/tern-zh-cn/raw/main/docs/screenshot.png"
     },
-    "stars": 9,
+    "stars": 10,
     "status": null
   },
   "materemias/codexbar-agentview": {
@@ -713,7 +713,7 @@
     "screenshots": {
       "": "https://github.com/mmnavarr/overseer/raw/main/docs/images/tour.png"
     },
-    "stars": 89,
+    "stars": 94,
     "status": null
   },
   "mreishus/tern-plugins": {
@@ -758,7 +758,7 @@
     "status": null
   },
   "pelikanade/flake": {
-    "pushed": "2026-11-06",
+    "pushed": "2026-11-07",
     "stars": 11,
     "status": null
   },
@@ -875,13 +875,13 @@
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-11-07",
-    "stars": 116,
+    "pushed": "2026-11-08",
+    "stars": 156,
     "status": null
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-11-04",
-    "stars": 120,
+    "stars": 121,
     "status": null
   },
   "taooceros/tern-csv": {
