@@ -678,6 +678,16 @@ sections:
       url: https://github.com/Evolt0/tern-java-navigation
       kind: plugin
       description: Java and Kotlin definitions, references and project-wide symbol search in Tern's native editor, backed by Eclipse JDT LS and the JetBrains Kotlin LSP.
+    - name: Search Everywhere
+      url: https://github.com/sneaky-bulgarian/tern-plugins/tree/main/tern-searcheverywhere
+      kind: plugin
+      description: PyCharm-style search bar on a double Shift that finds files, classes, functions and variables under the focused pane's folder, with camel-hump fuzzy matching, `Class.method` and `file:42` jumps, and grows from a bar to fit the results.
+      repo: sneaky-bulgarian/tern-plugins
+    - name: Test Explorer
+      url: https://github.com/sneaky-bulgarian/tern-plugins/tree/main/tern-testview
+      kind: plugin
+      description: Finds pytest, unittest, vitest and jest tests, runs them with each failure's trace beside its source line, and opens beside an agent to show the pytest and unittest runs it starts as they happen.
+      repo: sneaky-bulgarian/tern-plugins
 - title: Media and fun
   blurb: Music, games, toys, and whatever doesn't fit anywhere else.
   sections:
