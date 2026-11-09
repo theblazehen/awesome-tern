@@ -257,6 +257,10 @@ sections:
       url: https://github.com/mullerino/tern-worktree-panel
       kind: plugin
       description: Pins a panel to every tab that lists the git worktrees of the focused repository with the state of the omp agents in each, moves agents waiting for you to the top, and focuses or opens a worktree's tab on click.
+    - name: tern-worktree-sessions
+      url: https://github.com/ryankish/tern-worktree-sessions
+      kind: plugin
+      description: Gives each git worktree its own persistent session with tabs and panes you set in JSON, optional per-repository setup that asks questions before creating a worktree, and one-click push and pull request.
   - title: Notifications and alerts
     entries:
     - name: tern-pushover
