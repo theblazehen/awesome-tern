@@ -479,6 +479,10 @@ sections:
       url: https://github.com/jorgoose/tern-tab-spinner
       kind: plugin
       description: Sends a moving accent highlight around the icon of each working tab in the native vertical sidebar, with no extra panes or polling.
+    - name: Night Drive
+      url: https://github.com/matteoantoci/tern-night-drive
+      kind: config
+      description: Synthwave theme with square tiles, flat mono tabs and a pink and cyan frame on the focused pane, with a setup script for the matching window settings.
   - title: Localization
     entries:
     - name: tern-zh-cn
