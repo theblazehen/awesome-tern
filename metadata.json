@@ -137,7 +137,7 @@
     "status": null
   },
   "Ioshiro/tern-control-room": {
-    "pushed": "2026-11-09",
+    "pushed": "2026-11-10",
     "stars": 0,
     "status": null
   },
@@ -410,7 +410,7 @@
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 38487,
+    "stars": 38506,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -982,11 +982,11 @@
   },
   "skaft-software/octet": {
     "pushed": "2026-11-10",
-    "stars": 191,
+    "stars": 192,
     "status": null
   },
   "sneaky-bulgarian/tern-plugins": {
-    "pushed": "2026-11-08",
+    "pushed": "2026-11-10",
     "screenshots": {
       "tern-searcheverywhere": "https://github.com/sneaky-bulgarian/tern-plugins/raw/main/tern-searcheverywhere/docs/demo.gif",
       "tern-testview": "https://github.com/sneaky-bulgarian/tern-plugins/raw/main/tern-testview/docs/agent.gif"
@@ -1124,7 +1124,7 @@
     "status": null
   },
   "wolfiesch/tern-grafana": {
-    "pushed": "2026-11-05",
+    "pushed": "2026-11-10",
     "screenshots": {
       "": "https://github.com/wolfiesch/tern-grafana/raw/main/docs/screenshot.png"
     },
@@ -1153,7 +1153,7 @@
     "status": null
   },
   "yizixu/tern-omp-sessions": {
-    "pushed": "2026-11-09",
+    "pushed": "2026-11-10",
     "screenshots": {
       "": "https://github.com/yizixu/tern-omp-sessions/raw/main/assets/sidebar-screenshot.png"
     },
