@@ -205,6 +205,11 @@ sections:
       url: https://github.com/Ioshiro/tern-control-room
       kind: plugin
       description: Persistent block listing every pane of every session in the window, attention first, with failed commands, a peek at recent output, status-check requests to agents, interrupt and pin in a floating pane.
+    - name: Tern Manager
+      url: https://github.com/yagizkaterli/herakles-lobi/tree/main/ternmanager/plugin
+      kind: plugin
+      description: Renders the live Tern world, operator cards and unit state in a freshness-explicit panel, with a read-only SSH inventory.
+      repo: yagizkaterli/herakles-lobi
   - title: Orchestration
     entries:
     - name: tern-dsh-web
@@ -487,6 +492,11 @@ sections:
       url: https://github.com/materemias/tern-awui
       kind: companion
       description: Phone and browser web app for the omp agents running in Tern, reached over Tailscale, with sessions grouped by project and two-way control for prompts, questions, model choice, rewind and push notifications.
+    - name: Lobi
+      url: https://github.com/yagizkaterli/herakles-lobi
+      kind: companion
+      description: A Rust desktop app and local API that unifies commits, mail, capsules and project state with the CapsuleSpace bus.
+      repo: yagizkaterli/herakles-lobi
   - title: Themes and appearance
     entries:
     - name: tern-wide-autocomplete
