@@ -287,10 +287,6 @@ sections:
       url: https://github.com/edcnogueira/tern-gpg-touch
       kind: plugin
       description: Shows a toast, and optionally plays a sound, when a typed command starts that will wait for a touch on your GPG security key, with per-folder rules.
-    - name: tern-desktop-pet
-      url: https://github.com/hanbong5938/tern-desktop-pet
-      kind: plugin
-      description: Connects Tern agent observations and semantic asks to the separately installed Desktop Pet app.
 - title: Workspace
   blurb: Sessions, navigation and layout, remote hosts, and how Tern looks.
   sections:
@@ -352,6 +348,11 @@ sections:
       url: https://github.com/matteoantoci/tern-agent-deck
       kind: plugin
       description: Sidebar in every tab that groups your omp agents and their subagents by project, puts the agents that wait for you first, and pins, renames, copies or resumes sessions with a click.
+    - name: session-root
+      url: https://github.com/ryosuz/tern/tree/main/plugins/session-root
+      kind: plugin
+      description: Gives each session a root directory that new tabs open in, shown in the status line, with a command that starts a session at a folder.
+      repo: ryosuz/tern
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
@@ -411,6 +412,11 @@ sections:
       url: https://github.com/arg3t/neotern
       kind: app
       description: Neovim drawn as a native Tern surface in the style of Neovide, with a native command palette and picker; alpha and tuned to the author's own dotfiles.
+    - name: Herd
+      url: https://github.com/DarkoKuzmanovic/tern-herd/tree/main/plugins/herd
+      kind: plugin
+      description: Watches and steers herdr-core terminals and agents in a block, with a status tree, needs-you filters, an activity inbox, logs, toasts and confirmed send and interrupt actions.
+      repo: DarkoKuzmanovic/tern-herd
   - title: Remote hosts
     blurb: 'Working across machines: connecting to hosts, and moving files, clipboard images and links between local and remote panes.'
     entries:
@@ -438,6 +444,10 @@ sections:
       url: https://github.com/jmilldotdev/tern-remote-paste
       kind: plugin
       description: Makes Ctrl+V in an ssh pane upload a Mac clipboard image to the remote host and paste its path for agents such as omp and Claude Code.
+    - name: tern-remote-ports
+      url: https://github.com/f81/tern-remote-ports
+      kind: plugin
+      description: Forwards ports from ssh hosts to localhost by picking one of the ports listening there, with a panel to open or stop each forward and a status-line count.
   - title: Companion apps
     blurb: Apps that reach Tern's sessions or agents from outside Tern, on the web, a phone or the desktop.
     entries:
@@ -491,12 +501,20 @@ sections:
       url: https://github.com/matteoantoci/tern-night-drive
       kind: config
       description: Synthwave theme with square tiles, flat mono tabs and a pink and cyan frame on the focused pane, with a setup script for the matching window settings.
+    - name: tern-backdrop
+      url: https://github.com/avcton/tern-backdrop
+      kind: plugin
+      description: Puts an animated gradient, an image or a looping video behind the whole window, with bar tints and controls for how Tern's panels sit over it.
   - title: Localization
     entries:
     - name: tern-zh-cn
       url: https://github.com/maicent/tern-zh-cn
       kind: plugin
       description: Partial Simplified Chinese translation with Chinese titles for over 50 built-in palette commands and CSS replacement of the palette tabs and tab-bar buttons.
+    - name: omp-tern-korean
+      url: https://github.com/jinhyeok694/omp-tern-korean
+      kind: extension
+      description: Korean translation of omp's interface text as drawn in Tern, with Korean command-palette rows and a Korean-friendly font, leaving conversations and code untouched.
 - title: Development
   blurb: Version control, code review, issues and tasks, and tools for files, infrastructure and data.
   sections:
@@ -540,6 +558,10 @@ sections:
       url: https://github.com/Noctivoro/tern-margin
       kind: app
       description: Renders a Markdown file block by block so you can leave CriticMarkup comments on any paragraph, list, table or code block, and hands them back to the agent that opened it.
+    - name: tern-azdo
+      url: https://github.com/zachristmas/tern-azdo
+      kind: app
+      description: Lists the active Azure DevOps pull requests of a whole organization, with diffs, comment threads, votes and a one-click AI review that starts a coding agent in a new block.
   - title: Issues and tasks
     entries:
     - name: tern-tracker
@@ -575,6 +597,10 @@ sections:
       url: https://github.com/JakobMusik/tern-objectives
       kind: plugin
       description: Links objectives to the tabs where their work happens in a graph that jumps to any tab or pane and marks omp chats that need you, then brings finished objectives back for spaced-repetition review, rated Hard, Good or Easy.
+    - name: beads-tern
+      url: https://github.com/Roflochinsky/beads-tern
+      kind: plugin
+      description: Native Beads board with board and table views, search and filters, dependency navigation, and create, edit, claim and close actions through your installed `bd`; built from source and still pre-release.
   - title: File viewers and notebooks
     entries:
     - name: tern-video-block
@@ -613,6 +639,10 @@ sections:
       url: https://github.com/cxnmai/tern-pdf
       kind: plugin
       description: Opens PDFs in a native pane that reloads when LaTeX or Typst rebuilds the file, with page navigation and in-pane zoom, rendered by a Rust helper using Poppler.
+    - name: tern-js-lib-versions
+      url: https://github.com/Artimunor/tern-js-lib-versions
+      kind: plugin
+      description: Opens `package.json` as a dependency table with the newest minor and major versions your package manager's minimum release age allows, workspace catalogs resolved, and per-package or update-all buttons.
   - title: Cloud and data
     entries:
     - name: tern-kube
