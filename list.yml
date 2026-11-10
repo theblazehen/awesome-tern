@@ -376,7 +376,7 @@ sections:
     - name: OMP Sessions
       url: https://github.com/yizixu/tern-omp-sessions
       kind: plugin
-      description: Adds per-pane omp status icons and saved conversation names to Tern's vertical-tabs sidebar, with a pane jumper and a searchable session history that resumes in a new tab.
+      description: Adds theme-aware split-layout cards, saved conversation titles and per-pane omp status to Tern's sidebar, with a pane jumper and searchable session history that resumes in a new tab.
     - name: Jumpr
       url: https://github.com/starkedev/jumpr
       kind: plugin
