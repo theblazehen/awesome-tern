@@ -154,6 +154,10 @@ sections:
       url: https://github.com/DoraJasmine/dora-tern-omp-usage
       kind: plugin
       description: Shows omp usage limits above the composer with a hover card, today's tokens and cost in the status line, a 7-day dashboard and per-host data for WSL and SSH.
+    - name: provider-quota
+      url: https://github.com/amuluze/provider-quota
+      kind: plugin
+      description: Shows every omp provider's quota windows, balances and login problems in a dashboard that tags the one with the most headroom, with a status-line summary; the interface is in Chinese.
   - title: Status and dashboards
     entries:
     - name: tern-t3
@@ -197,12 +201,20 @@ sections:
       url: https://github.com/edcnogueira/tern-agent-radar
       kind: plugin
       description: Lists every coding agent across sessions in one pane, ordered by who needs you, with a jump-to-agent picker, a status-line count and a toast when an agent starts waiting.
+    - name: tern-control-room
+      url: https://github.com/Ioshiro/tern-control-room
+      kind: plugin
+      description: Persistent block listing every pane of every session in the window, attention first, with failed commands, a peek at recent output, status-check requests to agents, interrupt and pin in a floating pane.
   - title: Orchestration
     entries:
     - name: tern-dsh-web
       url: https://github.com/meisijiya/tern-dsh-web
       kind: plugin
       description: Starts the DeepSeek Harness web UI on demand from a status-bar menu and opens it in a browser block, with restart, stop and update actions.
+    - name: Roost (zerx-lab)
+      url: https://github.com/zerx-lab/Roost
+      kind: plugin
+      description: Runs fixed omp and shell workflows on your machine from cron schedules or GitHub events relayed by a self-hosted GitHub App, with run logs, diffs, follow-ups and cost budgets, in a Chinese-language interface.
     - name: tern-swarm
       url: https://github.com/bmanturner/tern-swarm
       kind: plugin
@@ -287,6 +299,14 @@ sections:
       url: https://github.com/edcnogueira/tern-gpg-touch
       kind: plugin
       description: Shows a toast, and optionally plays a sound, when a typed command starts that will wait for a touch on your GPG security key, with per-folder rules.
+    - name: tern-attention
+      url: https://github.com/baekjosh/tern-attention
+      kind: plugin
+      description: Pins Tern's needs-attention inbox as an always-visible rail with a Later tab for deferred items, a workspace tree, a choice of placement and a read-only iPhone mirror; macOS only.
+    - name: tern-sidepulse
+      url: https://github.com/alphastorm/tern-sidepulse
+      kind: plugin
+      description: Forwards the working, waiting, done and failed state of omp sessions to the SidePulse LED and menu-bar agent monitor on macOS.
 - title: Workspace
   blurb: Sessions, navigation and layout, remote hosts, and how Tern looks.
   sections:
@@ -353,6 +373,14 @@ sections:
       kind: plugin
       description: Gives each session a root directory that new tabs open in, shown in the status line, with a command that starts a session at a folder.
       repo: ryosuz/tern
+    - name: OMP Sessions
+      url: https://github.com/yizixu/tern-omp-sessions
+      kind: plugin
+      description: Adds per-pane omp status icons and saved conversation names to Tern's vertical-tabs sidebar, with a pane jumper and a searchable session history that resumes in a new tab.
+    - name: Jumpr
+      url: https://github.com/starkedev/jumpr
+      kind: plugin
+      description: Keyboard-driven list of the omp agents you start from it, grouped by project with one list per machine, where moving through the list brings each agent's tab to the front as a live preview.
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
@@ -384,6 +412,10 @@ sections:
       url: https://github.com/bneil/tern-extrakeys
       kind: plugin
       description: Termux-style bar of buttons for Esc, Ctrl, Alt, Tab, arrows and more that types into a pane you choose, using Termux's extra-keys config format.
+    - name: tern-herdr-keys
+      url: https://github.com/nahwan-kim/tern-herdr-keys
+      kind: plugin
+      description: Herdr-style spaces with ⌘⇧1…9 session jumps, a ⌘W that closes the block, then the tab, then the session, and a pinned default session per host; command titles are in Korean.
   - title: Integrations
     blurb: Plugins that make Tern fit a setup you already work in, such as a multiplexer, editor, window manager or browser.
     entries:
@@ -505,6 +537,11 @@ sections:
       url: https://github.com/avcton/tern-backdrop
       kind: plugin
       description: Puts an animated gradient, an image or a looping video behind the whole window, with bar tints and controls for how Tern's panels sit over it.
+    - name: Spine Tweaks
+      url: https://github.com/ryosuz/tern/tree/main/plugins/spine-tweaks
+      kind: plugin
+      description: Replaces your avatar in Spine chats with a picture of your choice and puts a tinted, rounded background behind your own messages.
+      repo: ryosuz/tern
   - title: Localization
     entries:
     - name: tern-zh-cn
@@ -810,6 +847,10 @@ sections:
       url: https://github.com/bmanturner/tern-rss
       kind: plugin
       description: Follows RSS and Atom feeds in a block with expandable previews, articles in a docked reader browser, toasts for starred feeds and a catch-up line instead of an ever-growing unread count.
+    - name: tern-hue
+      url: https://github.com/wolfiesch/tern-hue
+      kind: plugin
+      description: Controls Philips Hue rooms, zones, scenes and lights through the local bridge in a native pane, with palette commands and a status-line count of lit and offline lights.
     - name: tern-pomodoro
       url: https://github.com/tcstacks/tern-pomodoro
       kind: plugin
