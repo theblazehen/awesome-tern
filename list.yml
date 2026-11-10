@@ -344,6 +344,10 @@ sections:
       description: Canvas that gathers Claude Code, Antigravity, Pi and omp session histories into one searchable list, with tags, aliases, hidden sessions and one-click resume in a new tab.
       repo: duzui300/tern-plugins
       screenshot: https://raw.githubusercontent.com/duzui300/tern-plugins/main/plugins/agent-sessions/docs/session-manager.png
+    - name: Agent Deck
+      url: https://github.com/matteoantoci/tern-agent-deck
+      kind: plugin
+      description: Sidebar in every tab that groups your omp agents and their subagents by project, puts the agents that wait for you first, and pins, renames, copies or resumes sessions with a click.
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
