@@ -154,6 +154,10 @@ sections:
       url: https://github.com/DoraJasmine/dora-tern-omp-usage
       kind: plugin
       description: Shows omp usage limits above the composer with a hover card, today's tokens and cost in the status line, a 7-day dashboard and per-host data for WSL and SSH.
+    - name: provider-quota
+      url: https://github.com/amuluze/provider-quota
+      kind: plugin
+      description: Shows every omp provider's quota windows, balances and login problems in a dashboard that tags the one with the most headroom, with a status-line summary; the interface is in Chinese.
   - title: Status and dashboards
     entries:
     - name: tern-t3
@@ -197,12 +201,20 @@ sections:
       url: https://github.com/edcnogueira/tern-agent-radar
       kind: plugin
       description: Lists every coding agent across sessions in one pane, ordered by who needs you, with a jump-to-agent picker, a status-line count and a toast when an agent starts waiting.
+    - name: tern-control-room
+      url: https://github.com/Ioshiro/tern-control-room
+      kind: plugin
+      description: Persistent block listing every pane of every session in the window, attention first, with failed commands, a peek at recent output, status-check requests to agents, interrupt and pin in a floating pane.
   - title: Orchestration
     entries:
     - name: tern-dsh-web
       url: https://github.com/meisijiya/tern-dsh-web
       kind: plugin
       description: Starts the DeepSeek Harness web UI on demand from a status-bar menu and opens it in a browser block, with restart, stop and update actions.
+    - name: Roost (zerx-lab)
+      url: https://github.com/zerx-lab/Roost
+      kind: plugin
+      description: Runs fixed omp and shell workflows on your machine from cron schedules or GitHub events relayed by a self-hosted GitHub App, with run logs, diffs, follow-ups and cost budgets, in a Chinese-language interface.
     - name: tern-swarm
       url: https://github.com/bmanturner/tern-swarm
       kind: plugin
@@ -287,10 +299,14 @@ sections:
       url: https://github.com/edcnogueira/tern-gpg-touch
       kind: plugin
       description: Shows a toast, and optionally plays a sound, when a typed command starts that will wait for a touch on your GPG security key, with per-folder rules.
-    - name: tern-desktop-pet
-      url: https://github.com/hanbong5938/tern-desktop-pet
+    - name: tern-attention
+      url: https://github.com/baekjosh/tern-attention
       kind: plugin
-      description: Connects Tern agent observations and semantic asks to the separately installed Desktop Pet app.
+      description: Pins Tern's needs-attention inbox as an always-visible rail with a Later tab for deferred items, a workspace tree, a choice of placement and a read-only iPhone mirror; macOS only.
+    - name: tern-sidepulse
+      url: https://github.com/alphastorm/tern-sidepulse
+      kind: plugin
+      description: Forwards the working, waiting, done and failed state of omp sessions to the SidePulse LED and menu-bar agent monitor on macOS.
 - title: Workspace
   blurb: Sessions, navigation and layout, remote hosts, and how Tern looks.
   sections:
@@ -352,6 +368,19 @@ sections:
       url: https://github.com/matteoantoci/tern-agent-deck
       kind: plugin
       description: Sidebar in every tab that groups your omp agents and their subagents by project, puts the agents that wait for you first, and pins, renames, copies or resumes sessions with a click.
+    - name: session-root
+      url: https://github.com/ryosuz/tern/tree/main/plugins/session-root
+      kind: plugin
+      description: Gives each session a root directory that new tabs open in, shown in the status line, with a command that starts a session at a folder.
+      repo: ryosuz/tern
+    - name: OMP Sessions
+      url: https://github.com/yizixu/tern-omp-sessions
+      kind: plugin
+      description: Adds per-pane omp status icons and saved conversation names to Tern's vertical-tabs sidebar, with a pane jumper and a searchable session history that resumes in a new tab.
+    - name: Jumpr
+      url: https://github.com/starkedev/jumpr
+      kind: plugin
+      description: Keyboard-driven list of the omp agents you start from it, grouped by project with one list per machine, where moving through the list brings each agent's tab to the front as a live preview.
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
@@ -383,6 +412,10 @@ sections:
       url: https://github.com/bneil/tern-extrakeys
       kind: plugin
       description: Termux-style bar of buttons for Esc, Ctrl, Alt, Tab, arrows and more that types into a pane you choose, using Termux's extra-keys config format.
+    - name: tern-herdr-keys
+      url: https://github.com/nahwan-kim/tern-herdr-keys
+      kind: plugin
+      description: Herdr-style spaces with ⌘⇧1…9 session jumps, a ⌘W that closes the block, then the tab, then the session, and a pinned default session per host; command titles are in Korean.
   - title: Integrations
     blurb: Plugins that make Tern fit a setup you already work in, such as a multiplexer, editor, window manager or browser.
     entries:
@@ -411,6 +444,11 @@ sections:
       url: https://github.com/arg3t/neotern
       kind: app
       description: Neovim drawn as a native Tern surface in the style of Neovide, with a native command palette and picker; alpha and tuned to the author's own dotfiles.
+    - name: Herd
+      url: https://github.com/DarkoKuzmanovic/tern-herd/tree/main/plugins/herd
+      kind: plugin
+      description: Watches and steers herdr-core terminals and agents in a block, with a status tree, needs-you filters, an activity inbox, logs, toasts and confirmed send and interrupt actions.
+      repo: DarkoKuzmanovic/tern-herd
   - title: Remote hosts
     blurb: 'Working across machines: connecting to hosts, and moving files, clipboard images and links between local and remote panes.'
     entries:
@@ -438,6 +476,10 @@ sections:
       url: https://github.com/jmilldotdev/tern-remote-paste
       kind: plugin
       description: Makes Ctrl+V in an ssh pane upload a Mac clipboard image to the remote host and paste its path for agents such as omp and Claude Code.
+    - name: tern-remote-ports
+      url: https://github.com/f81/tern-remote-ports
+      kind: plugin
+      description: Forwards ports from ssh hosts to localhost by picking one of the ports listening there, with a panel to open or stop each forward and a status-line count.
   - title: Companion apps
     blurb: Apps that reach Tern's sessions or agents from outside Tern, on the web, a phone or the desktop.
     entries:
@@ -491,12 +533,25 @@ sections:
       url: https://github.com/matteoantoci/tern-night-drive
       kind: config
       description: Synthwave theme with square tiles, flat mono tabs and a pink and cyan frame on the focused pane, with a setup script for the matching window settings.
+    - name: tern-backdrop
+      url: https://github.com/avcton/tern-backdrop
+      kind: plugin
+      description: Puts an animated gradient, an image or a looping video behind the whole window, with bar tints and controls for how Tern's panels sit over it.
+    - name: Spine Tweaks
+      url: https://github.com/ryosuz/tern/tree/main/plugins/spine-tweaks
+      kind: plugin
+      description: Replaces your avatar in Spine chats with a picture of your choice and puts a tinted, rounded background behind your own messages.
+      repo: ryosuz/tern
   - title: Localization
     entries:
     - name: tern-zh-cn
       url: https://github.com/maicent/tern-zh-cn
       kind: plugin
       description: Partial Simplified Chinese translation with Chinese titles for over 50 built-in palette commands and CSS replacement of the palette tabs and tab-bar buttons.
+    - name: omp-tern-korean
+      url: https://github.com/jinhyeok694/omp-tern-korean
+      kind: extension
+      description: Korean translation of omp's interface text as drawn in Tern, with Korean command-palette rows and a Korean-friendly font, leaving conversations and code untouched.
 - title: Development
   blurb: Version control, code review, issues and tasks, and tools for files, infrastructure and data.
   sections:
@@ -540,6 +595,10 @@ sections:
       url: https://github.com/Noctivoro/tern-margin
       kind: app
       description: Renders a Markdown file block by block so you can leave CriticMarkup comments on any paragraph, list, table or code block, and hands them back to the agent that opened it.
+    - name: tern-azdo
+      url: https://github.com/zachristmas/tern-azdo
+      kind: app
+      description: Lists the active Azure DevOps pull requests of a whole organization, with diffs, comment threads, votes and a one-click AI review that starts a coding agent in a new block.
   - title: Issues and tasks
     entries:
     - name: tern-tracker
@@ -575,6 +634,10 @@ sections:
       url: https://github.com/JakobMusik/tern-objectives
       kind: plugin
       description: Links objectives to the tabs where their work happens in a graph that jumps to any tab or pane and marks omp chats that need you, then brings finished objectives back for spaced-repetition review, rated Hard, Good or Easy.
+    - name: beads-tern
+      url: https://github.com/Roflochinsky/beads-tern
+      kind: plugin
+      description: Native Beads board with board and table views, search and filters, dependency navigation, and create, edit, claim and close actions through your installed `bd`; built from source and still pre-release.
   - title: File viewers and notebooks
     entries:
     - name: tern-video-block
@@ -613,6 +676,10 @@ sections:
       url: https://github.com/cxnmai/tern-pdf
       kind: plugin
       description: Opens PDFs in a native pane that reloads when LaTeX or Typst rebuilds the file, with page navigation and in-pane zoom, rendered by a Rust helper using Poppler.
+    - name: tern-js-lib-versions
+      url: https://github.com/Artimunor/tern-js-lib-versions
+      kind: plugin
+      description: Opens `package.json` as a dependency table with the newest minor and major versions your package manager's minimum release age allows, workspace catalogs resolved, and per-package or update-all buttons.
   - title: Cloud and data
     entries:
     - name: tern-kube
@@ -780,6 +847,10 @@ sections:
       url: https://github.com/bmanturner/tern-rss
       kind: plugin
       description: Follows RSS and Atom feeds in a block with expandable previews, articles in a docked reader browser, toasts for starred feeds and a catch-up line instead of an ever-growing unread count.
+    - name: tern-hue
+      url: https://github.com/wolfiesch/tern-hue
+      kind: plugin
+      description: Controls Philips Hue rooms, zones, scenes and lights through the local bridge in a native pane, with palette commands and a status-line count of lit and offline lights.
     - name: tern-pomodoro
       url: https://github.com/tcstacks/tern-pomodoro
       kind: plugin
