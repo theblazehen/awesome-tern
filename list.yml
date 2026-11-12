@@ -638,6 +638,10 @@ sections:
       url: https://github.com/Roflochinsky/beads-tern
       kind: plugin
       description: Native Beads board with board and table views, search and filters, dependency navigation, and create, edit, claim and close actions through your installed `bd`; built from source and still pre-release.
+    - name: tern-linear
+      url: https://github.com/peterrauscher/tern-linear
+      kind: plugin
+      description: Your Linear issues as a board or table with search, filters and a drawer for the description, relations and comments, plus keys to assign, move, comment on and create issues.
   - title: File viewers and notebooks
     entries:
     - name: tern-video-block
