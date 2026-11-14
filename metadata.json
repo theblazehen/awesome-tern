@@ -193,7 +193,7 @@
     "status": null
   },
   "Mouriya-Emma/omp-thinking-translator": {
-    "pushed": "2026-11-11",
+    "pushed": "2026-11-13",
     "stars": 1,
     "status": null
   },
@@ -303,7 +303,7 @@
     "status": null
   },
   "alt-glitch/hermes-tern": {
-    "pushed": "2026-11-10",
+    "pushed": "2026-11-14",
     "screenshots": {
       "": "https://github.com/alt-glitch/hermes-tern/raw/main/docs/images/transcript.png"
     },
@@ -369,7 +369,7 @@
     "status": null
   },
   "blastworksai/tools": {
-    "pushed": "2026-11-13",
+    "pushed": "2026-11-14",
     "screenshots": {
       "plugins/tern/SPAWN": "https://github.com/blastworksai/tools/raw/main/plugins/tern/SPAWN/assets/screenshots/spawn-all-tabs.png",
       "plugins/tern/TODO": "https://github.com/blastworksai/tools/raw/main/plugins/tern/TODO/assets/screenshots/todo-blurred.png",
@@ -406,11 +406,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-11-13",
+    "pushed": "2026-11-14",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 38916,
+    "stars": 38986,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -435,7 +435,7 @@
     "status": null
   },
   "contrafy/tern-grafana": {
-    "pushed": "2026-11-11",
+    "pushed": "2026-11-13",
     "screenshots": {
       "": "https://github.com/contrafy/tern-grafana/raw/master/docs/screenshots/dashboard.png"
     },
@@ -601,8 +601,8 @@
     "status": null
   },
   "jinhyeok694/omp-tern-korean": {
-    "pushed": "2026-11-13",
-    "stars": 0,
+    "pushed": "2026-11-14",
+    "stars": 1,
     "status": null
   },
   "jmazzola/tern-plugin-omp-usage": {
@@ -726,11 +726,11 @@
     "status": null
   },
   "materemias/omp-stretch": {
-    "pushed": "2026-11-12",
+    "pushed": "2026-11-13",
     "screenshots": {
       "": "https://github.com/materemias/omp-stretch/raw/master/docs/stretch.gif"
     },
-    "stars": 10,
+    "stars": 11,
     "status": null
   },
   "materemias/tern-awui": {
@@ -792,7 +792,7 @@
     "status": null
   },
   "mk-wang/tern-workspaces": {
-    "pushed": "2026-11-09",
+    "pushed": "2026-11-14",
     "stars": 0,
     "status": null
   },
@@ -801,7 +801,7 @@
     "screenshots": {
       "": "https://github.com/mmnavarr/overseer/raw/main/docs/images/tour.png"
     },
-    "stars": 107,
+    "stars": 108,
     "status": null
   },
   "mreishus/tern-plugins": {
@@ -860,7 +860,7 @@
     "screenshots": {
       "": "https://github.com/peterrauscher/tern-linear/raw/main/docs/images/board.png"
     },
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "pfTheTrial/tern-ai-limits": {
@@ -880,7 +880,7 @@
     "status": null
   },
   "plumj-am/nixos": {
-    "pushed": "2026-11-12",
+    "pushed": "2026-11-13",
     "stars": 6,
     "status": null
   },
@@ -967,7 +967,7 @@
     "screenshots": {
       "": "https://github.com/saanuregh/tern-agents-ui/raw/main/docs/screenshot.png"
     },
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "saavy1/saavy_cloud": {
@@ -1011,8 +1011,8 @@
     "status": null
   },
   "stencil-hq/tern-sdk": {
-    "pushed": "2026-11-12",
-    "stars": 127,
+    "pushed": "2026-11-14",
+    "stars": 129,
     "status": null
   },
   "taooceros/tern-csv": {
@@ -1040,7 +1040,7 @@
     "status": null
   },
   "tdortman/dotfiles": {
-    "pushed": "2026-11-12",
+    "pushed": "2026-11-14",
     "stars": 1,
     "status": null
   },
@@ -1071,11 +1071,11 @@
     "status": null
   },
   "thegeneralist01/tern-projects": {
-    "pushed": "2026-11-12",
+    "pushed": "2026-11-13",
     "screenshots": {
       "": "https://github.com/thegeneralist01/tern-projects/raw/main/docs/screenshots/showcase-overview.png"
     },
-    "stars": 21,
+    "stars": 23,
     "status": null
   },
   "theoparis/nix-tern": {
@@ -1191,7 +1191,7 @@
     "screenshots": {
       "": "https://github.com/zachristmas/tern-azdo/raw/main/docs/list.png"
     },
-    "stars": 0,
+    "stars": 1,
     "status": null
   },
   "zachristmas/tern-mssql": {
@@ -1224,9 +1224,8 @@
     "status": null
   },
   "zsxawerdu/tern-jj-diff": {
-    "pushed": "2026-10-08",
-    "stars": 1,
-    "status": null
+    "stars": 0,
+    "status": "unavailable"
   },
   "zyzhou-s-lab/carly-switch": {
     "pushed": "2026-10-15",
