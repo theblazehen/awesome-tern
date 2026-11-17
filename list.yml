@@ -83,6 +83,11 @@ sections:
       url: https://github.com/materemias/omp-stretch
       kind: extension
       description: Shows each omp reply in Tern as its gist, with linked phrases that grow their detail in place when clicked, and tells the model which parts you opened.
+    - name: omp-account
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/omp-account
+      kind: extension
+      description: Adds an `/account` command that picks which OAuth account of the model's provider an omp conversation uses, keeps it pinned across resumes and shows it in the status line, so two subscriptions share one profile.
+      repo: Emirfs/tern-plugins
   - title: Usage and quotas
     entries:
     - name: tern-omp-usage-dashboard
