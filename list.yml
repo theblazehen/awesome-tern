@@ -89,10 +89,11 @@ sections:
       url: https://github.com/wolfiesch/tern-omp-usage-dashboard
       kind: plugin
       description: Native pane of omp provider quotas for every account, with remaining bars, reset countdowns and explicit login, stale and no-data states.
-    - name: tern-plugins (Emirfs)
-      url: https://github.com/Emirfs/tern-plugins
+    - name: omp-usage
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/omp-usage
       kind: plugin
-      description: Collection with a pane of remaining limits for every account across omp profiles, a display of which omp profile each pane runs, and a split-columns layout helper.
+      description: Shows the remaining limits of every account across all omp profiles in one pane, counting an account signed in to several profiles once, with per-provider totals and a layout that never scrolls; the interface is in Turkish.
+      repo: Emirfs/tern-plugins
     - name: omp-cache-meter
       url: https://github.com/andreiverdes/omp-cache-meter
       kind: extension
@@ -316,6 +317,11 @@ sections:
       url: https://github.com/rezhajulio/workspaces-sidebar
       kind: plugin
       description: Pins a workspace sidebar to every tab that lists sessions and their tabs as a tree, with live badges for waiting agents, running and failed commands, one-click switching, tab color tags, and attention-jump keybindings.
+    - name: omp-profile
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/omp-profile
+      kind: plugin
+      description: Shows which omp profile each pane runs in the tab title and status line, and in every split's header through a bundled omp extension.
+      repo: Emirfs/tern-plugins
     - name: tern-projects
       url: https://github.com/thegeneralist01/tern-projects
       kind: plugin
@@ -388,6 +394,11 @@ sections:
       kind: plugin
       description: Window plugin with an IDE-style four-pane layout, set split ratios, and an omp pane, packaged with Nix inside a NixOS config.
       repo: plumj-am/nixos
+    - name: split-columns
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/split-columns
+      kind: plugin
+      description: Rebuilds a grid of split rows as columns, keeping programs running, so each column's horizontal divider moves on its own.
+      repo: Emirfs/tern-plugins
     - name: tern-tab-search
       url: https://github.com/cgasgarth/tern-tab-search
       kind: plugin
