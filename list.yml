@@ -639,6 +639,10 @@ sections:
       url: https://github.com/edheltzel/GitButler-for-Tern
       kind: plugin
       description: GitButler workspaces in Tern, with a status-bar segment, a workspace block with one lane per branch stack and a diff block.
+    - name: tern-git-graph
+      url: https://github.com/AlessioBolpagni98/tern-git-graph
+      kind: plugin
+      description: Draws every branch as colored lanes beside the commit table, in a quick look or a left sidebar, with the selected commit's files and diffs beside it.
   - title: Review and feedback
     entries:
     - name: Tern Reviewr
