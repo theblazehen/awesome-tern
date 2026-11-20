@@ -89,7 +89,7 @@
     "status": null
   },
   "Emirfs/tern-plugins": {
-    "pushed": "2026-11-18",
+    "pushed": "2026-11-20",
     "stars": 0,
     "status": null
   },
@@ -471,7 +471,7 @@
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 39507,
+    "stars": 39519,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -1104,7 +1104,7 @@
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-11-20",
-    "stars": 135,
+    "stars": 136,
     "status": null
   },
   "taooceros/tern-csv": {
