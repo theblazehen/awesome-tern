@@ -402,7 +402,7 @@ sections:
     - name: Jumpr
       url: https://github.com/starkedev/jumpr
       kind: plugin
-      description: Keyboard-driven list of the omp agents you start from it, grouped by project with one list per machine, where moving through the list brings each agent's tab to the front as a live preview.
+      description: Keyboard-driven list of the coding agents you start from it, omp or any agent Tern's ACP chat runs such as Claude Code, grouped by project with one list per machine, where moving through the list brings each agent's tab to the front as a live preview.
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
