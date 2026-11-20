@@ -56,6 +56,14 @@
     "stars": 2,
     "status": null
   },
+  "DeprecatedLuke/tern-simple-agent-sidebar": {
+    "pushed": "2026-11-13",
+    "screenshots": {
+      "": "https://github.com/DeprecatedLuke/tern-simple-agent-sidebar/raw/main/docs/screenshot-light.png"
+    },
+    "stars": 0,
+    "status": null
+  },
   "DinMon/tern-omp-vimnav": {
     "pushed": "2026-10-07",
     "screenshots": {
@@ -85,6 +93,14 @@
     "stars": 0,
     "status": null
   },
+  "EternityX/tern-notch": {
+    "pushed": "2026-11-10",
+    "screenshots": {
+      "": "https://github.com/EternityX/tern-notch/raw/main/docs/screenshot.png"
+    },
+    "stars": 0,
+    "status": null
+  },
   "Evolt0/tern-go-navigation": {
     "pushed": "2026-11-02",
     "screenshots": {
@@ -98,11 +114,21 @@
     "stars": 1,
     "status": null
   },
+  "Explorer-cc/tern-doc-zh": {
+    "pushed": "2026-11-13",
+    "stars": 0,
+    "status": null
+  },
   "FR-HL/tern-quotadeck": {
     "pushed": "2026-10-31",
     "screenshots": {
       "": "https://github.com/FR-HL/tern-quotadeck/raw/main/docs/preview.png"
     },
+    "stars": 0,
+    "status": null
+  },
+  "Fiasco071/tern-claude": {
+    "pushed": "2026-11-13",
     "stars": 0,
     "status": null
   },
@@ -154,6 +180,11 @@
     "stars": 1,
     "status": null
   },
+  "Justar96/tern-agent-resume": {
+    "pushed": "2026-11-12",
+    "stars": 0,
+    "status": null
+  },
   "KinseyD/LastFry": {
     "pushed": "2026-11-19",
     "screenshots": {
@@ -200,6 +231,14 @@
   "Mouriya-Emma/omp-thinking-translator": {
     "pushed": "2026-11-20",
     "stars": 1,
+    "status": null
+  },
+  "MrsKugla/custom-script-buttons": {
+    "pushed": "2026-11-19",
+    "screenshots": {
+      "": "https://github.com/MrsKugla/custom-script-buttons/raw/main/docs/overview.png"
+    },
+    "stars": 0,
     "status": null
   },
   "MrsKugla/omp-tiles-plugin": {
@@ -270,6 +309,11 @@
     "stars": 4,
     "status": null
   },
+  "ThomasLewis1028/tern-navi": {
+    "pushed": "2026-11-12",
+    "stars": 0,
+    "status": null
+  },
   "Unravl/tern-plugins": {
     "pushed": "2026-10-22",
     "stars": 2,
@@ -318,6 +362,14 @@
       "": "https://github.com/alt-glitch/hermes-tern/raw/main/docs/images/transcript.png"
     },
     "stars": 6,
+    "status": null
+  },
+  "alt-glitch/tern-plugins": {
+    "pushed": "2026-11-15",
+    "screenshots": {
+      "prs": "https://github.com/alt-glitch/tern-plugins/raw/main/prs/docs/page-conversation.png"
+    },
+    "stars": 0,
     "status": null
   },
   "amuluze/provider-quota": {
@@ -419,7 +471,7 @@
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 39505,
+    "stars": 39507,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -482,6 +534,14 @@
     "stars": 0,
     "status": null
   },
+  "dbydd/tern-colab": {
+    "pushed": "2026-11-19",
+    "screenshots": {
+      "": "https://github.com/dbydd/tern-colab/raw/main/assets/screenshot.png"
+    },
+    "stars": 0,
+    "status": null
+  },
   "dbydd/tern-datablender": {
     "pushed": "2026-10-31",
     "screenshots": {
@@ -511,6 +571,11 @@
   "duzui300/tern-plugins": {
     "pushed": "2026-11-20",
     "stars": 1,
+    "status": null
+  },
+  "eboyko/stencil-highlighter": {
+    "pushed": "2026-11-19",
+    "stars": 0,
     "status": null
   },
   "edcnogueira/tern-agent-radar": {
@@ -609,8 +674,13 @@
     "stars": 0,
     "status": null
   },
+  "ivansnow02/tern-acp-fold": {
+    "pushed": "2026-11-11",
+    "stars": 0,
+    "status": null
+  },
   "jinhyeok694/omp-tern-korean": {
-    "pushed": "2026-11-19",
+    "pushed": "2026-11-20",
     "stars": 2,
     "status": null
   },
@@ -690,6 +760,11 @@
   "kenXengineering/tern-periscope": {
     "pushed": "2026-10-23",
     "stars": 1,
+    "status": null
+  },
+  "kingxuchen/tern-line-boxes": {
+    "pushed": "2026-11-13",
+    "stars": 0,
     "status": null
   },
   "kyle-elliott/tern-spotify": {
@@ -997,6 +1072,14 @@
     "stars": 2,
     "status": null
   },
+  "sgammon/bazel-tern": {
+    "pushed": "2026-11-14",
+    "screenshots": {
+      "": "https://raw.githubusercontent.com/sgammon/bazel-tern/main/media/tern-bazel-preview.png"
+    },
+    "stars": 2,
+    "status": null
+  },
   "skaft-software/octet": {
     "pushed": "2026-11-20",
     "stars": 238,
@@ -1236,10 +1319,6 @@
     },
     "stars": 3,
     "status": null
-  },
-  "zsxawerdu/tern-jj-diff": {
-    "stars": 0,
-    "status": "unavailable"
   },
   "zyzhou-s-lab/carly-switch": {
     "pushed": "2026-10-15",
