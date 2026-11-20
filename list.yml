@@ -83,16 +83,28 @@ sections:
       url: https://github.com/materemias/omp-stretch
       kind: extension
       description: Shows each omp reply in Tern as its gist, with linked phrases that grow their detail in place when clicked, and tells the model which parts you opened.
+    - name: omp-account
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/omp-account
+      kind: extension
+      description: Adds an `/account` command to choose an OAuth account for the current model provider, remember the choice when the conversation resumes and show it in the status line.
+      repo: Emirfs/tern-plugins
+    - name: omp-artifacts
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/omp-artifacts
+      kind: extension
+      description: Gives omp a versioned artifact tool for pages, diagrams, documents and code, with a browser pane docked beside the conversation in Tern.
+      repo: Emirfs/tern-plugins
   - title: Usage and quotas
     entries:
     - name: tern-omp-usage-dashboard
       url: https://github.com/wolfiesch/tern-omp-usage-dashboard
       kind: plugin
       description: Native pane of omp provider quotas for every account, with remaining bars, reset countdowns and explicit login, stale and no-data states.
-    - name: tern-plugins (Emirfs)
-      url: https://github.com/Emirfs/tern-plugins
+    - name: omp-usage
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/omp-usage
       kind: plugin
-      description: Collection with a pane of remaining limits for every account across omp profiles, a display of which omp profile each pane runs, and a split-columns layout helper.
+      description: Shows remaining quota and reset times for every account across omp profiles in one Turkish or English pane, counting accounts shared by multiple profiles only once.
+      repo: Emirfs/tern-plugins
+      screenshot: https://raw.githubusercontent.com/Emirfs/tern-plugins/HEAD/omp-usage/docs/screenshot-dark.png
     - name: omp-cache-meter
       url: https://github.com/andreiverdes/omp-cache-meter
       kind: extension
@@ -321,6 +333,11 @@ sections:
       url: https://github.com/rezhajulio/workspaces-sidebar
       kind: plugin
       description: Pins a workspace sidebar to every tab that lists sessions and their tabs as a tree, with live badges for waiting agents, running and failed commands, one-click switching, tab color tags, and attention-jump keybindings.
+    - name: omp-profile
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/omp-profile
+      kind: plugin
+      description: Shows which omp profile each pane runs in the tab title and status line, and in every split's header through a bundled omp extension.
+      repo: Emirfs/tern-plugins
     - name: tern-projects
       url: https://github.com/thegeneralist01/tern-projects
       kind: plugin
@@ -393,6 +410,11 @@ sections:
       kind: plugin
       description: Window plugin with an IDE-style four-pane layout, set split ratios, and an omp pane, packaged with Nix inside a NixOS config.
       repo: plumj-am/nixos
+    - name: split-columns
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/split-columns
+      kind: plugin
+      description: Rebuilds a grid of split rows as columns, keeping programs running, so each column's horizontal divider moves on its own.
+      repo: Emirfs/tern-plugins
     - name: tern-tab-search
       url: https://github.com/cgasgarth/tern-tab-search
       kind: plugin
@@ -454,6 +476,11 @@ sections:
       kind: plugin
       description: Watches and steers herdr-core terminals and agents in a block, with a status tree, needs-you filters, an activity inbox, logs, toasts and confirmed send and interrupt actions.
       repo: DarkoKuzmanovic/tern-herd
+    - name: hermes-bridge
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/hermes-bridge
+      kind: plugin
+      description: Connects Carly, Hermes and omp so they can hand off tasks, open agent tabs and jump to live per-device Hermes conversations.
+      repo: Emirfs/tern-plugins
   - title: Remote hosts
     blurb: 'Working across machines: connecting to hosts, and moving files, clipboard images and links between local and remote panes.'
     entries:
@@ -494,6 +521,11 @@ sections:
       description: Phone and browser web app for the omp agents running in Tern, reached over Tailscale, with sessions grouped by project and two-way control for prompts, questions, model choice, rewind and push notifications.
   - title: Themes and appearance
     entries:
+    - name: Mods (Emirfs)
+      url: https://github.com/Emirfs/tern-plugins/tree/HEAD/mods
+      kind: plugin
+      description: Adds a native settings panel for eleven switchable Tern UI tweaks, including tab styles, profile colors, wallpaper, focus and privacy modes, plus custom CSS.
+      repo: Emirfs/tern-plugins
     - name: tern-wide-autocomplete
       url: https://github.com/doyouing/tern-wide-autocomplete
       kind: plugin
