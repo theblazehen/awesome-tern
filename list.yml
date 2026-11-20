@@ -775,6 +775,10 @@ sections:
       kind: plugin
       description: Finds pytest, unittest, vitest and jest tests, runs them with each failure's trace beside its source line, and opens beside an agent to show the pytest and unittest runs it starts as they happen.
       repo: sneaky-bulgarian/tern-plugins
+    - name: qualflare-tern
+      url: https://github.com/Qualflare/qualflare-tern
+      kind: plugin
+      description: Offers to upload test results to Qualflare when a test run writes a report, turns `qf` output into cards and tables, and adds panes for a project's latest launches and its quality dashboard.
 - title: Media and fun
   blurb: Music, games, toys, and whatever doesn't fit anywhere else.
   sections:
