@@ -222,6 +222,10 @@ sections:
       kind: plugin
       description: Shows the scheduled jobs and host health of a tackroom agent-config repo as a native block, with Run now, Pause and Resume for launchd jobs.
       repo: yourconscience/tackroom
+    - name: tern-navi
+      url: https://github.com/ThomasLewis1028/tern-navi
+      kind: plugin
+      description: Floating Battle Network-style Navi whose mugshot, glow and toasts follow each omp agent's state, with the gist of its last reply, Focus and Stop buttons, and a persona folder for its name, voice, colors and art.
   - title: Orchestration
     entries:
     - name: tern-dsh-web
@@ -408,6 +412,18 @@ sections:
       kind: plugin
       description: Herdr-style sidebar for workspaces and coding agents across local and VPS hosts.
       screenshot: https://github.com/Aft1n/switchboard/raw/main/docs/images/sidebar.png
+    - name: tern-agent-resume
+      url: https://github.com/Justar96/tern-agent-resume
+      kind: plugin
+      description: Brings Claude Code, Codex, pi, omp, opencode, Copilot and Gemini back into their own conversations after Tern or the machine restarts, reusing the flags and environment they were started with.
+    - name: tern-claude
+      url: https://github.com/Fiasco071/tern-claude
+      kind: app
+      description: Board of every Claude Code session on the machine as cards with folder, branch, last prompt and prompt count, to continue, fork, hand off with a short brief, or close; made on Windows, with untested Linux support and no running-session detection on macOS.
+    - name: tern-simple-agent-sidebar
+      url: https://github.com/DeprecatedLuke/tern-simple-agent-sidebar
+      kind: plugin
+      description: Agent rail on every tab, reworked from tern-agent-nav, that groups agents by working directory and shows each one's current work, its subagent tree with todo progress and its running background jobs.
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
@@ -517,6 +533,10 @@ sections:
       url: https://github.com/f81/tern-remote-ports
       kind: plugin
       description: Forwards ports from ssh hosts to localhost by picking one of the ports listening there, with a panel to open or stop each forward and a status-line count.
+    - name: tern-colab
+      url: https://github.com/dbydd/tern-colab
+      kind: plugin
+      description: Starts Google Colab CPU, GPU and TPU runtimes from a popup panel and opens each in an SSH split, with the Compute Units balance and a `~/.ssh/config` ProxyCommand generator.
   - title: Companion apps
     blurb: Apps that reach Tern's sessions or agents from outside Tern, on the web, a phone or the desktop.
     entries:
@@ -524,6 +544,10 @@ sections:
       url: https://github.com/materemias/tern-awui
       kind: companion
       description: Phone and browser web app for the omp agents running in Tern, reached over Tailscale, with sessions grouped by project and two-way control for prompts, questions, model choice, rewind and push notifications.
+    - name: tern-notch
+      url: https://github.com/EternityX/tern-notch
+      kind: plugin
+      description: Shows omp agent activity, usage and pending questions in the MacBook notch, which opens on hover into a prompt box for messages, slash commands and model and effort changes; macOS 14 or later.
   - title: Themes and appearance
     entries:
     - name: Mods (Emirfs)
@@ -584,6 +608,14 @@ sections:
       kind: plugin
       description: Replaces your avatar in Spine chats with a picture of your choice and puts a tinted, rounded background behind your own messages.
       repo: ryosuz/tern
+    - name: tern-line-boxes
+      url: https://github.com/kingxuchen/tern-line-boxes
+      kind: plugin
+      description: Loosens the line height on the status line, composer caption, tool rows, slash list, block bar and sidebar host row so descenders like g and y are no longer clipped.
+    - name: tern-acp-fold
+      url: https://github.com/ivansnow02/tern-acp-fold
+      kind: plugin
+      description: Folds runs of finished tool calls and thoughts in Tern's agent chat into one line that names the work and sums its time, leaving running and approval-pending items open.
   - title: Localization
     entries:
     - name: tern-zh-cn
@@ -603,10 +635,6 @@ sections:
       url: https://github.com/resYuto/tern-jj
       kind: plugin
       description: Displays `jj status` and `jj st` output as a read-only native card with added, modified and deleted files colored to match the Tern theme.
-    - name: tern-jj-diff
-      url: https://github.com/zsxawerdu/tern-jj-diff
-      kind: plugin
-      description: Renders `jj diff` and `jj show` output as a native view with summary badges and one collapsible section per file, filling the gap left by Tern's built-in `jj st` and `jj log` views.
     - name: TernGitButler
       url: https://github.com/edheltzel/GitButler-for-Tern
       kind: plugin
@@ -641,6 +669,15 @@ sections:
       url: https://github.com/zachristmas/tern-azdo
       kind: app
       description: Lists the active Azure DevOps pull requests of a whole organization, with diffs, comment threads, votes and a one-click AI review that starts a coding agent in a new block.
+    - name: stencil-highlighter
+      url: https://github.com/eboyko/stencil-highlighter
+      kind: plugin
+      description: Collects comments on text you select in a file, git view, terminal or chat, keeps them in a paired omp extension, and sends the batch to the agent as one message.
+    - name: Pull requests (alt-glitch)
+      url: https://github.com/alt-glitch/tern-plugins/tree/HEAD/prs
+      kind: plugin
+      description: Lists your open pull requests and the ones waiting on your review through the GitHub CLI, and opens one's conversation, checks and diffs in a block with merge, close, approve and review actions.
+      repo: alt-glitch/tern-plugins
   - title: Issues and tasks
     entries:
     - name: tern-tracker
@@ -821,6 +858,14 @@ sections:
       url: https://github.com/Qualflare/qualflare-tern
       kind: plugin
       description: Offers to upload test results to Qualflare when a test run writes a report, turns `qf` output into cards and tables, and adds panes for a project's latest launches and its quality dashboard.
+    - name: bazel-tern
+      url: https://github.com/sgammon/bazel-tern
+      kind: plugin
+      description: Turns ordinary `bazel`, `bazelisk` and `bb` commands into native build, test, run and query views with live action progress, a test grid, failures linked to source lines and BuildBuddy shortcuts.
+    - name: custom-script-buttons
+      url: https://github.com/MrsKugla/custom-script-buttons
+      kind: plugin
+      description: Block of colored buttons that each run a local script, streaming its output, exit status and duration and passing typed lines to its input; Windows only, with an Italian interface.
 - title: Media and fun
   blurb: Music, games, toys, and whatever doesn't fit anywhere else.
   sections:
@@ -948,6 +993,10 @@ sections:
       url: https://docs.stencil.so/tern/protocol/index.html
       kind: docs
       description: Specifies the in-band protocol where CLIs, TUIs, and agents send UI trees that Tern lays out and draws natively.
+    - name: tern-doc-zh
+      url: https://github.com/Explorer-cc/tern-doc-zh
+      kind: docs
+      description: Unofficial Simplified Chinese translation of the Tern plugin SDK and Surface Protocol documentation, published as a website.
   - title: SDKs and protocol libraries
     sort: manual
     entries:
