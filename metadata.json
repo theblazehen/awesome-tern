@@ -1,8 +1,8 @@
 {
   "0xGREG/tern-omp-layout-fixes": {
-    "pushed": "2026-10-09",
+    "pushed": "2026-11-21",
     "stars": 0,
-    "status": null
+    "status": "archived"
   },
   "Aft1n/switchboard": {
     "pushed": "2026-11-21",
@@ -233,7 +233,7 @@
     "status": null
   },
   "Mouriya-Emma/omp-thinking-translator": {
-    "pushed": "2026-11-20",
+    "pushed": "2026-11-21",
     "stars": 1,
     "status": null
   },
@@ -435,7 +435,7 @@
     "status": null
   },
   "blastworksai/tools": {
-    "pushed": "2026-11-21",
+    "pushed": "2026-11-22",
     "screenshots": {
       "plugins/tern/TODO": "https://github.com/blastworksai/tools/raw/main/plugins/tern/TODO/assets/screenshots/todo-blurred.png",
       "plugins/tern/USAGE": "https://github.com/blastworksai/tools/raw/main/plugins/tern/USAGE/assets/screenshots/usage-views.png",
@@ -471,11 +471,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-11-21",
+    "pushed": "2026-11-22",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 39565,
+    "stars": 39629,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -684,7 +684,7 @@
     "status": null
   },
   "jinhyeok694/omp-tern-korean": {
-    "pushed": "2026-11-21",
+    "pushed": "2026-11-22",
     "stars": 2,
     "status": null
   },
@@ -806,15 +806,15 @@
     "status": null
   },
   "materemias/codexbar-agentview": {
-    "pushed": "2026-11-09",
+    "pushed": "2026-11-21",
     "screenshots": {
-      "": "https://github.com/materemias/codexbar-agentview/raw/master/docs/kde.gif"
+      "": "https://github.com/materemias/codexbar-agentview/raw/master/docs/tern.gif"
     },
     "stars": 4,
     "status": null
   },
   "materemias/omp-stretch": {
-    "pushed": "2026-11-19",
+    "pushed": "2026-11-21",
     "screenshots": {
       "": "https://github.com/materemias/omp-stretch/raw/master/docs/stretch.gif"
     },
@@ -822,7 +822,7 @@
     "status": null
   },
   "materemias/tern-awui": {
-    "pushed": "2026-11-19",
+    "pushed": "2026-11-21",
     "screenshots": {
       "": "https://github.com/materemias/tern-awui/raw/main/docs/phone.gif"
     },
@@ -948,7 +948,7 @@
     "screenshots": {
       "": "https://github.com/peterrauscher/tern-linear/raw/main/docs/images/board.png"
     },
-    "stars": 2,
+    "stars": 3,
     "status": null
   },
   "pfTheTrial/tern-ai-limits": {
@@ -1086,7 +1086,7 @@
   },
   "skaft-software/octet": {
     "pushed": "2026-11-20",
-    "stars": 238,
+    "stars": 241,
     "status": null
   },
   "sneaky-bulgarian/tern-plugins": {
@@ -1108,7 +1108,7 @@
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-11-21",
-    "stars": 136,
+    "stars": 137,
     "status": null
   },
   "taooceros/tern-csv": {
@@ -1265,7 +1265,7 @@
     "status": null
   },
   "yourconscience/tackroom": {
-    "pushed": "2026-11-21",
+    "pushed": "2026-11-22",
     "stars": 10,
     "status": null
   },
