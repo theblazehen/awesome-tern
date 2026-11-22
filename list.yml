@@ -95,6 +95,10 @@ sections:
       repo: Emirfs/tern-plugins
   - title: Usage and quotas
     entries:
+    - name: tern-usage-rings
+      url: https://github.com/WyrmKeep/tern-usage-rings
+      kind: plugin
+      description: Shows each AI coding subscription's usage as a ring per provider docked under the side tabs, pooling several accounts into one figure, with every account's limits and reset times on hover.
     - name: tern-omp-usage-dashboard
       url: https://github.com/wolfiesch/tern-omp-usage-dashboard
       kind: plugin
