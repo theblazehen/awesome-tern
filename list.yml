@@ -464,6 +464,10 @@ sections:
       url: https://github.com/nahwan-kim/tern-herdr-keys
       kind: plugin
       description: Herdr-style spaces with ⌘⇧1…9 session jumps, a ⌘W that closes the block, then the tab, then the session, and a pinned default session per host; command titles are in Korean.
+    - name: tern-column-auto-resize
+      url: https://github.com/Lycaennaa/TernColumnAutoResize
+      kind: plugin
+      description: Keeps columns panes equal-width as they are split or closed. It treats vertically stacked panes as one column and preserves their vertical split ratios too.
   - title: Integrations
     blurb: Plugins that make Tern fit a setup you already work in, such as a multiplexer, editor, window manager or browser.
     entries:
