@@ -224,7 +224,7 @@
     "status": null
   },
   "MicroProofs/tern-difftastic": {
-    "pushed": "2026-11-09",
+    "pushed": "2026-11-23",
     "screenshots": {
       "": "https://github.com/MicroProofs/tern-difftastic/raw/main/docs/screenshot.png"
     },
@@ -496,7 +496,7 @@
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 39702,
+    "stars": 39715,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -1106,7 +1106,7 @@
     "status": null
   },
   "skaft-software/octet": {
-    "pushed": "2026-11-20",
+    "pushed": "2026-11-23",
     "stars": 244,
     "status": null
   },
