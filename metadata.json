@@ -218,6 +218,11 @@
     "stars": 2,
     "status": null
   },
+  "Lycaennaa/TernColumnAutoResize": {
+    "pushed": "2026-11-22",
+    "stars": 0,
+    "status": null
+  },
   "MicroProofs/tern-difftastic": {
     "pushed": "2026-11-09",
     "screenshots": {
@@ -329,6 +334,14 @@
   "Unravl/tern-plugins": {
     "pushed": "2026-10-22",
     "stars": 2,
+    "status": null
+  },
+  "WyrmKeep/tern-usage-rings": {
+    "pushed": "2026-11-22",
+    "screenshots": {
+      "": "https://github.com/WyrmKeep/tern-usage-rings/raw/main/screenshots/card.png"
+    },
+    "stars": 0,
     "status": null
   },
   "Yupmoh/tern-plugins": {
