@@ -467,7 +467,7 @@ sections:
     - name: tern-column-auto-resize
       url: https://github.com/Lycaennaa/TernColumnAutoResize
       kind: plugin
-      description: Keeps columns panes equal-width as they are split or closed. It treats vertically stacked panes as one column and preserves their vertical split ratios too.
+      description: Keeps columns equal-width as panes are split or closed, treating vertically stacked panes as one column and keeping their vertical split ratios, with an on/off toggle per tab.
   - title: Integrations
     blurb: Plugins that make Tern fit a setup you already work in, such as a multiplexer, editor, window manager or browser.
     entries:
