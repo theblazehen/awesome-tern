@@ -626,6 +626,10 @@ sections:
       description: Folds runs of finished tool calls and thoughts in Tern's agent chat into one line that names the work and sums its time, leaving running and approval-pending items open.
   - title: Localization
     entries:
+    - name: tern-chinese-plugin
+      url: https://github.com/maosasagawa/tern-chinese-plugin
+      kind: plugin
+      description: Complete Simplified Chinese localization for Tern covering all 14 native Settings pages (descriptions, options, buttons, and cross-OS layout), Command Palette tabs, footer and all 241 built-in actions, plus an interactive 337-setting Chinese Settings Center and Keybind Manager.
     - name: tern-zh-cn
       url: https://github.com/maicent/tern-zh-cn
       kind: plugin
