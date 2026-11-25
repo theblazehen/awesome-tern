@@ -523,7 +523,7 @@
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 39840,
+    "stars": 39856,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -656,7 +656,7 @@
   },
   "eggpeat/tern-jobs": {
     "pushed": "2026-10-23",
-    "stars": 1,
+    "stars": 0,
     "status": null
   },
   "emerycp/tern-notion-kanban": {
@@ -756,7 +756,7 @@
     "status": null
   },
   "jinhyeok694/omp-tern-korean": {
-    "pushed": "2026-11-24",
+    "pushed": "2026-11-25",
     "stars": 2,
     "status": null
   },
@@ -907,7 +907,7 @@
     "status": null
   },
   "materemias/tern-awui": {
-    "pushed": "2026-11-21",
+    "pushed": "2026-11-25",
     "screenshots": {
       "": "https://github.com/materemias/tern-awui/raw/main/docs/phone.gif"
     },
@@ -1206,7 +1206,7 @@
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-11-25",
-    "stars": 139,
+    "stars": 140,
     "status": null
   },
   "taooceros/tern-csv": {
