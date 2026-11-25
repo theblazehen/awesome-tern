@@ -629,7 +629,7 @@ sections:
     - name: tern-chinese-plugin
       url: https://github.com/maosasagawa/tern-chinese-plugin
       kind: plugin
-      description: Complete Simplified Chinese localization for Tern covering all 14 native Settings pages (descriptions, options, buttons, and cross-OS layout), Command Palette tabs, footer and all 241 built-in actions, plus an interactive 337-setting Chinese Settings Center and Keybind Manager.
+      description: Simplified Chinese translation of the native Settings dialog, command palette and tab bar, with Chinese palette entries for every built-in action and a Chinese settings center and keybind manager; it shares the `zh-cn` plugin id with tern-zh-cn, so only one of the two can be installed.
     - name: tern-zh-cn
       url: https://github.com/maicent/tern-zh-cn
       kind: plugin
