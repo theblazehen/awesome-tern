@@ -108,7 +108,6 @@ sections:
       kind: plugin
       description: Shows remaining quota and reset times for every account across omp profiles in one Turkish or English pane, counting accounts shared by multiple profiles only once.
       repo: Emirfs/tern-plugins
-      screenshot: https://raw.githubusercontent.com/Emirfs/tern-plugins/HEAD/omp-usage/docs/screenshot-dark.png
     - name: omp-cache-meter
       url: https://github.com/andreiverdes/omp-cache-meter
       kind: extension
@@ -174,6 +173,14 @@ sections:
       url: https://github.com/amuluze/provider-quota
       kind: plugin
       description: Shows every omp provider's quota windows, balances and login problems in a dashboard that tags the one with the most headroom, with a status-line summary; the interface is in Chinese.
+    - name: tern-agy-cache
+      url: https://github.com/ninthcj/tern-agy-cache
+      kind: plugin
+      description: Prompt-cache meter for Google Antigravity (`agy`) panes, with a hit-rate bar above each composer, a five-minute expiry countdown and a per-turn details canvas.
+    - name: tern-openrouter-free-requests
+      url: https://github.com/anagnorisis2peripeteia/tern-openrouter-free-requests
+      kind: plugin
+      description: Widget-bar meter of how many free-model requests your OpenRouter key has left today, with the key kept in the system keychain.
   - title: Status and dashboards
     entries:
     - name: tern-t3
@@ -230,6 +237,10 @@ sections:
       url: https://github.com/ThomasLewis1028/tern-navi
       kind: plugin
       description: Floating Battle Network-style Navi whose mugshot, glow and toasts follow each omp agent's state, with the gist of its last reply, Focus and Stop buttons, and a persona folder for its name, voice, colors and art.
+    - name: omp-tabs
+      url: https://github.com/lederniermagicien/omp-tabs
+      kind: plugin
+      description: Grows vertical tabs to up to three lines with each omp agent's state, todo progress, current task or pending question, and its directory.
   - title: Orchestration
     entries:
     - name: tern-dsh-web
@@ -256,6 +267,10 @@ sections:
       url: https://github.com/mmnavarr/overseer
       kind: plugin
       description: Panel listing every branch in flight with its worktree, agents, pull request and ticket, where each worktree gets its own Tern session.
+    - name: Flightdeck
+      url: https://github.com/itsjxck/flightdeck
+      kind: plugin
+      description: Fork of Overseer with a Mission control tab where a coordinator omp agent splits your goals into tasks for worker agents in their own Worktrunk worktrees; macOS only.
     - name: Forge Projects
       url: https://github.com/Moti-Velz/tern-forge/tree/main/projects
       kind: plugin
@@ -275,6 +290,10 @@ sections:
       kind: plugin
       description: Session-scoped orchestration on top of SPAWN, with durable controller ownership, managed dispatch, worker and coordinator rollover, an owner-approved landing queue and guided reload recovery.
       repo: blastworksai/tools
+    - name: tern-wingman
+      url: https://github.com/ninthcj/tern-wingman
+      kind: plugin
+      description: Lets a coding agent hand work to omp or other Tern agents in side panes or picture-in-picture through a skill and CLI, with editable queues, callbacks to the lead agent and a live panel of the agent tree.
   - title: Worktrees
     entries:
     - name: tern-worktrees
@@ -298,6 +317,10 @@ sections:
       url: https://github.com/ryankish/tern-worktree-sessions
       kind: plugin
       description: Gives each git worktree its own persistent session with tabs and panes you set in JSON, optional per-repository setup that asks questions before creating a worktree, and one-click push and pull request.
+    - name: dev-tern-plugin
+      url: https://github.com/gabrielmoreira/dev-tern-plugin
+      kind: plugin
+      description: Sidebar and status-bar widget for the `dev` multi-repository workspace CLI, with a workspace switcher that focuses already-open tabs and forms for creating workspaces, checking remotes and reviewing pull requests.
   - title: Notifications and alerts
     entries:
     - name: tern-pushover
@@ -428,6 +451,10 @@ sections:
       url: https://github.com/DeprecatedLuke/tern-simple-agent-sidebar
       kind: plugin
       description: Agent rail on every tab, reworked from tern-agent-nav, that groups agents by working directory and shows each one's current work, its subagent tree with todo progress and its running background jobs.
+    - name: tern-snapshot-plugin
+      url: https://github.com/MrsKugla/tern-snapshot-plugin
+      kind: plugin
+      description: Saves the window's sessions with their tabs, splits, open files and blocks to JSON and rebuilds the missing ones later, resuming omp agents in their conversations; Windows only, with an Italian interface.
   - title: Navigation, layout and input
     entries:
     - name: tern-ide layout
@@ -472,6 +499,15 @@ sections:
       url: https://github.com/Lycaennaa/TernColumnAutoResize
       kind: plugin
       description: Keeps columns equal-width as panes are split or closed, treating vertically stacked panes as one column and keeping their vertical split ratios, with an on/off toggle per tab.
+    - name: tern-better-sessions
+      url: https://github.com/aurbano/tern-better-sessions
+      kind: plugin
+      description: Lists sessions in the vertical sidebar and the current session's tabs in the top bar, with a show-or-hide button, width commands and a root folder per session for its new tabs.
+    - name: hints (oh-my-tern)
+      url: https://github.com/MaxYuan-max/oh-my-tern/tree/main/hints
+      kind: plugin
+      description: Lists the paths, links and agent resume commands on the focused pane's screen, newest first, and copies the one you pick; the interface is in Chinese.
+      repo: MaxYuan-max/oh-my-tern
   - title: Integrations
     blurb: Plugins that make Tern fit a setup you already work in, such as a multiplexer, editor, window manager or browser.
     entries:
@@ -809,6 +845,10 @@ sections:
       url: https://github.com/dbydd/tern-datablender
       kind: app
       description: Viewer for NetCDF, HDF5 and MATLAB data fields with a node-graph editor for filters, FFT and time shifts, blended layers and hover values, shipped as prebuilt binaries.
+    - name: tern-tenantctl
+      url: https://github.com/willstarnet/tern-tenantctl
+      kind: plugin
+      description: Renders output from the tenantctl Microsoft 365 admin CLI as native reports with ranked findings, tables whose rows open into details, and a panel that runs lookups and changes on a record.
   - title: System and developer tools
     entries:
     - name: tern-clock
@@ -882,6 +922,10 @@ sections:
       url: https://github.com/MrsKugla/custom-script-buttons
       kind: plugin
       description: Block of colored buttons that each run a local script, streaming its output, exit status and duration and passing typed lines to its input; Windows only, with an Italian interface.
+    - name: mise-tern-plugin
+      url: https://github.com/gabrielmoreira/mise-tern-plugin
+      kind: plugin
+      description: Native panel for the focused folder's mise tools and tasks, with merged, global and local views, installs, upgrades, a task editor and a review step that shows the exact command or TOML change first.
 - title: Media and fun
   blurb: Music, games, toys, and whatever doesn't fit anywhere else.
   sections:
