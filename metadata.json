@@ -100,7 +100,8 @@
     "pushed": "2026-11-20",
     "screenshots": {
       "hermes-bridge": "https://github.com/Emirfs/tern-plugins/raw/feat/tern-eklentisi/hermes-bridge/docs/screenshot.webp",
-      "mods": "https://github.com/Emirfs/tern-plugins/raw/feat/tern-eklentisi/mods/docs/screenshot.webp"
+      "mods": "https://github.com/Emirfs/tern-plugins/raw/feat/tern-eklentisi/mods/docs/screenshot.webp",
+      "omp-usage": "https://github.com/Emirfs/tern-plugins/raw/feat/tern-eklentisi/omp-usage/docs/screenshot.webp"
     },
     "stars": 0,
     "status": null
@@ -223,6 +224,11 @@
     "stars": 0,
     "status": null
   },
+  "MaxYuan-max/oh-my-tern": {
+    "pushed": "2026-11-23",
+    "stars": 0,
+    "status": null
+  },
   "MicroProofs/tern-difftastic": {
     "pushed": "2026-11-23",
     "screenshots": {
@@ -261,6 +267,14 @@
   "MrsKugla/omp-tiles-plugin": {
     "pushed": "2026-10-13",
     "stars": 1,
+    "status": null
+  },
+  "MrsKugla/tern-snapshot-plugin": {
+    "pushed": "2026-11-19",
+    "screenshots": {
+      "": "https://github.com/MrsKugla/tern-snapshot-plugin/raw/main/docs/widget.png"
+    },
+    "stars": 0,
     "status": null
   },
   "NaC-L/tern-mcp": {
@@ -405,6 +419,11 @@
     "stars": 3,
     "status": null
   },
+  "anagnorisis2peripeteia/tern-openrouter-free-requests": {
+    "pushed": "2026-11-16",
+    "stars": 0,
+    "status": null
+  },
   "andreiverdes/omp-cache-meter": {
     "pushed": "2026-11-10",
     "screenshots": {
@@ -419,6 +438,14 @@
       "": "https://github.com/arg3t/neotern/raw/main/docs/img/editor.png"
     },
     "stars": 11,
+    "status": null
+  },
+  "aurbano/tern-better-sessions": {
+    "pushed": "2026-11-20",
+    "screenshots": {
+      "": "https://github.com/aurbano/tern-better-sessions/raw/main/docs/screenshot.png"
+    },
+    "stars": 1,
     "status": null
   },
   "avcton/tern-backdrop": {
@@ -496,7 +523,7 @@
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 39838,
+    "stars": 39840,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -650,12 +677,28 @@
     "stars": 1,
     "status": null
   },
+  "gabrielmoreira/dev-tern-plugin": {
+    "pushed": "2026-11-18",
+    "screenshots": {
+      "": "https://github.com/gabrielmoreira/dev-tern-plugin/raw/main/docs/screenshot.png"
+    },
+    "stars": 0,
+    "status": null
+  },
   "gabrielmoreira/herdr-tern-plugin": {
     "pushed": "2026-10-05",
     "screenshots": {
       "": "https://github.com/gabrielmoreira/herdr-tern-plugin/raw/main/assets/picker.png"
     },
     "stars": 3,
+    "status": null
+  },
+  "gabrielmoreira/mise-tern-plugin": {
+    "pushed": "2026-11-18",
+    "screenshots": {
+      "": "https://github.com/gabrielmoreira/mise-tern-plugin/raw/main/docs/images/tools.png"
+    },
+    "stars": 0,
     "status": null
   },
   "getpipher/font-default": {
@@ -696,6 +739,14 @@
   },
   "ian139/tern-browser-profiles": {
     "pushed": "2026-10-15",
+    "stars": 0,
+    "status": null
+  },
+  "itsjxck/flightdeck": {
+    "pushed": "2026-11-23",
+    "screenshots": {
+      "": "https://github.com/itsjxck/flightdeck/raw/main/docs/images/mission-now-light.png"
+    },
     "stars": 0,
     "status": null
   },
@@ -800,6 +851,11 @@
   "larkinwc/tern-pushover": {
     "pushed": "2026-10-26",
     "stars": 0,
+    "status": null
+  },
+  "lederniermagicien/omp-tabs": {
+    "pushed": "2026-11-22",
+    "stars": 1,
     "status": null
   },
   "lfsmoura/tern-haptic-alert": {
@@ -950,6 +1006,19 @@
       "": "https://github.com/nibblebot/tern-worktree/raw/main/assets/worktree-demo.gif"
     },
     "stars": 3,
+    "status": null
+  },
+  "ninthcj/tern-agy-cache": {
+    "pushed": "2026-11-19",
+    "screenshots": {
+      "": "https://github.com/ninthcj/tern-agy-cache/raw/main/assets/preview.png"
+    },
+    "stars": 0,
+    "status": null
+  },
+  "ninthcj/tern-wingman": {
+    "pushed": "2026-11-25",
+    "stars": 0,
     "status": null
   },
   "ocasazza/tern-balatro": {
@@ -1244,6 +1313,11 @@
       "": "https://github.com/willstarnet/tern-git-fx/raw/main/docs/images/sprites-preview.png"
     },
     "stars": 1,
+    "status": null
+  },
+  "willstarnet/tern-tenantctl": {
+    "pushed": "2026-11-23",
+    "stars": 0,
     "status": null
   },
   "wolfiesch/omp-side": {
