@@ -5,7 +5,7 @@
     "status": "archived"
   },
   "Aft1n/switchboard": {
-    "pushed": "2026-11-21",
+    "pushed": "2026-11-24",
     "stars": 1,
     "status": null
   },
@@ -127,7 +127,7 @@
     "status": null
   },
   "Explorer-cc/tern-doc-zh": {
-    "pushed": "2026-11-13",
+    "pushed": "2026-11-23",
     "stars": 0,
     "status": null
   },
@@ -146,7 +146,7 @@
   },
   "Ghost-9/pi-tern": {
     "pushed": "2026-10-31",
-    "stars": 13,
+    "stars": 14,
     "status": null
   },
   "H4vC/tern-CDP-tidal": {
@@ -189,7 +189,7 @@
     "screenshots": {
       "": "https://github.com/JakobMusik/tern-objectives/raw/main/docs/graph.png"
     },
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "Justar96/tern-agent-resume": {
@@ -246,7 +246,7 @@
     "status": null
   },
   "Mouriya-Emma/omp-thinking-translator": {
-    "pushed": "2026-11-22",
+    "pushed": "2026-11-23",
     "stars": 1,
     "status": null
   },
@@ -323,7 +323,7 @@
   },
   "TazeDiB/Toons-Tern": {
     "pushed": "2026-10-08",
-    "stars": 4,
+    "stars": 5,
     "status": null
   },
   "ThomasLewis1028/tern-navi": {
@@ -337,7 +337,7 @@
     "status": null
   },
   "WyrmKeep/tern-usage-rings": {
-    "pushed": "2026-11-22",
+    "pushed": "2026-11-23",
     "screenshots": {
       "": "https://github.com/WyrmKeep/tern-usage-rings/raw/main/screenshots/card.png"
     },
@@ -456,7 +456,7 @@
     "status": null
   },
   "blastworksai/tools": {
-    "pushed": "2026-11-22",
+    "pushed": "2026-11-24",
     "screenshots": {
       "plugins/tern/TODO": "https://github.com/blastworksai/tools/raw/main/plugins/tern/TODO/assets/screenshots/todo-blurred.png",
       "plugins/tern/USAGE": "https://github.com/blastworksai/tools/raw/main/plugins/tern/USAGE/assets/screenshots/usage-views.png",
@@ -492,11 +492,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-11-23",
+    "pushed": "2026-11-25",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 39715,
+    "stars": 39838,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -521,7 +521,7 @@
     "status": null
   },
   "contrafy/tern-grafana": {
-    "pushed": "2026-11-13",
+    "pushed": "2026-11-25",
     "screenshots": {
       "": "https://github.com/contrafy/tern-grafana/raw/master/docs/screenshots/dashboard.png"
     },
@@ -551,7 +551,7 @@
   },
   "d3d0n/terngram": {
     "pushed": "2026-10-05",
-    "stars": 4,
+    "stars": 38,
     "status": null
   },
   "dbydd/power-surge": {
@@ -594,7 +594,7 @@
     "status": null
   },
   "duzui300/tern-plugins": {
-    "pushed": "2026-11-20",
+    "pushed": "2026-11-25",
     "stars": 1,
     "status": null
   },
@@ -646,7 +646,7 @@
     "status": null
   },
   "foxzool/tern-tracker": {
-    "pushed": "2026-10-14",
+    "pushed": "2026-11-24",
     "stars": 1,
     "status": null
   },
@@ -705,7 +705,7 @@
     "status": null
   },
   "jinhyeok694/omp-tern-korean": {
-    "pushed": "2026-11-23",
+    "pushed": "2026-11-24",
     "stars": 2,
     "status": null
   },
@@ -826,6 +826,14 @@
     "stars": 15,
     "status": null
   },
+  "maosasagawa/tern-chinese-plugin": {
+    "pushed": "2026-11-25",
+    "screenshots": {
+      "": "https://github.com/maosasagawa/tern-chinese-plugin/raw/main/docs/preview.png"
+    },
+    "stars": 0,
+    "status": null
+  },
   "materemias/codexbar-agentview": {
     "pushed": "2026-11-21",
     "screenshots": {
@@ -839,7 +847,7 @@
     "screenshots": {
       "": "https://github.com/materemias/omp-stretch/raw/master/docs/stretch.gif"
     },
-    "stars": 13,
+    "stars": 14,
     "status": null
   },
   "materemias/tern-awui": {
@@ -910,7 +918,7 @@
     "screenshots": {
       "": "https://github.com/mmnavarr/overseer/raw/main/docs/images/tour.png"
     },
-    "stars": 114,
+    "stars": 115,
     "status": null
   },
   "mreishus/tern-plugins": {
@@ -989,7 +997,7 @@
     "status": null
   },
   "plumj-am/nixos": {
-    "pushed": "2026-11-21",
+    "pushed": "2026-11-25",
     "stars": 6,
     "status": null
   },
@@ -1107,7 +1115,7 @@
   },
   "skaft-software/octet": {
     "pushed": "2026-11-23",
-    "stars": 244,
+    "stars": 246,
     "status": null
   },
   "sneaky-bulgarian/tern-plugins": {
@@ -1120,7 +1128,7 @@
     "status": null
   },
   "starkedev/jumpr": {
-    "pushed": "2026-11-23",
+    "pushed": "2026-11-25",
     "screenshots": {
       "": "https://github.com/starkedev/jumpr/raw/main/docs/jumpr.png"
     },
@@ -1128,7 +1136,7 @@
     "status": null
   },
   "stencil-hq/tern-sdk": {
-    "pushed": "2026-11-23",
+    "pushed": "2026-11-25",
     "stars": 139,
     "status": null
   },
@@ -1157,12 +1165,12 @@
     "status": null
   },
   "tdortman/dotfiles": {
-    "pushed": "2026-11-23",
+    "pushed": "2026-11-24",
     "stars": 1,
     "status": null
   },
   "tdortman/tern-plugins": {
-    "pushed": "2026-11-23",
+    "pushed": "2026-11-24",
     "stars": 0,
     "status": null
   },
@@ -1235,7 +1243,7 @@
     "screenshots": {
       "": "https://github.com/willstarnet/tern-git-fx/raw/main/docs/images/sprites-preview.png"
     },
-    "stars": 2,
+    "stars": 1,
     "status": null
   },
   "wolfiesch/omp-side": {
@@ -1309,7 +1317,7 @@
     "status": null
   },
   "zachristmas/tern-azdo": {
-    "pushed": "2026-11-09",
+    "pushed": "2026-11-23",
     "screenshots": {
       "": "https://github.com/zachristmas/tern-azdo/raw/main/docs/list.png"
     },
