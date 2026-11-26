@@ -52,11 +52,11 @@
     "status": null
   },
   "Dangerboi/tern-kata": {
-    "pushed": "2026-11-20",
+    "pushed": "2026-11-26",
     "screenshots": {
       "": "https://github.com/Dangerboi/tern-kata/raw/main/docs/images/tern-kata.png"
     },
-    "stars": 9,
+    "stars": 12,
     "status": null
   },
   "DarkoKuzmanovic/tern-herd": {
@@ -77,7 +77,7 @@
     "screenshots": {
       "": "https://github.com/DinMon/tern-omp-vimnav/raw/main/docs/vimnav-demo.webp"
     },
-    "stars": 1,
+    "stars": 2,
     "status": null
   },
   "DoraJasmine/dora-tern-omp-usage": {
@@ -166,7 +166,7 @@
     "status": null
   },
   "ITSyndicate25/tern-mizu": {
-    "pushed": "2026-10-08",
+    "pushed": "2026-11-26",
     "stars": 5,
     "status": null
   },
@@ -176,7 +176,7 @@
     "status": null
   },
   "ITSyndicate25/tern-vscode-dark": {
-    "pushed": "2026-10-15",
+    "pushed": "2026-11-26",
     "stars": 2,
     "status": null
   },
@@ -225,7 +225,7 @@
     "status": null
   },
   "MaxYuan-max/oh-my-tern": {
-    "pushed": "2026-11-23",
+    "pushed": "2026-11-26",
     "stars": 0,
     "status": null
   },
@@ -252,7 +252,7 @@
     "status": null
   },
   "Mouriya-Emma/omp-thinking-translator": {
-    "pushed": "2026-11-23",
+    "pushed": "2026-11-25",
     "stars": 1,
     "status": null
   },
@@ -519,11 +519,11 @@
     "status": null
   },
   "can1357/oh-my-pi": {
-    "pushed": "2026-11-25",
+    "pushed": "2026-11-26",
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 39856,
+    "stars": 39932,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -626,7 +626,7 @@
     "status": null
   },
   "eboyko/stencil-highlighter": {
-    "pushed": "2026-11-19",
+    "pushed": "2026-11-26",
     "stars": 0,
     "status": null
   },
@@ -756,7 +756,7 @@
     "status": null
   },
   "jinhyeok694/omp-tern-korean": {
-    "pushed": "2026-11-25",
+    "pushed": "2026-11-26",
     "stars": 2,
     "status": null
   },
@@ -879,7 +879,7 @@
     "screenshots": {
       "": "https://github.com/maicent/tern-zh-cn/raw/main/docs/screenshot.png"
     },
-    "stars": 15,
+    "stars": 16,
     "status": null
   },
   "maosasagawa/tern-chinese-plugin": {
@@ -891,7 +891,7 @@
     "status": null
   },
   "materemias/codexbar-agentview": {
-    "pushed": "2026-11-21",
+    "pushed": "2026-11-26",
     "screenshots": {
       "": "https://github.com/materemias/codexbar-agentview/raw/master/docs/tern.gif"
     },
@@ -899,7 +899,7 @@
     "status": null
   },
   "materemias/omp-stretch": {
-    "pushed": "2026-11-21",
+    "pushed": "2026-11-26",
     "screenshots": {
       "": "https://github.com/materemias/omp-stretch/raw/master/docs/stretch.gif"
     },
@@ -974,7 +974,7 @@
     "screenshots": {
       "": "https://github.com/mmnavarr/overseer/raw/main/docs/images/tour.png"
     },
-    "stars": 115,
+    "stars": 116,
     "status": null
   },
   "mreishus/tern-plugins": {
@@ -1094,7 +1094,7 @@
     "status": null
   },
   "rezhajulio/workspaces-sidebar": {
-    "pushed": "2026-11-03",
+    "pushed": "2026-11-25",
     "screenshots": {
       "": "https://github.com/rezhajulio/workspaces-sidebar/raw/main/docs/demo.png"
     },
@@ -1128,7 +1128,7 @@
     "status": null
   },
   "roverdude24/tern-roost": {
-    "pushed": "2026-11-19",
+    "pushed": "2026-11-26",
     "screenshots": {
       "": "https://github.com/roverdude24/tern-roost/raw/main/docs/panel-0.2.5.png"
     },
@@ -1184,7 +1184,7 @@
   },
   "skaft-software/octet": {
     "pushed": "2026-11-23",
-    "stars": 246,
+    "stars": 247,
     "status": null
   },
   "sneaky-bulgarian/tern-plugins": {
@@ -1234,7 +1234,7 @@
     "status": null
   },
   "tdortman/dotfiles": {
-    "pushed": "2026-11-24",
+    "pushed": "2026-11-25",
     "stars": 1,
     "status": null
   },
@@ -1244,7 +1244,7 @@
     "status": null
   },
   "theblazehen/mantern": {
-    "pushed": "2026-10-05",
+    "pushed": "2026-11-26",
     "screenshots": {
       "": "https://github.com/theblazehen/mantern/raw/main/docs/screenshot.png"
     },
@@ -1269,7 +1269,7 @@
     "screenshots": {
       "": "https://github.com/thegeneralist01/tern-projects/raw/main/docs/screenshots/showcase-overview.png"
     },
-    "stars": 27,
+    "stars": 28,
     "status": null
   },
   "theoparis/nix-tern": {
