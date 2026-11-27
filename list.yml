@@ -967,6 +967,7 @@ sections:
       url: https://github.com/juanangelaalma/tern-pets
       kind: plugin
       description: Adds an animated pet companion to a Tern pane or floating overlay, with shell-activity reactions and customizable, shareable pet packs.
+      screenshot: https://raw.githubusercontent.com/juanangelaalma/tern-pets/master/assets/screenshots/pet-gallery.png
     - name: tern-pokemon
       url: https://github.com/ITSyndicate25/tern-pokemon
       kind: plugin
