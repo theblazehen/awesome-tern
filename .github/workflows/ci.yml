@@ -22,17 +22,29 @@ jobs:
       - name: Validate list.yml
         run: uv run -q tools/awesome_tern.py check
       # On main (pushes, nightly, manual runs): fetch stars and status, rebuild, commit.
+      # Every run rebuilds from the newest main, so a run for an older commit never rebases its
+      # generated README onto a newer one. If another merge lands mid-run, the push is rejected
+      # and the README is rebuilt on top of it with the metadata this run already fetched.
       - name: Refresh metadata and regenerate README.md
         if: github.event_name != 'pull_request'
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
-          uv run -q tools/awesome_tern.py refresh
-          uv run -q tools/awesome_tern.py build
-          git add README.md metadata.json assets
-          git diff --cached --quiet && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update README.md and metadata"
-          git pull --rebase -q
-          git push
+          git fetch -q origin main
+          git checkout -q -B main origin/main
+          uv run -q tools/awesome_tern.py refresh
+          cp metadata.json "$RUNNER_TEMP/metadata.json"
+          for attempt in 1 2 3; do
+            uv run -q tools/awesome_tern.py build
+            git add README.md metadata.json assets
+            git diff --cached --quiet && exit 0
+            git commit -q -m "Update README.md and metadata"
+            git push -q origin main && exit 0
+            echo "main moved during the run; rebuilding on top of it (attempt $attempt)"
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            cp "$RUNNER_TEMP/metadata.json" metadata.json
+          done
+          exit 1
