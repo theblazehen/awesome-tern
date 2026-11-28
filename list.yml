@@ -143,7 +143,7 @@ sections:
     - name: tern-plugin-omp-usage
       url: https://github.com/jmazzola/tern-plugin-omp-usage
       kind: plugin
-      description: Shows omp usage limits above the composer's context bar, with a meter, reset countdown and clock time for each window on hover.
+      description: Shows omp usage limits above the composer's context bar, with a hover card of reset times, pace and plans, a widget-bar warning when a window runs ahead of its pace, opt-in low-quota toasts, combined multi-account pools and CLIProxyAPI and Keeper quotas.
     - name: tern-minimax-quota
       url: https://github.com/meisijiya/tern-minimax-quota
       kind: plugin
