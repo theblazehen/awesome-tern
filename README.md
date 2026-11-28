@@ -17,7 +17,7 @@ Each entry shows what kind of project it is, its GitHub stars and how long ago i
 - **[Agents](#agents)** 78 — [Coding agents](#coding-agents) · [Agent extensions](#agent-extensions) · [Usage and quotas](#usage-and-quotas) · [Status and dashboards](#status-and-dashboards) · [Orchestration](#orchestration) · [Worktrees](#worktrees) · [Notifications and alerts](#notifications-and-alerts)
 - **[Workspace](#workspace)** 71 — [Sessions and sidebars](#sessions-and-sidebars) · [Navigation, layout and input](#navigation-layout-and-input) · [Integrations](#integrations) · [Remote hosts](#remote-hosts) · [Companion apps](#companion-apps) · [Themes and appearance](#themes-and-appearance) · [Localization](#localization)
 - **[Development](#development)** 58 — [Git](#git) · [Review and feedback](#review-and-feedback) · [Issues and tasks](#issues-and-tasks) · [File viewers and notebooks](#file-viewers-and-notebooks) · [Cloud and data](#cloud-and-data) · [System and developer tools](#system-and-developer-tools)
-- **[Media and fun](#media-and-fun)** 21 — [Music and media](#music-and-media) · [Fun](#fun) · [Other](#other)
+- **[Media and fun](#media-and-fun)** 22 — [Music and media](#music-and-media) · [Fun](#fun) · [Other](#other)
 - **[Building for Tern](#building-for-tern)** 12 — [Documentation](#documentation) · [SDKs and protocol libraries](#sdks-and-protocol-libraries) · [Plugin templates and tooling](#plugin-templates-and-tooling)
 - **[Packaging and dotfiles](#packaging-and-dotfiles)** 4
 
@@ -376,6 +376,7 @@ Each entry shows what kind of project it is, its GitHub stars and how long ago i
 | **[tern-git-fx](https://github.com/willstarnet/tern-git-fx)**<br><a href="#legend"><img src="assets/kinds/plugin.svg" alt="plugin" align="absmiddle"></a><br>`★ 1` `6w` | Plays a small pixel-art animation in the pane corner while a git command runs, then a success or failure ending based on its exit status.<details><summary>Screenshot</summary><img src="https://github.com/willstarnet/tern-git-fx/raw/main/docs/images/sprites-preview.png" width="520" alt="tern-git-fx screenshot"></details> |
 | **[power-surge](https://github.com/dbydd/power-surge)**<br><a href="#legend"><img src="assets/kinds/plugin.svg" alt="plugin" align="absmiddle"></a><br>`★ 0` `6w` | Neovim plugin that shows sparks on every text change with a combo meter and screen shake, with a Tern command and chord for it. |
 | **[tern-balatro](https://github.com/ocasazza/tern-balatro)**<br><a href="#legend"><img src="assets/kinds/plugin.svg" alt="plugin" align="absmiddle"></a><br>`★ 0` `4w` | Balatro jokers wander a card table, shop or blind and pop +Mult when clicked, with sprites cut from your own copy of the game, in the style of tern-pokemon. |
+| **[tern-pets](https://github.com/juanangelaalma/tern-pets)**<br><a href="#legend"><img src="assets/kinds/plugin.svg" alt="plugin" align="absmiddle"></a><br>`★ 0` `2d` | Adds an animated pet companion to a Tern pane or floating overlay, with shell-activity reactions and customizable, shareable pet packs.<details><summary>Screenshot</summary><img src="https://raw.githubusercontent.com/juanangelaalma/tern-pets/master/assets/screenshots/pet-gallery.png" width="520" alt="tern-pets screenshot"></details> |
 
 ### Other
 
