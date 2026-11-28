@@ -396,7 +396,7 @@
     "status": null
   },
   "alt-glitch/hermes-tern": {
-    "pushed": "2026-11-27",
+    "pushed": "2026-11-28",
     "screenshots": {
       "": "https://github.com/alt-glitch/hermes-tern/raw/main/docs/images/transcript.png"
     },
@@ -523,7 +523,7 @@
     "screenshots": {
       "": "https://github.com/can1357/oh-my-pi/raw/main/assets/python.webp"
     },
-    "stars": 40046,
+    "stars": 40059,
     "status": null
   },
   "cgasgarth/tern-claude-workflows": {
@@ -756,7 +756,7 @@
     "status": null
   },
   "jinhyeok694/omp-tern-korean": {
-    "pushed": "2026-11-27",
+    "pushed": "2026-11-28",
     "stars": 2,
     "status": null
   },
@@ -1071,7 +1071,7 @@
     "status": null
   },
   "plumj-am/nixos": {
-    "pushed": "2026-11-27",
+    "pushed": "2026-11-28",
     "stars": 6,
     "status": null
   },
@@ -1133,7 +1133,7 @@
     "status": null
   },
   "roverdude24/tern-roost": {
-    "pushed": "2026-11-26",
+    "pushed": "2026-11-28",
     "screenshots": {
       "": "https://github.com/roverdude24/tern-roost/raw/main/docs/panel-0.2.5.png"
     },
@@ -1189,7 +1189,7 @@
   },
   "skaft-software/octet": {
     "pushed": "2026-11-28",
-    "stars": 248,
+    "stars": 251,
     "status": null
   },
   "sneaky-bulgarian/tern-plugins": {
@@ -1211,7 +1211,7 @@
   },
   "stencil-hq/tern-sdk": {
     "pushed": "2026-11-27",
-    "stars": 142,
+    "stars": 143,
     "status": null
   },
   "taooceros/tern-csv": {
